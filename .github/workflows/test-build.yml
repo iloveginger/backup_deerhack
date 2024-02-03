@@ -1,0 +1,45 @@
+name: Build Deerhack Backend and Frontend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        label:
+          - 'deerhack'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '14'
+
+      - name: Install Backend Dependencies
+        working-directory: backend
+        run: |
+          npm install
+
+      - name: Build Backend
+        working-directory: backend
+        run: |
+          # Add any build commands for your Strapi backend
+          npm run build
+
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: |
+          npm install
+
+      - name: Build Frontend
+        working-directory: frontend
+        run: |
+          # Add any build commands for your Next.js frontend
+          npm run build
