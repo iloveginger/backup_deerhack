@@ -1,9 +1,9 @@
-name: Build Backend and Frontend
+name: Build Frontend
 
 on:
-  push:
+  pull_request:
     branches:
-      - main
+      - dev
 
 jobs:
   build:
@@ -22,6 +22,15 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            frontend/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('frontend/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install Frontend Dependencies
         working-directory: frontend
         run: |
@@ -32,4 +41,3 @@ jobs:
         run: |
           # Add any build commands for your Next.js frontend
           npm run build
-          
