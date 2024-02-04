@@ -37,7 +37,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           EXCLUDE: "/node_modules/"
-          TARGET: /home/ubuntu/code/  
+          TARGET: /home/ubuntu/code/
 
       - name: SSH into Remote Server and Start Application
         uses: appleboy/ssh-action@master
@@ -47,4 +47,4 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ubuntu/code/frontend
-            echo "brought here by github" > /home/ubuntu/command.txt
+            echo "brought here by standalone" > /home/ubuntu/command.txt
