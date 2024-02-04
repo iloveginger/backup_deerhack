@@ -8,11 +8,8 @@ on:
 jobs:
   deploy:
     name: Deploy to Remote Server
-    runs-on: self-hosted
-    strategy:
-      matrix:
-        labels:  # Corrected from 'label' to 'labels'
-          - 'deerhack'
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
@@ -20,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '14'  # Use a valid Node.js version
+          node-version: '20'  # Use a valid Node.js version
 
       - name: Install Dependencies
         working-directory: frontend
@@ -40,7 +37,7 @@ jobs:
             SSH_PRIVATE_KEY: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
             REMOTE_HOST: ${{ secrets.YOUR_REMOTE_HOST }}
             REMOTE_USER: ${{ secrets.YOUR_REMOTE_USER }}
-            TARGET: /path/to/remote/directory  # Specify the target directory on the remote server
+            TARGET: /home/ubuntu/code/  # Specify the target directory on the remote server
 
       - name: SSH into Remote Server and Start Application
         uses: appleboy/ssh-action@master
@@ -49,5 +46,5 @@ jobs:
           username: ${{ secrets.YOUR_REMOTE_USER }}
           key: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
           script: |
-            cd /path/to/remote/directory/frontend
+            cd /home/ubuntu/code/frontend
             npm run start
