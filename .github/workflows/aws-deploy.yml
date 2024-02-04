@@ -32,12 +32,12 @@ jobs:
       - name: Transfer files to Remote Server
         uses: easingthemes/ssh-deploy@main
         with:
-          working-directory: frontend
-          env:
-            SSH_PRIVATE_KEY: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
-            REMOTE_HOST: ${{ secrets.YOUR_REMOTE_HOST }}
-            REMOTE_USER: ${{ secrets.YOUR_REMOTE_USER }}
-            TARGET: /home/ubuntu/code/  # Specify the target directory on the remote server
+          SOURCE : frontend/
+          SSH_PRIVATE_KEY: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.YOUR_REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.YOUR_REMOTE_USER }}
+          EXCLUDE: "/.next/, /node_modules/"
+          TARGET: /home/ubuntu/code/  # Specify the target directory on the remote server
 
       - name: SSH into Remote Server and Start Application
         uses: appleboy/ssh-action@master
@@ -47,4 +47,4 @@ jobs:
           key: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
           script: |
             cd /home/ubuntu/code/frontend
-            npm run start
+            echo "brought here by github" > /home/ubuntu/command.txt
