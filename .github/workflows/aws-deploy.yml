@@ -46,5 +46,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /home/ubuntu/code/frontend
-            echo "brought here by standalone" > /home/ubuntu/command.txt
+            pm2 reload all
