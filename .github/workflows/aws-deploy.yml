@@ -42,9 +42,9 @@ jobs:
       - name: SSH into Remote Server and Start Application
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.YOUR_REMOTE_HOST }}
-          username: ${{ secrets.YOUR_REMOTE_USER }}
-          key: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ubuntu/code/frontend
             echo "brought here by github" > /home/ubuntu/command.txt
