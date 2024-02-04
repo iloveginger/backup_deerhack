@@ -12,9 +12,8 @@ jobs:
       matrix:
         labels:  # Corrected from 'label' to 'labels'
           - 'deerhack'
-          
+
     name: Deploy to Remote Server
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the repository
