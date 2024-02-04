@@ -1,4 +1,4 @@
-name: Deploy Merged code to AWS
+name: Deploy Frontend to Remote Server
 
 on:
   push:
@@ -6,32 +6,26 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: self-hosted
     strategy:
       matrix:
         labels:  # Corrected from 'label' to 'labels'
           - 'deerhack'
+          
+    name: Deploy to Remote Server
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout the repository
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'  # Use a valid Node.js version
 
-      - name: Cache Node.js modules
-        uses: actions/cache@v2
-        with:
-          path: |
-            frontend/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('frontend/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Install Frontend Dependencies
+      - name: Install Dependencies
         working-directory: frontend
         run: |
           npm install
@@ -39,31 +33,24 @@ jobs:
       - name: Build Frontend
         working-directory: frontend
         run: |
-          # Add any build commands for your Next.js frontend
           npm run build
 
-  deploy:
-    name: Build and send built files to server.
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout the files
-        uses: actions/checkout@v2
-
-      - name: Deploy to Server 1
+      - name: Transfer files to Remote Server
         uses: easingthemes/ssh-deploy@main
+        with:
+          working-directory: frontend
           env:
-            SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-            REMOTE_HOST: ${{ secrets.HOST_DNS }}
-            REMOTE_USER: ${{ secrets.USERNAME }}
-            TARGET: ${{ secrets.TARGET_DIR }}
+            SSH_PRIVATE_KEY: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
+            REMOTE_HOST: ${{ secrets.YOUR_REMOTE_HOST }}
+            REMOTE_USER: ${{ secrets.YOUR_REMOTE_USER }}
+            TARGET: /home/ubuntu/code/  # Specify the target directory on the remote server
 
-      - name: Executing remote ssh commands using ssh key
+      - name: SSH into Remote Server and Start Application
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST_DNS }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          host: ${{ secrets.YOUR_REMOTE_HOST }}
+          username: ${{ secrets.YOUR_REMOTE_USER }}
+          key: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
           script: |
-            npm run build 
-            echo "command was run here" > cmd.txt
+            cd /home/ubuntu/code/frontend
+            npm run start
