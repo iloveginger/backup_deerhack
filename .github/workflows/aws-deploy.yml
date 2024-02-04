@@ -33,9 +33,9 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         with:
           SOURCE : frontend/
-          SSH_PRIVATE_KEY: ${{ secrets.YOUR_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.YOUR_REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.YOUR_REMOTE_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.HOST_DNS }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
           EXCLUDE: "/.next/, /node_modules/"
           TARGET: /home/ubuntu/code/  # Specify the target directory on the remote server
 
