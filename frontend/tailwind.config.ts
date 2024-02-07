@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors:{
         "primary": "#6633CC",
+        "primary-lighter": "#A57290",
         "secondary": "#F5C144",
         "dark-purple": "#110C24",
         "violet": "#241A4A",
@@ -18,6 +19,10 @@ const config: Config = {
         "saffron": "#F5C144",
         "magnolia": "#FCF7FF",
       },
+      gradientColorStopPositions:{
+        3: "3%",
+        1: "1%",
+      }
       // fontFamily: {
       //   "cabinetLight": ["var(--font-cabinet-light)"],
       // }

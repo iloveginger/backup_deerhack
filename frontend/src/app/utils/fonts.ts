@@ -14,6 +14,18 @@ const cabinetBold = localFont({
     preload: true,
 })
 
+const cabinetExtraBold = localFont({
+    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-ExtraBold.woff2",
+    fallback: ["system-ui", 'arial'],
+    preload: true,
+})
+
+const cabinetBlack = localFont({
+    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Black.woff2",
+    fallback: ["system-ui", 'arial'],
+    preload: true,
+})
+
 const satoshiRegular = localFont({
     src: "../assets/fonts/satoshi/Satoshi-Regular.woff2",
     fallback: ["system-ui", 'arial'],
@@ -21,4 +33,5 @@ const satoshiRegular = localFont({
 })
 
 
-export {cabinetLight, cabinetBold, satoshiRegular}
+
+export {cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold, cabinetBlack}
