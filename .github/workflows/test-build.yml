@@ -7,7 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted 
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        label:
+          - 'deerhack'
 
     steps:
       - name: Checkout Repository
