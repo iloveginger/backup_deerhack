@@ -787,6 +787,7 @@ export interface ApiJudgeJudge extends Schema.CollectionType {
     singularName: 'judge';
     pluralName: 'judges';
     displayName: 'Judges';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -796,6 +797,7 @@ export interface ApiJudgeJudge extends Schema.CollectionType {
     position: Attribute.String & Attribute.Required;
     description: Attribute.Text & Attribute.Required;
     image: Attribute.Media;
+    linkedin_url: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -820,6 +822,7 @@ export interface ApiMentorMentor extends Schema.CollectionType {
     singularName: 'mentor';
     pluralName: 'mentors';
     displayName: 'Mentor';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -829,6 +832,7 @@ export interface ApiMentorMentor extends Schema.CollectionType {
     position: Attribute.String & Attribute.Required;
     description: Attribute.Text & Attribute.Required;
     image: Attribute.Media;
+    linkedin_url: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
