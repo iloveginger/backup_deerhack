@@ -1,13 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+// export const cabinetFont = localFont({
+//   // src: "./assets/fonts/cabinet_grotesk/CabinetGrotesk-Regular.woff2",
+//   // style: "bold",
+//   src: [
+//     {
+//       path: "./assets/fonts/cabinet_grotesk/CabinetGrotesk-Regular.woff2",
+//       style: "normal",
+//     },
+//     {
+//       path: "./assets/fonts/cabinet_grotesk/CabinetGrotesk-Extrabold.woff2",
+//       style: "bold",
+//     },
+//   ],
+// });
 
 export const metadata: Metadata = {
-    title: "Deerhack 2024",
-    description: "To be worked",
-  };
+  title: "Deerhack 2024",
+  description: "To be worked",
+};
 
 export default function RootLayout({
   children,
@@ -16,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
