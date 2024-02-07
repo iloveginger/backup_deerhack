@@ -2,8 +2,8 @@ export default function Trophy({
   height = 159,
   width = 159,
 }: {
-  height: number;
-  width: number;
+  height?: number;
+  width?: number;
 }) {
   return (
     <svg
