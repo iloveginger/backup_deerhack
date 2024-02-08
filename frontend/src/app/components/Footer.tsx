@@ -2,10 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Deer from "../assets/icons/deer";
 import FooterArt from "../assets/icons/FooterArt";
+import { cabinetBold, satoshiRegular } from "@/fonts";
+import Mail from "../assets/icons/mail";
+import Phone from "../assets/icons/Phone";
+
 
 const Footer = () => {
   return (
-    <div className="footer_container flex flex-col flex-grow bg-[#241A4A] w-full">
+    <div className="footer_container flex flex-col  bg-[#241A4A] w-full">
       <div className="mx-32 mt-16">
         <div className="flex items-center flex-row gap mb-10 ">
           <div className="flex flex-col gap-4 mr-80 contact">
@@ -21,16 +25,17 @@ const Footer = () => {
             </div>
             <div className="mt-10 contact_info">
               <div className="text-white flex flex-row mb-4 justify-center items-center">
-                <Image
+                {/* <Image
                   src="Group 63.svg"
                   className="inline"
                   alt="SoftwareClub"
                   height={32}
                   width={32}
-                />
+                /> */}
+                <Mail/>
                 <span className="px-2 text-xl/[24px]">deerhack@deerwalk.edu.np</span>
               </div>
-              <div className="text-white flex flex-row justify-end items-center">
+              <div className="text-white flex flex-row justify-start items-center">
                 <Image
                   src="Group 64.svg"
                   className="inline"
@@ -38,6 +43,7 @@ const Footer = () => {
                   height={32}
                   width={32}
                 />
+
                 <span className="px-2 text-xl/[24px]">9841210924/9843109234</span>
               </div>
             </div>
@@ -89,13 +95,13 @@ const Footer = () => {
             </div>
           </div>
           <div className="Event_summary text-white ">
-            <p className="font-[700] text-3xl/[32px] mb-8">Event Summary</p>
+            <p className={`font-[700] text-3xl/[32px] mb-8 ${satoshiRegular.className}`}>Event Summary</p>
             <p className="mb-5 text-xl/[32px]">Mode:In-person</p>
             <p className="mb-5 text-xl/[32px]">Venue:Deerwalk Complex</p>
             <p className="text-xl/[32px]">Date:5th-7th May, 2024</p>
           </div>
         </div>
-        <span className="text-white flex justify-center text-sm/[24px]">
+        <span className={ `text-white flex justify-center text-sm/[24px] ${cabinetBold.className}`}>
           All Rights Reserved © DWIT Software Club 2024
         </span>
       </div>
@@ -107,7 +113,8 @@ const Footer = () => {
           width = {1000}
           objectFit="cover"
         /> */}
-        <FooterArt width={1700} height={1200}/>
+        <FooterArt 
+        />
       </div>
     </div>
   );

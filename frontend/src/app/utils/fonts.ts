@@ -1,0 +1,24 @@
+import localFont from "next/font/local";
+
+
+const cabinetLight = localFont({
+    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Light.woff2",
+    variable: "--font-cabinet-light",
+    fallback: ["system-ui", 'arial'],
+    preload: true,
+})
+
+const cabinetBold = localFont({
+    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Bold.woff2",
+    fallback: ["system-ui", 'arial'],
+    preload: true,
+})
+
+const satoshiRegular = localFont({
+    src: "../assets/fonts/satoshi/Satoshi-Regular.woff2",
+    fallback: ["system-ui", 'arial'],
+    preload: true,
+})
+
+
+export {cabinetLight, cabinetBold, satoshiRegular}

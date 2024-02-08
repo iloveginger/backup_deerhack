@@ -18,6 +18,10 @@ const config: Config = {
         saffron: "#F5C144",
         magnolia: "#FCF7FF",
       },
+      // fontFamily: {
+      //   "cabinetLight": ["var(--font-cabinet-light)"],
+      // }
+      
     },
   },
   plugins: [],
