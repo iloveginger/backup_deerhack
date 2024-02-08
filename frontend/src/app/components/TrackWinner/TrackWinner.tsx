@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import Confetti from "@/app/assets/images/confetti";
-import style from "./styles.module.css";
 import { cabinetBlack, cabinetBold } from "@/app/utils/fonts";
 
 export default function TrackWinner(): ReactElement {
