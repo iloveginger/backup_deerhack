@@ -15,5 +15,13 @@
         @apply bg-gradient-to-r from-primary from-1% to-secondary bg-clip-text text-transparent
     }
 
+    .font-cabinet-light {
+        font-family: var(--font-cabinet-light);
+    }
+
+    .font-cabinet-bold {
+        font-family: var(--font-cabinet-bold);
+    }
+
 
 }

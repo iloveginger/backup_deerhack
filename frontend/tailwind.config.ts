@@ -22,10 +22,10 @@ const config: Config = {
       gradientColorStopPositions:{
         3: "3%",
         1: "1%",
+      },
+      fontFamily: {
+        "cabinet-light": ["var(--font-cabinet-light)"],
       }
-      // fontFamily: {
-      //   "cabinetLight": ["var(--font-cabinet-light)"],
-      // }
       
     },
   },
