@@ -16,15 +16,15 @@ import LinkedInSVG from "../assets/icons/linkedin";
 
 const Footer = () => {
   return (
-    <div className="footer_container pb-52 flex flex-col  bg-[#241A4A]  w-full">
-      <div className="mx-32 mt-16">
-        <div className="flex items-center flex-row gap mb-10 ">
-          <div className="flex flex-col gap-4 mr-80 contact">
-            <div className="flex gap-8 items-center logo_container">
+    <div key ="footer_container" className="pb-52 flex min-h-screen flex-col flex-grow  bg-[#241A4A]  w-full">
+      <div className="flex flex-grow flex-col w-[85%] m-auto mt-10">
+        <div className="flex items-center md:flex-row justify-between gap-10 mb-10 sm:flex-col -sm:flex-col">
+          <div className="flex flex-col ">
+            <div key = "logo_container" className="flex gap-7 items-center sm:justify-center md:justify-start">
               <DWITSVG />
               <SoftwareSVG />
             </div>
-            <div className="mt-10 contact_info">
+            <div key = "contact_info" className="mt-10">
               <div className="text-white flex flex-row mb-4 justify-center items-center">
                 <MailSVG />
                 <span className={`px-2 text-[20px] ${cabinetLight.className}`}>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <div className="Social_media flex flex-col mt-11 gap-4">
+            <div key = "socials" className="flex flex-col mt-11 gap-4">
               <p
                 className={`text-white text-xl font-[700] ${cabinetLight.className}`}
               >
@@ -52,8 +52,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="Navigation mr-80">
-            <div className="links text-white flex flex-col gap-11 justify-center items-center">
+          <div key="Navigation">
+            <div className="links text-white flex flex-col gap-9 justify-center items-center">
               <Link
                 className={`px-2 text-[16px] ${cabinetLight.className}`}
                 href=""
@@ -74,7 +74,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="Event_summary text-white ">
+          <div key = "event_summary" className="text-white ">
             <p
               className={`font-[700] text-[28px] mb-8 ${cabinetLight.className}`}
             >

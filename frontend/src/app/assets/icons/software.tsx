@@ -1,7 +1,7 @@
 export default function SoftwareSVG() {
   return (
     <svg
-      width="47"
+      width="37"
       height="77"
       viewBox="0 0 47 77"
       fill="none"

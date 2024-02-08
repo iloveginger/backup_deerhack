@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-export default function FooterArt({
+export default function FooterArtSVG({
   height,
   width,
 }: {
@@ -10,6 +10,7 @@ export default function FooterArt({
     <svg
       width={`${width}`}
       height={`${height}`}
+      // className = "absolute top-[50%]  translate-y-[-65%]"
       viewBox="0 0 1536 683"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

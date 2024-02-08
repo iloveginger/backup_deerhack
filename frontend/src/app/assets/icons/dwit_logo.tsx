@@ -1,13 +1,14 @@
 export default function DWITSVG() {
   return (
     <svg
-      width="85"
+      width="55"
       height="84"
       viewBox="0 0 86 86"
+      className="lg:"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_264_1177)">
+      <g clipPath="url(#clip0_264_1177)">
         <path
           d="M85 41.9911C85 65.192 65.975 83.9971 42.5 83.9971C19.025 83.9971 0 65.192 0 41.9911C0 18.7902 19.025 -0.00292969 42.5 -0.00292969C65.975 -0.00292969 85 18.8021 85 41.9911Z"
           fill="url(#paint0_linear_264_1177)"
@@ -17,8 +18,8 @@ export default function DWITSVG() {
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M14.5538 62.2714C21.387 68.0624 30.6276 64.6169 32.4271 63.021C33.8132 63.6013 36.7799 69.0054 42.0324 69.6824C54.1668 71.2178 58.5318 59.8172 60.8662 59.249C62.9575 59.249 70.5567 75.2558 76.8549 67.6272C76.8549 67.6272 66.289 84.7704 41.5947 85.2298C16.2804 84.7704 5.5321 63.3112 5.5321 63.3112C5.5321 63.3112 14.6268 64.8345 14.5538 62.2714Z"
           fill="url(#paint1_linear_264_1177)"
         />
@@ -32,8 +33,8 @@ export default function DWITSVG() {
           y2="-0.00292969"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7BC2E8" />
-          <stop offset="1" stop-color="#1F6AB4" />
+          <stop stopColor="#7BC2E8" />
+          <stop offset="1" stopColor="#1F6AB4" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_264_1177"
@@ -43,8 +44,8 @@ export default function DWITSVG() {
           y2="59.249"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#89A289" />
-          <stop offset="1" stop-color="#006233" />
+          <stop stopColor="#89A289" />
+          <stop offset="1" stopColor="#006233" />
         </linearGradient>
         <clipPath id="clip0_264_1177">
           <rect width="85.2323" height="85.2324" fill="white" />
