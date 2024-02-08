@@ -5,14 +5,14 @@ import footer_image from "@/app/assets/images/footer_image.svg";
 
 import { cabinetBold, cabinetRegular } from "@/fonts";
 
-import SoftwareSVG from "@/icons/Software";
-import DWITSVG from "@/icons/DwitLogo";
-import MailSVG from "@/icons/EmailIcon";
-import PhoneSVG from "@/icons/Phone";
-import FacebookSVG from "@/icons/Facebook";
-import InstagramSVG from "@/icons/Instagram";
-import DiscordSVG from "@/icons/Discord";
-import LinkedInSVG from "@/icons/LinkedIn";
+import SoftwareSVG from "@/app/assets/icons/Software";
+import DWITSVG from "@/app/assets/icons/DwitLogo";
+import MailSVG from "@/app/assets/icons/EmailIcon";
+import PhoneSVG from "@/app/assets/icons/Phone";
+import FacebookSVG from "@/app/assets/icons/Facebook";
+import InstagramSVG from "@/app/assets/icons/Instagram";
+import DiscordSVG from "@/app/assets/icons/Discord";
+import LinkedInSVG from "@/app/assets/icons/LinkedIn";
 
 export default function Footer(): ReactElement {
   return (
