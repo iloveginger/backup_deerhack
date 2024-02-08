@@ -8,16 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors:{
-        "primary": "#6633CC",
-        "primary-lighter": "#A57290",
-        "secondary": "#F5C144",
+      colors: {
+        primary: "#6633CC",
+        secondary: "#F5C144",
         "dark-purple": "#110C24",
-        "violet": "#241A4A",
-        "grape": "#6633CC",
-        "purpures": "#9D4BAD",
-        "saffron": "#F5C144",
-        "magnolia": "#FCF7FF",
+        violet: "#241A4A",
+        grape: "#6633CC",
+        purpures: "#9D4BAD",
+        saffron: "#F5C144",
+        magnolia: "#FCF7FF",
       },
       gradientColorStopPositions:{
         3: "3%",
@@ -27,6 +26,7 @@ const config: Config = {
         "cabinet-light": ["var(--font-cabinet-light)"],
       }
       
+
     },
   },
   plugins: [],
