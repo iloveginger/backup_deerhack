@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "./components/Navbar/page";
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: "Deerhack 2024",
@@ -13,11 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <>
       <header className="fixed w-full mx-auto">
         <Navbar />
       </header>
       <main>{children}</main>
     </>
+
   );
 }
