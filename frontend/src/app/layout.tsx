@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Navbar } from "./components/Navbar/page";
 
 export const metadata: Metadata = {
-    title: "Deerhack 2024",
-    description: "To be worked",
-  };
+  title: "Deerhack 2024",
+  description: "To be worked",
+};
 
 export default function RootLayout({
   children,
@@ -15,8 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <>
+      <header className="fixed w-full mx-auto">
+        <Navbar />
+      </header>
+      <main>{children}</main>
+    </>
   );
 }

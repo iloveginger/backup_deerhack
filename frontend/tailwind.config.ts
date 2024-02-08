@@ -18,7 +18,9 @@ const config: Config = {
         "saffron": "#F5C144",
         "magnolia": "#FCF7FF",
       },
-      
+      backgroundImage:{
+        "hero": "url('/images/Hero.svg')",
+      }
     },
   },
   plugins: [],
