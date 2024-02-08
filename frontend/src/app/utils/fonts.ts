@@ -7,6 +7,13 @@ const cabinetLight = localFont({
   preload: true,
 });
 
+const cabinetRegular = localFont({
+  src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Regular.woff2",
+  variable: "--font-cabinet-regular",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
+
 const cabinetBold = localFont({
   src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Bold.woff2",
   fallback: ["system-ui", "arial"],
@@ -19,4 +26,4 @@ const satoshiRegular = localFont({
   preload: true,
 });
 
-export { cabinetLight, cabinetBold, satoshiRegular };
+export { cabinetLight, cabinetBold, satoshiRegular, cabinetRegular };
