@@ -21,7 +21,6 @@ const config: Config = {
       // fontFamily: {
       //   "cabinetLight": ["var(--font-cabinet-light)"],
       // }
-      
     },
   },
   plugins: [],
