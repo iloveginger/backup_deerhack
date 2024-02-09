@@ -1,10 +1,10 @@
-import FetchData from "./data";
+// import FetchData from "./data";
 import { cabinetBold, satoshiRegular, cabinetRegular } from "@/fonts";
 import JudgeCard from "./JudgeCard";
 
 const Judges = async () => {
-  const data = await FetchData();
-  console.log();
+  // const data = await FetchData();
+  // console.log();
   return (
     <div key="container" className="w-[85%] m-auto py-10">
       <div key="judgeContainer" className="flex items-center flex-col my-20">
