@@ -1,6 +1,12 @@
 import { ReactElement, ReactSVGElement } from "react";
 
-export default function SolanaSVG(): ReactSVGElement {
+export default function SolanaSVG({
+  height = 32,
+  width = 32,
+}: {
+  height?: number;
+  width?: number;
+}): ReactElement {
   return (
     <svg
       width="35"
@@ -11,7 +17,7 @@ export default function SolanaSVG(): ReactSVGElement {
     >
       <mask
         id="mask0_233_968"
-        style="mask-type:luminance"
+        style={{ maskType: "luminance" }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

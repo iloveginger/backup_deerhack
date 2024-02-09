@@ -4,7 +4,7 @@ import ReplitSVG from "@/app/assets/images/replit";
 
 export default function Filecoin(): ReactElement {
   return (
-    <div className=" bg-violet w-48 mt-10 ml-10 rounded-xl">
+    <div className=" bg-violet w-48 rounded-xl">
       <div className="flex flex-col px-4 py-5 gap-3">
         <div className="flex justify-start gap-2 items-center">
           <ReplitSVG height={38} width={40} />
