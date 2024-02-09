@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 // import { cabinetLight, cabinetBold } from "./utils/fonts";
 
 import { cabinetBold, satoshiRegular } from "@/fonts";
+import JudgesSection from "./sections/Judges/Judges";
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
         This is satoshiiiii
       </p>
 
+      <JudgesSection />
       <FooterSection />
     </main>
-    
   );
 }
