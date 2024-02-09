@@ -1,10 +1,26 @@
-// import FetchData from "./data";
-import { cabinetBold, satoshiRegular, cabinetRegular } from "@/fonts";
+import React from "react";
+import FetchData from "./data";
+import { cabinetBold } from "@/fonts";
 import JudgeCard from "./JudgeCard";
+import Judge from "@/app/types/judge";
 
 const Judges = async () => {
-  // const data = await FetchData();
-  // console.log();
+  const response = await FetchData();
+  const judges = response.data;
+  let judges_real: Judge[] = [];
+  for (let judge of judges) {
+    console.log(judge.attributes.image.data.attributes.url);
+
+    let entity: Judge = {
+      name: judge.attributes.name,
+      position: judge.attributes.position,
+      image:"http://localhost:1337"+judge.attributes.image.data.attributes.url,
+      linkedin_url: judge.attributes.linkedin_url,
+    };
+
+    judges_real.push(entity);
+  }
+
   return (
     <div key="container" className="w-[85%] m-auto py-10">
       <div key="judgeContainer" className="flex items-center flex-col my-20">
@@ -15,16 +31,20 @@ const Judges = async () => {
         </h1>
         <div
           key="JudgeCards"
-        className="flex flex-wrap lg:w-full xl:w-[70%] mt-2 gap-16 justify-center"
+          className="flex flex-wrap lg:w-full xl:w-[70%] mt-2 gap-16 justify-center"
         >
-          <JudgeCard name ="krish" position="dev" />
-          <JudgeCard name ="krish" position="dev"/>
-          <JudgeCard name ="krish" position="dev"/>
-          <JudgeCard name ="krish" position="dev"/>
-          <JudgeCard name ="krish" position="dev"/>
+          {judges_real.map((judge: Judge) => (
+            <JudgeCard
+              key={judge.name}
+              name={judge.name}
+              position={judge.position}
+              image={judge.image}
+              linkedin_url={judge.linkedin_url}
+            />
+          ))}
         </div>
       </div>
-    </div> 
+    </div>
   );
 };
 
