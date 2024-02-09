@@ -1,6 +1,6 @@
-import FetchData from "./data";
+// import FetchData from "./data";
 import { cabinetBold, satoshiRegular, cabinetRegular } from "@/fonts";
-import JudgeCard from "./JudgeCard";
+import MentorCard from "./MentorCardCard";
 
 const Judges = async () => {
   const data = await FetchData();
@@ -11,7 +11,7 @@ const Judges = async () => {
         <h1
           className={`bg-gradient-to-r from-primary to-secondary text-4xl bg-clip-text text-transparent font-[800] mb-6 ${cabinetBold.className}`}
         >
-          Judges for DeerHack 2024
+          Mentors for DeerHack 2024
         </h1>
         <div
           key="JudgeCards"

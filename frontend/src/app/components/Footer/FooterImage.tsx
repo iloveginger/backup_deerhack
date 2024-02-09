@@ -26,8 +26,7 @@ function FooterImage() {
         width={dimensions.width}
         className="absolute top-[50%]  translate-y-[-65%] lg:translate-y-[-55%] sm:translate-y-[-35%]"
       /> */}
-      <FooterArtSVG
-      />
+      <FooterArtSVG />
     </div>
   );
 }

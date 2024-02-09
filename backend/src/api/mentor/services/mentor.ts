@@ -2,6 +2,6 @@
  * mentor service
  */
 
-import { factories } from '@strapi/strapi';
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreService('api::mentor.mentor');
+export default factories.createCoreService("api::mentor.mentor");

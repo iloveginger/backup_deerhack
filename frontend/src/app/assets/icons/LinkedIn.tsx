@@ -1,9 +1,15 @@
-export default function LinkedInSVG() {
+interface svgProps{
+  className? : string,
+}
+
+export default function LinkedInSVG(
+  {className = ""}:svgProps
+) {
   return (
     <svg
       width="24"
       height="24"
-      className="inline mr-5"
+      className={`${className}`}
       viewBox="0 0 25 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

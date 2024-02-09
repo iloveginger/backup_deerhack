@@ -19,9 +19,8 @@ export default function Home() {
         This is satoshiiiii
       </p>
 
-      <JudgesSection/>
+      <JudgesSection />
       <FooterSection />
     </main>
-    
   );
 }

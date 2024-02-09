@@ -1,4 +1,3 @@
-
 import Judges from "@/app/components/Judges/Judges";
 
 const JudgesSection = () => {

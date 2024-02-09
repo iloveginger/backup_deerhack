@@ -3,13 +3,13 @@ import LinkedInSVG from "@/app/assets/icons/LinkedIn";
 import { cabinetRegular } from "@/app/utils/fonts";
 import Image from "next/image";
 
-interface judgeProps{
+interface mentorProps{
   name:string, 
   position:string,
 }
 
 
-const JudgeCard = ({name, position}:judgeProps) => {
+const MentorCard = ({name, position}:mentorProps) => {
   return (
     <div className="mb-5 flex justify-center items-center" key="container">
         <div key= "cardContainer" className="relative flex items-center justify-center rounded-xl h-70 w-full bg-gradient-to-br p-0.5 from-grape to-saffron">
@@ -38,4 +38,4 @@ const JudgeCard = ({name, position}:judgeProps) => {
   );
 };
 
-export default JudgeCard;
+export default MentorCard;
