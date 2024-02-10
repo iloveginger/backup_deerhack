@@ -1,5 +1,5 @@
 import MainLogo from "@/app/assets/icons/MainLogo";
-import HeroIcon from "@/images/Hero.webp";
+import HeroIcon from "@/icons/Hero.svg";
 import Image from "next/image";
 import { cabinetBold, cabinetRegular } from "@/fonts";
 
