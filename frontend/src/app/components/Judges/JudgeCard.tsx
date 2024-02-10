@@ -7,23 +7,23 @@ import Link from "next/link";
 
 const JudgeCard = ({ name, position, image, linkedin_url }: Judge) => {
   return (
-    <div className="mb-5 flex justify-center items-center" key="container">
+    <div className="mb-5 flex justify-center items-center" key="cardContainer">
       <div
-        key="cardContainer"
-        className="relative flex items-center justify-center rounded-xl h-70 w-full bg-gradient-to-br p-0.5 from-grape to-saffron"
+        key="card"
+        className="relative flex items-center justify-center rounded-xl h-80 w-64 bg-gradient-to-br p-1 from-grape to-saffron"
       >
         <div key="imageContainer" className="w-full h-full">
           <Image
             src={image}
-            width={200}
+            width={300}
             height={375}
             alt="test"
-            className="rounded-xl ojbect-cover h-full"
+            className="rounded-xl object-cover w-full h-full"
           />
         </div>
         <div
           key="linkedinContainer"
-          className="absolute top-[80%] flex flex-row items-center  justify-between bg-[#110C24] rounded-lg py-2 px-4 w-[80%]"
+          className="absolute bottom-[3%] flex flex-row items-center  justify-between bg-[#110C24] rounded-lg py-4 px-5 w-[90%]"
         >
           <div>
             <p
