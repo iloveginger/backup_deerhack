@@ -1,4 +1,3 @@
-import FooterSection from "./sections/Footer/Footer";
 import localFont from "next/font/local";
 // import { cabinetLight, cabinetBold } from "./utils/fonts";
 
@@ -17,9 +16,6 @@ export default function Home() {
       <p className={`${cabinetBold.className} text-white font-[500]`}>
         This is satoshiiiii
       </p>
-
-      <FooterSection />
     </main>
-    
   );
 }
