@@ -21,7 +21,7 @@ const cabinetBold = localFont({
 });
 
 const cabinetExtraBold = localFont({
-    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-ExtraBold.woff2",
+    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Extrabold.woff2",
     fallback: ["system-ui", 'arial'],
     preload: true,
     variable: "--font-cabinet-extra-bold",

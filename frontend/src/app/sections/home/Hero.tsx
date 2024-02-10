@@ -2,7 +2,7 @@ import MainLogo from "@/app/assets/icons/MainLogo";
 import HeroIcon from "@/icons/Hero.svg";
 import Image from "next/image";
 import { cabinetBold, cabinetRegular } from "@/fonts";
-import Footer from "@/app/components/Footer/Footer";
+// import Footer from "@/app/components/Footer/Footer";
 
 
 const Hero = () => {
