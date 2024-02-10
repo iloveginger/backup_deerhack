@@ -1,10 +1,8 @@
-interface svgProps{
-  className? : string,
+interface svgProps {
+  className?: string;
 }
 
-export default function LinkedInSVG(
-  {className = ""}:svgProps
-) {
+export default function LinkedInSVG({ className = "" }: svgProps) {
   return (
     <svg
       width="24"

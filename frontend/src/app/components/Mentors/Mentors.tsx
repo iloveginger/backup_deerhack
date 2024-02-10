@@ -12,12 +12,10 @@ const Judges = async () => {
         </h1>
         <div
           key="JudgeCards"
-        className="flex flex-wrap lg:w-full xl:w-[70%] mt-2 gap-16 justify-center"
-        >
-          
-        </div>
+          className="flex flex-wrap lg:w-full xl:w-[70%] mt-2 gap-16 justify-center"
+        ></div>
       </div>
-    </div> 
+    </div>
   );
 };
 
