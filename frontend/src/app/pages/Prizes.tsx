@@ -14,7 +14,7 @@ export default function PrizesPage(): ReactElement {
         className="absolute z-0 right-9 hidden lg:block"
       />
       <p
-        className={`${cabinetExtraBold.className} text-center text-3xl text-primary-gradient-color w-fit mx-auto`}
+        className={`${cabinetExtraBold.className} text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
       >
         Prizes
       </p>

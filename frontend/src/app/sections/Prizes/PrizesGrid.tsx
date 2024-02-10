@@ -24,7 +24,7 @@ export default function PrizesGrid(): ReactElement {
           <Filecoin />
           <Replit />
         </div>
-        <div className="w-full md:w-fit flex flex-col sm:justify-between items-center gap-4">
+        <div className="w-full md:w-fit flex flex-col sm:justify-around items-center gap-4">
           <Solana
             title="Young Gun"
             description="best beginner project just starting out on Solana"
