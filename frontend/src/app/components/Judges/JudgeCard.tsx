@@ -10,7 +10,7 @@ const JudgeCard = ({ name, position, image, linkedin_url }: Judge) => {
     <div className="mb-5 flex justify-center items-center" key="cardContainer">
       <div
         key="card"
-        className="relative flex items-center justify-center rounded-xl h-80 w-64 bg-gradient-to-br p-1 from-grape to-saffron"
+        className="relative flex items-center justify-center rounded-xl h-80 w-64 lg:w-56 bg-gradient-to-br p-1 from-grape to-saffron"
       >
         <div key="imageContainer" className="w-full h-full">
           <Image

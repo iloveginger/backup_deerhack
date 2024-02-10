@@ -31,7 +31,7 @@ const Judges = async () => {
         </h1>
         <div
           key="JudgeCards"
-          className="flex flex-wrap lg:w-full xl:w-[70%] mt-2 gap-16 justify-center"
+          className="flex flex-wrap lg:w-full xl:w-[80%] mt-2 gap-16 justify-center"
         >
           {judges_real.map((judge: Judge) => (
             <JudgeCard
