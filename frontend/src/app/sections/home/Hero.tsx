@@ -6,7 +6,7 @@ import { cabinetBold, cabinetRegular } from "@/fonts";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="-mb-1">
       <div className="w-full flex justify-center items-center relative z-[-1]">
         <Image src={HeroIcon} alt="Hero Image" className="w-screen" />
         <div className="absolute mt-[-300px] gap-[24px] flex flex-col text-center ">
