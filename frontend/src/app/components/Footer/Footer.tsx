@@ -64,7 +64,7 @@ export default function Footer(): ReactElement {
               >
                 Visit Our Socials
               </p>
-              <div className="icons">
+              <div className="icons flex">
                 <FacebookSVG />
                 <InstagramSVG />
                 <DiscordSVG />
