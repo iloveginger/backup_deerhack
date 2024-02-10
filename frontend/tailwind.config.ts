@@ -18,9 +18,15 @@ const config: Config = {
         saffron: "#F5C144",
         magnolia: "#FCF7FF",
       },
-      // fontFamily: {
-      //   "cabinetLight": ["var(--font-cabinet-light)"],
-      // }
+      gradientColorStopPositions:{
+        3: "3%",
+        1: "1%",
+      },
+      fontFamily: {
+        "cabinet-light": ["var(--font-cabinet-light)"],
+      }
+      
+
     },
   },
   plugins: [],
