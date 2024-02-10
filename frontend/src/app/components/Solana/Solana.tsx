@@ -18,7 +18,7 @@ export default function Solana({
 }): ReactElement {
   return (
     <div className=" bg-violet w-48 rounded-xl">
-      <div className="flex flex-col px-4 py-5 gap-5">
+      <div className="flex flex-col px-4 py-4 gap-4">
         <div className="flex justify-start gap-2 items-center">
           <SolanaSVG height={38} width={40} />
           <p

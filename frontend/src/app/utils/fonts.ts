@@ -39,4 +39,4 @@ const satoshiRegular = localFont({
   preload: true,
 });
 
-export {cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold, cabinetBlack};
+export {cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold, cabinetBlack, cabinetRegular};

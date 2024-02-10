@@ -7,11 +7,10 @@ import {
   cabinetExtraBold,
 } from "@/app/utils/fonts";
 
-
 export default function GrandPrizeCard(): ReactElement {
   return (
     <div
-      className={`flex flex-col justify-evenly h-72 w-64 primary-gradient-background rounded-xl mt-10 ml-10`}
+      className={`flex flex-col justify-evenly h-72 w-64 primary-gradient-background rounded-xl`}
     >
       <div className="flex flex-col justify-center text-center">
         <div className="flex justify-center">
