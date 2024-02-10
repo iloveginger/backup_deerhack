@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function PrizesPage(): ReactElement {
   return (
-    <div className="bg-dark-purple">
+    <div className="bg-dark-purple py-10">
       <Image
         src={leaf_prizes_right}
         alt="leaf"
