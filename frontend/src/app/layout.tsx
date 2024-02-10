@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
 
     <>
-      <header className="fixed w-full mx-auto">
+      <header className="fixed w-full mx-auto z-10">
         <Navbar />
       </header>
       <main>{children}</main>
