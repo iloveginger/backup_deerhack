@@ -38,5 +38,16 @@ const satoshiRegular = localFont({
   fallback: ["system-ui", "arial"],
   preload: true,
 });
+const satoshiBold = localFont({
+  src: "../assets/fonts/satoshi/Satoshi-Bold.woff2",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
+const satoshiBlack = localFont({
+  src: "../assets/fonts/satoshi/Satoshi-Black.woff2",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
 
-export {cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold, cabinetBlack, cabinetRegular};
+
+export { cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold , cabinetBlack, cabinetRegular, satoshiBold, satoshiBlack };
