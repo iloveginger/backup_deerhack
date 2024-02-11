@@ -1,8 +1,8 @@
-type Judge = {
+type UserEntity = {
   name: string;
   position: string;
   image: string;
   linkedin_url: string;
 };
 
-export default Judge;
+export default UserEntity;
