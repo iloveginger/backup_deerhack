@@ -1,21 +1,20 @@
 import React from "react";
 import FetchData from "./data";
 import { cabinetBold } from "@/fonts";
-import JudgeCard from "./JudgeCard";
-import Judge from "@/app/types/judge";
+import UserEntity from "@/app/types/userentity";
+import UserCard from "../core/UserCard";
 
-const Judges = async () => {
+const JudgesList = async () => {
   const response = await FetchData();
   const judges = response.data;
-  let judges_real: Judge[] = [];
+  let judges_real: UserEntity[] = [];
   for (let judge of judges) {
-    let entity: Judge = {
+    let entity: UserEntity = {
       name: judge.attributes.name,
       position: judge.attributes.position,
       image:"http://localhost:1337"+judge.attributes.image.data.attributes.url,
       linkedin_url: judge.attributes.linkedin_url,
     };
-
     judges_real.push(entity);
   }
 
@@ -31,8 +30,8 @@ const Judges = async () => {
           key="JudgeCards"
           className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-2 gap-16 justify-center"
         >
-          {judges_real.map((judge: Judge) => (
-            <JudgeCard
+          {judges_real.map((judge: UserEntity) => (
+            <UserCard
               key={judge.name}
               name={judge.name}
               position={judge.position}
@@ -46,4 +45,4 @@ const Judges = async () => {
   );
 };
 
-export default Judges;
+export default JudgesList;

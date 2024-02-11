@@ -1,11 +1,11 @@
 import DWITSVG from "@/app/assets/icons/DwitLogo";
 import LinkedInSVG from "@/app/assets/icons/LinkedIn";
-import Judge from "@/app/types/judge";
+import UserEntity from "@/app/types/userentity";
 import { cabinetRegular } from "@/app/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 
-const JudgeCard = ({ name, position, image, linkedin_url }: Judge) => {
+const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
   return (
     <div className="mb-5 flex justify-center items-center" key="cardContainer">
       <div
@@ -44,4 +44,4 @@ const JudgeCard = ({ name, position, image, linkedin_url }: Judge) => {
   );
 };
 
-export default JudgeCard;
+export default UserCard;

@@ -13,13 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-
-    <>
+    <html>
+    <body>
       <header className="fixed w-full mx-auto z-10">
         <Navbar/>
       </header>
       <main>{children}</main>
-    </>
+    </body>
+    </html>
 
   );
 }

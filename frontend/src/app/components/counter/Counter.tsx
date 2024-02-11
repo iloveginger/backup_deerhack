@@ -15,8 +15,9 @@ const Counter = () => {
             seconds: Math.floor((timeLeft % (1000 * 60)) / 1000)
         };
     };
-    
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    
 
     useEffect(() => {
         const timer = setTimeout(() => {
