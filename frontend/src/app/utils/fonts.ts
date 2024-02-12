@@ -49,5 +49,10 @@ const satoshiBlack = localFont({
   preload: true,
 });
 
+const cabinetMedium = localFont({
+  src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Medium.woff2",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
 
-export { cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold , cabinetBlack, cabinetRegular, satoshiBold, satoshiBlack };
+export { cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold , cabinetBlack, cabinetRegular, satoshiBold, satoshiBlack,cabinetMedium };

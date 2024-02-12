@@ -24,6 +24,12 @@ const config: Config = {
       },
       fontFamily: {
         "cabinet-light": ["var(--font-cabinet-light)"],
+      },
+      screens:{
+        'sm' : '576px',
+        'md' : '768px',
+        'lg' : '1024px',
+        'xl' : '1280px',
       }
       
 

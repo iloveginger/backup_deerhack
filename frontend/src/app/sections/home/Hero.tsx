@@ -6,18 +6,18 @@ import { cabinetBold, cabinetRegular } from "@/fonts";
 
 const Hero = () => {
   return (
-    <div className="-mb-1">
-      <div className="w-full flex justify-center items-center relative z-[-1]">
-        <Image src={HeroIcon} alt="Hero Image" className="w-screen" />
-        <div className="absolute mt-[-300px] gap-[24px] flex flex-col text-center ">
-          <p
-            className={`text-3xl font-extrabold text-secondary ${cabinetBold.className} `}
-          >
-            26th - 29th April
-          </p>
-          <MainLogo />
-        </div>
+    <div className="relative w-full flex justify-center items-center">
+      <Image 
+        src={HeroIcon}
+        alt="Hero Image" 
+        className="w-screen" 
+      />
+      <div className="absolute gap-[25px] top-0 mt-[10rem] flex flex-col text-center">
+        <p className={`text-3xl font-extrabold text-secondary ${cabinetBold.className}`}>
+          26th - 29th April
+        </p>
       </div>
+        <MainLogo  />
     </div>
   );
 };
