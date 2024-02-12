@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
-import { cabinetRegular } from "@/app/utils/fonts";
+import { cabinetBold, cabinetMedium, cabinetRegular } from "@/app/utils/fonts";
 
 
 const Counter = () => {
@@ -32,39 +32,39 @@ const Counter = () => {
     };
 
     return (
-        <div className="text-magnolia w-75 h-[65] font-normal">
-            <div className="flex items-center text-lg">
+        <div className="text-magnolia w-75 h-[65] ">
+            <div className="flex justify-between">
                 <div className="flex flex-col items-center">
                     <p
-                        className={`text-2xl font-bold tracking-[.25rem] ${cabinetRegular.className} `}
+                        className={`text-2xl font-bold tracking-[.25rem] ${cabinetBold.className} `}
                     >
                         {addLeadingZero(timeLeft.days)}:
                     </p>
-                    <span className="font-normal text-[10px] mr-4">Days</span>
+                    <span className={`text-[10px] mr-4 ${cabinetMedium.className}`}>Days</span>
                 </div>
                 <div className="flex flex-col items-center">
                     <p
-                        className={`text-2xl font-bold tracking-[.25rem] ${cabinetRegular.className} `}
+                        className={`text-2xl font-bold tracking-[.25rem] ${cabinetBold.className} `}
                     >
                         {addLeadingZero(timeLeft.hours)}:
                     </p>
-                    <span className="font-normal text-[10px] mr-4">Hours</span>
+                    <span className={` text-[10px] mr-4 ${cabinetMedium.className}`}>Hours</span>
                 </div>
                 <div className="flex flex-col items-center">
                     <p
-                        className={`text-2xl font-bold tracking-[.25rem] ${cabinetRegular.className} `}
+                        className={`text-2xl font-bold tracking-[.25rem] ${cabinetBold.className} `}
                     >
                         {addLeadingZero(timeLeft.minutes)}:
                     </p>
-                    <span className="font-normal text-[10px] mr-4 ">Minutes</span>
+                    <span className={` text-[10px] mr-4 ${cabinetMedium.className}`}>Minutes</span>
                 </div>
                 <div className="flex flex-col items-center">
                     <p
-                        className={`text-2xl font-bold tracking-[.25rem] ml-[-13px] ${cabinetRegular.className} `}
+                        className={`text-2xl font-bold tracking-[.25rem] ml-[-15px] ${cabinetBold.className} `}
                     >
                         {addLeadingZero(timeLeft.seconds)}
                     </p>
-                    <span className="font-normal text-[10px] mr-4">Seconds</span>
+                    <span className={`font-medium text-[10px] mr-4 ${cabinetMedium.className}`}>Seconds</span>
                 </div>
             </div>
         </div>
