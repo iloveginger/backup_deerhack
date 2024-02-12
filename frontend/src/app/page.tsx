@@ -12,7 +12,7 @@ export default function Home() {
       <PrizesPage />
       <ExpectationsPage />
       <JudgesSection />
-      <Faq/>
+      <Faq />
       <Footer />
     </>
   );

@@ -21,17 +21,17 @@ const cabinetBold = localFont({
 });
 
 const cabinetExtraBold = localFont({
-    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Extrabold.woff2",
-    fallback: ["system-ui", 'arial'],
-    preload: true,
-    variable: "--font-cabinet-extra-bold",
-})
+  src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Extrabold.woff2",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+  variable: "--font-cabinet-extra-bold",
+});
 
 const cabinetBlack = localFont({
-    src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Black.woff2",
-    fallback: ["system-ui", 'arial'],
-    preload: true,
-})
+  src: "../assets/fonts/cabinet_grotesk/CabinetGrotesk-Black.woff2",
+  fallback: ["system-ui", "arial"],
+  preload: true,
+});
 
 const satoshiRegular = localFont({
   src: "../assets/fonts/satoshi/Satoshi-Regular.woff2",
@@ -55,4 +55,14 @@ const cabinetMedium = localFont({
   preload: true,
 });
 
-export { cabinetLight, cabinetBold, satoshiRegular, cabinetExtraBold , cabinetBlack, cabinetRegular, satoshiBold, satoshiBlack,cabinetMedium };
+export {
+  cabinetLight,
+  cabinetBold,
+  satoshiRegular,
+  cabinetExtraBold,
+  cabinetBlack,
+  cabinetRegular,
+  satoshiBold,
+  satoshiBlack,
+  cabinetMedium,
+};

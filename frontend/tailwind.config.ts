@@ -18,21 +18,19 @@ const config: Config = {
         saffron: "#F5C144",
         magnolia: "#FCF7FF",
       },
-      gradientColorStopPositions:{
+      gradientColorStopPositions: {
         3: "3%",
         1: "1%",
       },
       fontFamily: {
         "cabinet-light": ["var(--font-cabinet-light)"],
       },
-      screens:{
-        'sm' : '576px',
-        'md' : '768px',
-        'lg' : '1024px',
-        'xl' : '1280px',
-      }
-      
-
+      screens: {
+        sm: "576px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
     },
   },
   plugins: [],

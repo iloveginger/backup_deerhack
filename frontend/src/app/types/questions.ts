@@ -1,6 +1,6 @@
-type questions={
-    questions:object, 
-    index?:number,
-    title:string,
+type questions = {
+  questions: object;
+  index?: number;
+  title: string;
 };
 export default questions;

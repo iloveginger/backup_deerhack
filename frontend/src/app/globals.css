@@ -2,27 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    .from-1\% {
-        --tw-gradient-from-position: 1%;
-    }
+  .from-1\% {
+    --tw-gradient-from-position: 1%;
+  }
 
-    .primary-gradient-background {
-        background: linear-gradient(140.3deg, #6633CC -15.9%, #F5C144 72.56%);
-    }
+  .primary-gradient-background {
+    background: linear-gradient(140.3deg, #6633cc -15.9%, #f5c144 72.56%);
+  }
 
-    .text-primary-gradient-color {
-        @apply bg-gradient-to-r from-primary from-1% to-secondary bg-clip-text text-transparent
-    }
+  .text-primary-gradient-color {
+    @apply bg-gradient-to-r from-primary from-1% to-secondary bg-clip-text text-transparent;
+  }
 
-    .font-cabinet-light {
-        font-family: var(--font-cabinet-light);
-    }
+  .font-cabinet-light {
+    font-family: var(--font-cabinet-light);
+  }
 
-    .font-cabinet-bold {
-        font-family: var(--font-cabinet-bold);
-    }
-
-
+  .font-cabinet-bold {
+    font-family: var(--font-cabinet-bold);
+  }
 }

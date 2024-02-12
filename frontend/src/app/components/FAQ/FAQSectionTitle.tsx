@@ -1,16 +1,23 @@
-// components/FAQSectionTitle.tsx
-import React from 'react';
+import { ReactElement } from "react";
 
 interface Props {
   title: string;
   isActive: boolean;
   onClick: () => void;
+  link :ReactElement;
 }
 
-const FAQSectionTitle: React.FC<Props> = ({ title, isActive, onClick }) => {
+const FAQSectionTitle: React.FC<Props> = ({ title, isActive, onClick,link }) => {
   return (
-    <div className={`lg:w-1/4 cursor-pointer ${isActive ? 'bg-yellow-500 text-white' : 'bg-white text-black'}`} onClick={onClick}>
-      <h2 className="p-4">{title}</h2>
+    <div
+      className={`cursor-pointer flex flex-row items-center ${isActive ? "text-secondary" : "text-white"}`}
+      onClick={onClick}
+    >
+      <span className="fill-black">
+        {link}
+
+      </span>
+      <h2 className="p-4 ">{title}</h2>
     </div>
   );
 };

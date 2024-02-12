@@ -12,14 +12,15 @@ const JudgesList = async () => {
     let entity: UserEntity = {
       name: judge.attributes.name,
       position: judge.attributes.position,
-      image:"http://localhost:1337"+judge.attributes.image.data.attributes.url,
+      image:
+        "http://localhost:1337" + judge.attributes.image.data.attributes.url,
       linkedin_url: judge.attributes.linkedin_url,
     };
     judges_real.push(entity);
   }
 
   return (
-    <div key="container" className="w-full m-auto py-10 bg-dark-purple">
+    <div key="JudgeContainer" className="w-full m-auto py-10 bg-dark-purple">
       <div key="judgeContainer" className="flex items-center flex-col my-20">
         <h1
           className={`bg-gradient-to-r from-primary to-secondary text-4xl bg-clip-text text-transparent font-[800] mb-6 ${cabinetBold.className}`}

@@ -1,5 +1,5 @@
-// components/FAQQuestion.tsx
-import React, { useState } from 'react';
+import { cabinetBlack, cabinetRegular } from "@/app/utils/fonts";
+import React, { useState } from "react";
 
 interface Question {
   question: string;
@@ -18,19 +18,21 @@ const FAQQuestion: React.FC<Props> = ({ question }) => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-end bg-dark-purple text-white">
       <button
-        className="flex items-center w-full text-left py-2 px-4 bg-gray-200 hover:bg-gray-300"
+        className={`flex items-center justify-between text-left py-2 w-full px-4 mb-5 ${cabinetRegular.className}`}
         onClick={toggleAnswerVisibility}
       >
-        <span className="mr-2">+</span>
         {question.question}
+        <span className="">+</span>
       </button>
       {isAnswerVisible && (
-        <p className="ml-6 mt-2">{question.answer}</p>
+        <div className={`px-4 ${cabinetRegular.className}`}>
+          <p className="ml-6 mt-2">{question.answer}</p>
+        </div>
       )}
     </div>
   );
 };
 
-export default FAQQuestion;
+export default FAQQuestion
