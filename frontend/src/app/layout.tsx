@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body suppressContentEditableWarning className=" bg-dark-purple">
+      <body className=" bg-dark-purple">
         <header className="fixed w-full mx-auto z-10">
           <Navbar />
         </header>
