@@ -1,12 +1,12 @@
-import CardMedium from "./CardMedium";
-import CardMini from "./CardMini";
+import CardMedium from "@/app/components/DeerhackStats/CardMedium";
+import CardMini from "@/app/components/DeerhackStats/CardMini";
 import HackersSVG from "@/app/assets/images/hackers";
 import ProjectsSVG from "@/app/assets/images/projects";
-import CardLarge from "./CardLarge";
+import CardLarge from "@/app/components/DeerhackStats/CardLarge";
 
-export default function StatsSection() {
+export default function DeerHackStats() {
   return (
-    <div className="flex flex-wrap border gap-4">
+    <div className="flex-wrap flex gap-4 justify-center">
       <div className="flex flex-col gap-4">
         <CardMedium />
         <CardMini svg={<HackersSVG />} title="Hackers" numbers={75} />
