@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-Hello from sharad branch v2
-Hello from srijan
-=======
 Hello from the Deerhack In Numbers branch
->>>>>>> 3b815ec4b1a5fdac9c2ebd5fba6cd68e9e6b90cf
+Hello from the Deerhack In Numbers branch
