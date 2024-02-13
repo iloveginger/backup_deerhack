@@ -18,7 +18,7 @@ export default function CardDark({
 }) {
   return (
     <div className=" primary-gradient-background w-[20.4375rem] h-fit md:w-[33.125rem] md:h-[21.25rem] rounded-[3.6rem] p-[0.1875rem]">
-      <div className=" bg-dark-purple w-full h-full  rounded-[3.5rem] flex flex-col px-12 pt-9 pb-10 gap-10 justify-start">
+      <div className=" bg-dark-purple w-full h-full  rounded-[3.5rem] flex flex-col px-12 pt-9 pb-10 gap-5 justify-start">
         <div
           className={`${cabinetExtraBold.className} text-primary-gradient-color text-base  md:text-2xl w-full md:w-48`}
         >
