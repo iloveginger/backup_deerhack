@@ -1,11 +1,42 @@
 import BenefitsCards from "../sections/Benefits/BenefitsCard";
+import { cabinetBlack, cabinetExtraBold } from "../utils/fonts";
+import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
+import leaf_deerhack2023_right from "@/app/assets/images/leaf_deerhack2023_right.svg";
+import Image from "next/image";
 
-export default function BenefitsPage(){
-    return(
-        <div className=" bg-dark-purple ">
-            <div className="flex justify-center">
-                <BenefitsCards />
-            </div>
+export default function BenefitsPage() {
+  return (
+    <div className=" bg-dark-purple flex flex-col py-20  overflow-hidden">
+      <div className="relative">
+        <Image
+          src={leaf_prizes_right}
+          alt="leaf"
+          height={250}
+          className="absolute right-3 top-46 hidden lg:block -rotate-12"
+        />
+      </div>
+      <div
+        className={`${cabinetExtraBold.className}  flex justify-center items-center text-2xl sm:text-3xl md:text-5xl`}
+      >
+        <div className="text-primary-gradient-color">
+          Benefits of Participating
         </div>
-    )
+      </div>
+      <div className="flex justify-center">
+        <BenefitsCards />
+      </div>
+
+      <div className="h-40">
+        <div className="relative h-fit">
+          <Image
+            src={leaf_deerhack2023_right}
+            alt="leaf"
+            height={250}
+            style={{ transform: "scaleX(-1)" }}
+            className="absolute left-1 top-46 hidden lg:block"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }

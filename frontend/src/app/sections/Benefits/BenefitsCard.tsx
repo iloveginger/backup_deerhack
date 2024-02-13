@@ -7,8 +7,8 @@ import PuzzleSVG from "@/app/assets/images/puzzle";
 
 export default function BenefitsCards() {
   return (
-    <div className="flex flex-row flex-wrap content-center gap-3 mx-10 mt-10">
-      <div className="flex flex-col gap-3">
+    <div className="flex flex-row flex-wrap justify-center gap-6 mx-10 mt-10">
+      <div className="flex flex-col gap-6">
         <CardDark
           title="Build a Powerful Network"
           description="DeerHack is the perfect platform to find like-minded people and build your connections."
@@ -21,7 +21,7 @@ export default function BenefitsCards() {
         />
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-6">
         <CardLight
           title="Support for Your Ideas"
           description="DeerHack is dedicated to fostering ideas that drive global change and provide new solutions."

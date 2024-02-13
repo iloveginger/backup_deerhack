@@ -32,8 +32,8 @@ export default function PuzzleSVG(
           y2="97.035"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
-          <stop offset="1" stop-color="#F5C144" />
+          <stop stopColor="#6633CC" />
+          <stop offset="1" stopColor="#F5C144" />
         </linearGradient>
         <clipPath id="clip0_337_819">
           <rect width="119" height="132" fill="white" />

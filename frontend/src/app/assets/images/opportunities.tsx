@@ -36,8 +36,8 @@ export default function OpportunitiesSVG(
           y2="88.6704"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
-          <stop offset="1" stop-color="#F5C144" />
+          <stop stopColor="#6633CC" />
+          <stop offset="1" stopColor="#F5C144" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_337_816"

@@ -28,8 +28,8 @@ export default function IdeaSVG({
           y2="51.1774"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
-          <stop offset="1" stop-color="#F5C144" />
+          <stop stopColor="#6633CC" />
+          <stop offset="1" stopColor="#F5C144" />
         </linearGradient>
       </defs>
     </svg>
