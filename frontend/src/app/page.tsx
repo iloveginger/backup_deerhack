@@ -6,6 +6,7 @@ import ExpectationsPage from "./pages/Expectations";
 import AboutTheEventPage from "./pages/AboutTheEventPage";
 import DeerhackStatsPage from "./pages/DeerhackStatsPage";
 import BenefitsPage from "./pages/BenefitsPage";
+import SponsorPage from "./pages/page";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       <ExpectationsPage />
       <DeerhackStatsPage />
       <JudgesSection />
+      <SponsorPage/>
       <Footer />
     </>
   );
