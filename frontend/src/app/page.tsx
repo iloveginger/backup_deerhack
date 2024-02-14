@@ -5,12 +5,14 @@ import PrizesPage from "./pages/Prizes";
 import ExpectationsPage from "./pages/Expectations";
 import AboutTheEventPage from "./pages/AboutTheEventPage";
 import DeerhackStatsPage from "./pages/DeerhackStatsPage";
+import TrackPage from "./pages/TrackPage";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <AboutTheEventPage />
+      <TrackPage/>
       <PrizesPage />
       <ExpectationsPage />
       <DeerhackStatsPage />
