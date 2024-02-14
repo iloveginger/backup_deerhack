@@ -37,7 +37,7 @@ const FAQQuestion: React.FC<Props> = ({ question }) => {
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${isAnswerVisible ? "max-h-screen mb-2 opacity-100" : "max-h-0 -mb-2"}`}
+        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${isAnswerVisible ? "max-h-screen mb-2 opacity-100" : "max-h-0 opacity-5 -mb-2"}`}
       >
         {isAnswerVisible && (
           <p
