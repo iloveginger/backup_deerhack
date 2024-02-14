@@ -106,7 +106,7 @@ const FAQPage: React.FC = () => {
   
 
   return (
-    <div key="faqContainer" className="bg-dark-purple w-[70%] pt-14 ">
+    <div key="faqContainer" className="bg-dark-purple w-[70%] pt-14 pb-24 ">
       <div className=" box-border flex flex-row nowrap items-center w-full justify-between h-72">
         <div className="static">
           {sections.map((section, index) => (
