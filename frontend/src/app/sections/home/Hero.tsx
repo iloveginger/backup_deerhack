@@ -7,17 +7,15 @@ import { cabinetBold, cabinetRegular } from "@/fonts";
 const Hero = () => {
   return (
     <div className="relative w-full flex justify-center items-center">
-      <Image 
-        src={HeroIcon}
-        alt="Hero Image" 
-        className="w-screen" 
-      />
+      <Image src={HeroIcon} alt="Hero Image" className="w-screen" />
       <div className="absolute gap-[25px] top-0 mt-[10rem] flex flex-col text-center">
-        <p className={`text-3xl font-extrabold text-secondary ${cabinetBold.className}`}>
+        <p
+          className={`text-3xl font-extrabold text-secondary ${cabinetBold.className}`}
+        >
           26th - 29th April
         </p>
       </div>
-        <MainLogo  />
+      <MainLogo />
     </div>
   );
 };
