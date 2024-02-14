@@ -20,6 +20,7 @@ interface Question {
 }
 
 const FAQPage: React.FC = () => {
+  const [activeSectionIndex, setActiveSectionIndex] = useState<number>(0);
   const sections: Section[] = [
     {
       title: "About the Event",
@@ -40,7 +41,7 @@ const FAQPage: React.FC = () => {
             "Anyone can participate in DeerHack, regardless of their background or skill level. But do make sure that you have the skill set to make your solution a reality.",
         },
       ],
-      link: <AboutEventSVG />,
+      link: <AboutEventSVG className = {`${activeSectionIndex===0  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
     },
     {
       title: "Event Logistics",
@@ -61,7 +62,7 @@ const FAQPage: React.FC = () => {
             "DeerHack is a team-based event, but don't hesitate to register even if you're alone, we will conduct a pre-event where all the individuals who signed up will be assigned teams respective to their interests and expertise.",
         },
       ],
-      link: <EventLogSVG />,
+      link: <EventLogSVG className = {`${activeSectionIndex===1  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
     },
     {
       title: "Participation Guidelines",
@@ -82,7 +83,7 @@ const FAQPage: React.FC = () => {
             "With our experienced set of guides and mentors. DeerHack will make sure that if you encounter a problem, it will not go unsolved. Just don't be reluctant to reach out to us if you're facing a problem.",
         },
       ],
-      link: <ParticipationSVG/>,
+      link: <ParticipationSVG className = {`${activeSectionIndex===2  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
     },
     {
       title: "Other",
@@ -98,11 +99,11 @@ const FAQPage: React.FC = () => {
             "No need to worry. We are available to help and answer any questions you may have. You can send us an email at deerhack@deerwalk.edu.np or contact us through our social media accounts.",
         },
       ],
-      link: <OtherSVG />,
+      link: <OtherSVG className = {`${activeSectionIndex===3  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
     },
   ];
 
-  const [activeSectionIndex, setActiveSectionIndex] = useState<number>(0);
+  
 
   return (
     <div key="faqContainer" className="bg-dark-purple w-[70%] pt-14 ">
