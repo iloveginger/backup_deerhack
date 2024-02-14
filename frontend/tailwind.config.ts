@@ -34,5 +34,9 @@ const config: Config = {
     },
   },
   plugins: [],
+  corePlugins: {
+    opacity: true,
+    transitionProperty: true,
+  },
 };
 export default config;

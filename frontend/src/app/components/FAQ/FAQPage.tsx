@@ -40,7 +40,7 @@ const FAQPage: React.FC = () => {
             "Anyone can participate in DeerHack, regardless of their background or skill level. But do make sure that you have the skill set to make your solution a reality.",
         },
       ],
-      link:<AboutEventSVG/>
+      link: <AboutEventSVG />,
     },
     {
       title: "Event Logistics",
@@ -48,7 +48,7 @@ const FAQPage: React.FC = () => {
         {
           question: "What should I bring to DeerHack?",
           answer:
-            "You should bring any necessary equipment or tools for your project, such as a laptop or hardware components. Additionally, you may also want to bring a water bottle, and comfortable clothing for the long hours of relrentless innovation",
+            "You should bring any necessary equipment or tools for your project, such as a laptop or hardware components. Additionally, you may also want to bring a water bottle, and comfortable clothing for the long hours of relrentless innovation.",
         },
         {
           question: "Will foods and drinks be provided at DeerHack?",
@@ -61,7 +61,7 @@ const FAQPage: React.FC = () => {
             "DeerHack is a team-based event, but don't hesitate to register even if you're alone, we will conduct a pre-event where all the individuals who signed up will be assigned teams respective to their interests and expertise.",
         },
       ],
-      link:<EventLogSVG/>
+      link: <EventLogSVG />,
     },
     {
       title: "Participation Guidelines",
@@ -82,7 +82,7 @@ const FAQPage: React.FC = () => {
             "With our experienced set of guides and mentors. DeerHack will make sure that if you encounter a problem, it will not go unsolved. Just don't be reluctant to reach out to us if you're facing a problem.",
         },
       ],
-      link:<ParticipationSVG/>
+      link: <ParticipationSVG/>,
     },
     {
       title: "Other",
@@ -98,38 +98,30 @@ const FAQPage: React.FC = () => {
             "No need to worry. We are available to help and answer any questions you may have. You can send us an email at deerhack@deerwalk.edu.np or contact us through our social media accounts.",
         },
       ],
-      link:<OtherSVG/>
+      link: <OtherSVG />,
     },
   ];
 
   const [activeSectionIndex, setActiveSectionIndex] = useState<number>(0);
 
   return (
-    <div key= "faqContainer" className="pb-24 bg-dark-purple ">
-      <div className="flex flex-col items-center">
-        <h1
-          className={`bg-gradient-to-r text-center from-primary to-secondary text-4xl bg-clip-text text-transparent font-[800] mb-6 ${cabinetBold.className}`}
-        >
-          FAQ
-        </h1>
-        <div className="flex flex-row nowrap items-center w-full justify-between w-[75%]">
-          <div className="">
-            {sections.map((section, index) => (
-              <FAQSectionTitle
-                key={index}
-                title={section.title}
-                isActive={activeSectionIndex === index}
-                onClick={() => setActiveSectionIndex(index)
-                }
-                link = {section.link}
-              />
-            ))}
-          </div>
-          <div className="w-[50%]">
-            {sections[activeSectionIndex].questions.map((question, index) => (
-              <FAQQuestion key={index} question={question} />
-            ))}
-          </div>
+    <div key="faqContainer" className="bg-dark-purple w-[70%] pt-14 ">
+      <div className="flex flex-row nowrap items-center w-full justify-between pb-24">
+        <div className="static">
+          {sections.map((section, index) => (
+            <FAQSectionTitle
+              key={index}
+              title={section.title}
+              isActive={activeSectionIndex === index}
+              onClick={() => setActiveSectionIndex(index)}
+              link={section.link}
+            />
+          ))}
+        </div>
+        <div className="w-[50%]">
+          {sections[activeSectionIndex].questions.map((question, index) => (
+            <FAQQuestion key={index} question={question} />
+          ))}
         </div>
       </div>
     </div>
