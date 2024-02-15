@@ -15,13 +15,13 @@ export default function Home() {
       <Hero />
       <AboutTheEventPage />
       <BenefitsPage />
-      <TrackPage/>
+      <TrackPage />
       <PrizesPage />
       <ExpectationsPage />
       <DeerhackStatsPage />
       <JudgesSection />
       <Faq />
-      <SponsorPage/>
+      <SponsorPage />
       <Footer />
     </>
   );

@@ -851,37 +851,6 @@ export interface ApiMentorMentor extends Schema.CollectionType {
   };
 }
 
-export interface ApiSponsorSponsor extends Schema.CollectionType {
-  collectionName: 'sponsors';
-  info: {
-    singularName: 'sponsor';
-    pluralName: 'sponsors';
-    displayName: 'Sponsors';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Sponsors: Attribute.Media & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::sponsor.sponsor',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::sponsor.sponsor',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -902,7 +871,6 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::judge.judge': ApiJudgeJudge;
       'api::mentor.mentor': ApiMentorMentor;
-      'api::sponsor.sponsor': ApiSponsorSponsor;
     }
   }
 }

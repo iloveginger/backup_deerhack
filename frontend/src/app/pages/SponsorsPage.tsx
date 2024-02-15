@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ReactElement } from "react";
 export default function SponsorPage(): ReactElement {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="relative">
         <Image
           src={leaf_prizes_right}
