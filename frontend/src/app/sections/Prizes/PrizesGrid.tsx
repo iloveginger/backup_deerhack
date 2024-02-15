@@ -11,13 +11,9 @@ export default function PrizesGrid(): ReactElement {
   return (
     <div>
       <div className="mx-auto flex flex-wrap justify-center gap-4 mt-10">
-        <div className="w-full sm:w-fit md:w-fit flex flex-col gap-4 items-center">
-          <div>
-            <GrandPrizeCard />
-          </div>
-          <div>
-            <TrackWinner />
-          </div>
+        <div className="w-full sm:w-fit md:w-fit flex flex-col gap-4 items-center justify-between">
+          <GrandPrizeCard />
+          <TrackWinner />
         </div>
         <div className="w-full md:w-fit flex flex-col sm:justify-between items-center gap-4">
           <Polygon />
