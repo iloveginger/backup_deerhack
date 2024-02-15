@@ -7,6 +7,7 @@ import AboutTheEventPage from "./pages/AboutTheEventPage";
 import DeerhackStatsPage from "./pages/DeerhackStatsPage";
 import TrackPage from "./pages/TrackPage";
 import BenefitsPage from "./pages/BenefitsPage";
+import SponsorPage from "./pages/SponsorsPage";
 import Faq from "./sections/FAQ/FAQ";
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <DeerhackStatsPage />
       <JudgesSection />
       <Faq />
+      <SponsorPage/>
       <Footer />
     </>
   );
