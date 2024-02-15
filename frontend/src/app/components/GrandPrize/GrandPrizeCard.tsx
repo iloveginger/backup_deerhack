@@ -10,7 +10,7 @@ import {
 export default function GrandPrizeCard(): ReactElement {
   return (
     <div
-      className={`flex flex-col justify-evenly h-72 lg:h-[26rem] w-64 lg:w-[22rem] primary-gradient-background rounded-xl`}
+      className={`flex flex-col justify-evenly h-72 md:h-[61%] w-64 lg:w-[22rem] primary-gradient-background rounded-xl`}
     >
       <div className="flex flex-col justify-center text-center gap-4">
         <div className="flex justify-center">

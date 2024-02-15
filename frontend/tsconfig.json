@@ -20,9 +20,9 @@
     "paths": {
       "@/*": ["./src/*"],
       //path for assets images
-      "@/images*" : ["./src/app/assets/images/*"],
-      "@/icons*" : ["./src/app/assets/icons/*"],
-      "@/fonts": ["./src/app/utils/fonts"],
+      "@/images*": ["./src/app/assets/images/*"],
+      "@/icons*": ["./src/app/assets/icons/*"],
+      "@/fonts": ["./src/app/utils/fonts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
