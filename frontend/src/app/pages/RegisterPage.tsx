@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function RegisterPage(){
     return(
-        <div>
+        <div className="overflow-hidden">
             <div className="relative">
                 <Image
                     src={leaf_prizes_right}

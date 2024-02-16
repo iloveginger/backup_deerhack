@@ -3,7 +3,7 @@ import {cabinetExtraBold,satoshiRegular,satoshiBlack } from "@/app/utils/fonts";
 
 export default function RegisterCard(): ReactElement {
   return (
-    <div className="flex-col justify-center items-center mt-[1.2rem] w-64 md:w-[668px] lg:w-[960px] mx-auto">
+    <div className="flex-col justify-center items-center w-64 md:w-[668px] lg:w-[960px] mx-auto">
       <div className="primary-gradient-background p-[0.15rem] w-full rounded-[0.9rem]">
         <div className="flex flex-col bg-violet rounded-[0.8rem] md:flex-row py-20 px-5 sm:px-14 gap-3 md:items-center">
           <div
