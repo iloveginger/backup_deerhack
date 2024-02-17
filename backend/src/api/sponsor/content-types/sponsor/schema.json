@@ -4,21 +4,33 @@
   "info": {
     "singularName": "sponsor",
     "pluralName": "sponsors",
-    "displayName": "Sponsors",
-    "description": ""
+    "displayName": "Sponsor"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Sponsors": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sponsor_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sponsor-type.sponsor-type",
+      "inversedBy": "sponsors"
     }
   }
 }
