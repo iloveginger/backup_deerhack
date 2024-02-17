@@ -1,21 +1,27 @@
 import { cabinetBold } from '@/app/utils/fonts'
 import { ReactElement } from 'react'
+
+interface TracksHeadingProps {
+    svg?: ReactElement;
+    title?: string;
+    headStyling?: string;
+    onClick?: () => void; // Add onClick to the props interface
+}
+
 const TracksHeading = ({
     svg,
     title,
-    hoverColor,
-}: {
-    svg?: ReactElement;
-    title?: string;
-    hoverColor?: string;
-}) => {
+    headStyling,
+    onClick,
+}: TracksHeadingProps) => {
     return (
-        <>
-            <div className={`flex flex-row gap-4 items-center cursor-pointer p-3 text-lg ${cabinetBold.className} rounded-md bg-violet ${hoverColor} text-magnolia `}>
-                {svg}
-                <span >{title}</span>
-            </div>
-        </>
+        <div 
+            className={`flex flex-row gap-4 items-center cursor-pointer p-3 text-lg ${cabinetBold.className}  ${headStyling} rounded-md `}
+            onClick={onClick}
+        >
+            {svg}
+            <span>{title}</span>
+        </div>
     )
 }
 
