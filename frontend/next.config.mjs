@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "standalone",
   images: {
-    domains: ["localhost"],
+    domains: ["localhost","deerwalk.edu.np","54.164.230.35"],
   },
 };
 
