@@ -17,7 +17,7 @@ export default function OpportunitiesSVG(
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_337_816)">
+      <g clipPath="url(#clip0_337_816)">
         <path
           d="M64.5447 27.563V49.1818H40.597V68.8377H16.6501V93.0001H40.597H64.5447H92.9999V27.563H64.5447Z"
           fill="url(#paint0_linear_337_816)"
@@ -47,8 +47,8 @@ export default function OpportunitiesSVG(
           y2="54.3194"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
-          <stop offset="1" stop-color="#F5C144" />
+          <stop stopColor="#6633CC" />
+          <stop offset="1" stopColor="#F5C144" />
         </linearGradient>
         <clipPath id="clip0_337_816">
           <rect width="93" height="93" fill="white" />
