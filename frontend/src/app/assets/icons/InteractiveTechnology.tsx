@@ -1,10 +1,9 @@
 export default function InteractiveTechnology({
-    height = 25 ,
-    width =25
-}:{
-    height?: number;
-    width?: number;
-
+  height = 25,
+  width = 25,
+}: {
+  height?: number;
+  width?: number;
 }) {
     return (
         <svg

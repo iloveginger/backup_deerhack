@@ -1,8 +1,13 @@
+import { BACKEND_URL } from "@/app/utils/config";
+
 export default async function FetchData() {
-  const response = await fetch(
-    "http://localhost:1337/api/judges?populate=image",
-    { cache: "no-store" },
-  );
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/judges?populate=image`, {
+      cache: "no-store",
+    });
+    const data = await response.json();
+    return data;
+  } catch {
+    return {};
+  }
 }

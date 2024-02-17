@@ -1,10 +1,6 @@
 import { ReactElement } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import footer_image from "@/app/assets/images/footer_image.svg";
-
 import { cabinetBold, cabinetRegular } from "@/fonts";
-
 import SoftwareSVG from "@/app/assets/icons/Software";
 import DWITSVG from "@/app/assets/icons/DwitLogo";
 import MailSVG from "@/app/assets/icons/EmailIcon";
@@ -13,38 +9,30 @@ import FacebookSVG from "@/app/assets/icons/Facebook";
 import InstagramSVG from "@/app/assets/icons/Instagram";
 import DiscordSVG from "@/app/assets/icons/Discord";
 import LinkedInSVG from "@/app/assets/icons/LinkedIn";
+import FooterMobileSVG from "@/app/assets/images/FooterMobileSVG";
+import FooterGrapicSVG from "@/app/assets/images/FooterGrapicSVG";
 
 export default function Footer(): ReactElement {
   return (
     <div
       key="footer_container"
-      className="relative flex min-h-screen flex-col flex-grow w-full bg-dark-purple "
+      className="relative flex min-h-screen flex-col flex-grow w-full bg-violet "
     >
-      {/* BACKGROUND IMAGE WITH Z-INDEX SET */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={footer_image}
-          fill
-          object-fit="cover"
-          alt="deerhack footer"
-          className="hidden md:block"
-        />
-      </div>
-      <div className="relative flex flex-grow flex-col w-[85%] m-auto mt-10 mb-10 md:mb-0">
-        <div className="flex items-center md:flex-row justify-between gap-10 mb-10 sm:flex-col -sm:flex-col">
+      <div className="relative flex flex-grow flex-col w-[85%] m-auto mt-10 mb-16 md:mb-0">
+        <div className="flex md:items-center md:flex-row justify-between gap-10 mb-10 sm:flex-col flex-col">
           <div className="flex flex-col ">
             <div
               key="logo_container"
-              className="flex gap-7 items-center sm:justify-center md:justify-start"
+              className="flex gap-7 items-center md:justify-start"
             >
               <DWITSVG />
               <SoftwareSVG />
             </div>
             <div key="contact_info" className="mt-10">
-              <div className="text-white flex flex-row mb-4 justify-center items-center">
+              <div className="text-white flex flex-row mb-4 justify-start items-center">
                 <MailSVG />
                 <span
-                  className={`px-2 text-[20px] ${cabinetRegular.className}`}
+                  className={`px-2 md:text-[17px] lg:text-[20px] ${cabinetRegular.className}`}
                 >
                   deerhack@deerwalk.edu.np
                 </span>
@@ -52,28 +40,39 @@ export default function Footer(): ReactElement {
               <div className="text-white flex flex-row justify-start items-center">
                 <PhoneSVG />
                 <span
-                  className={`px-2 text-[20px] ${cabinetRegular.className}`}
+                  className={`px-2 md:text-[17px] lg:text-[20px] ${cabinetRegular.className}`}
                 >
                   9841210924/9843109234
                 </span>
               </div>
             </div>
-            <div key="socials" className="flex flex-col mt-11 gap-4">
+            <div
+              key="socials"
+              className="flex flex-col  mt-11 gap-4 mb-10 sm:mb-0"
+            >
               <p
-                className={`text-white text-xl font-[700] ${cabinetBold.className}`}
+                className={`text-white text-lg md:text-xl font-[300] ${cabinetBold.className}`}
               >
                 Visit Our Socials
               </p>
-              <div className="icons flex">
-                <FacebookSVG />
-                <InstagramSVG />
-                <DiscordSVG />
-                <LinkedInSVG />
+              <div className="flex gap-7">
+                <span className=" w-[20px] px-0 cursor-pointer">
+                  <FacebookSVG />
+                </span>
+                <span className="w-[20px] cursor-pointer">
+                  <InstagramSVG />
+                </span>
+                <span className="w-[20px] cursor-pointer">
+                  <DiscordSVG />
+                </span>
+                <span className="w-[20px] cursor-pointer">
+                  <LinkedInSVG />
+                </span>
               </div>
             </div>
           </div>
           <div key="Navigation">
-            <div className="links text-white flex flex-col gap-9 justify-center items-center">
+            <div className="links text-white flex flex-col gap-7 md:gap-9 justify-center md:items-center">
               <Link
                 className={`px-2 text-[16px] ${cabinetRegular.className}`}
                 href=""
@@ -94,9 +93,9 @@ export default function Footer(): ReactElement {
               </Link>
             </div>
           </div>
-          <div key="event_summary" className="text-white ">
+          <div key="event_summary" className="mt-10 sm:mt-0 text-white ">
             <p
-              className={`font-[700] text-[28px] mb-8 ${cabinetRegular.className}`}
+              className={`font-[700] sm:text-lg md:text-xl lg:text-2xl mb-8 ${cabinetRegular.className}`}
             >
               Event Summary
             </p>
@@ -112,10 +111,16 @@ export default function Footer(): ReactElement {
           </div>
         </div>
         <span
-          className={`text-white flex justify-center text-sm/[24px] font-[500] ${cabinetRegular.className}`}
+          className={`text-white flex justify-center text-xs/[24px] md:text-sm/[24px] font-[500] ${cabinetRegular.className}`}
         >
           All Rights Reserved © DWIT Software Club 2024
         </span>
+      </div>
+      <div className="w-full">
+        <FooterGrapicSVG className="hidden lg:block w-fit" />
+      </div>
+      <div className="lg:hidden w-full">
+        <FooterMobileSVG className="w-fit" />
       </div>
     </div>
   );

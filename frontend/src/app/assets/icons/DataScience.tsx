@@ -1,9 +1,9 @@
 const DataScience = ({
-    height = 25,
-    width = 25
+  height = 25,
+  width = 25,
 }: {
-    height?: number;
-    width?: number;
+  height?: number;
+  width?: number;
 }) => {
     return (
         <svg

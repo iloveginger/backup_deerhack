@@ -25,4 +25,4 @@ const TracksHeading = ({
     )
 }
 
-export default TracksHeading
+export default TracksHeading;

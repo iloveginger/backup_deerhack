@@ -4,12 +4,12 @@ import { cabinetBlack, cabinetExtraBold } from "@/app/utils/fonts";
 
 export default function OtherPrizes(): ReactElement {
   return (
-    <div className="flex justify-center mt-[1.2rem] sm:max-w-[670px] w-[80vw] lg:max-w-[960px] mx-auto">
-      <div className="primary-gradient-background p-[0.1rem] w-full rounded-[0.9rem]">
-        <div className="bg-violet rounded-[0.8rem] flex justify-between items-center py-10 px-5 sm:px-14 gap-3">
+    <div className="flex justify-center items-center mt-[1.2rem] w-64 md:w-[668px] lg:w-[960px] mx-auto">
+      <div className="primary-gradient-background p-[0.15rem] w-full rounded-[0.9rem]">
+        <div className="bg-violet rounded-[0.8rem] flex justify-between md:flex-row flex-col items-start py-10 px-5 sm:px-14 gap-3 md:items-center">
           <GiftBox height={100} width={100} />
           <div
-            className={`${cabinetExtraBold.className} text-primary-gradient-color text-sm sm:text-2xl text-end lg:text-4xl`}
+            className={`${cabinetExtraBold.className} text-primary-gradient-color text-2xl sm:text-2xl lg:text-4xl text-start md:text-end`}
           >
             And Many More Gifts and <br className="hidden sm:block" />
             Swags for everyone

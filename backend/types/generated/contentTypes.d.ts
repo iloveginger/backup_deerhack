@@ -851,6 +851,80 @@ export interface ApiMentorMentor extends Schema.CollectionType {
   };
 }
 
+export interface ApiSponsorSponsor extends Schema.CollectionType {
+  collectionName: 'sponsors';
+  info: {
+    singularName: 'sponsor';
+    pluralName: 'sponsors';
+    displayName: 'Sponsor';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+    logo: Attribute.Media;
+    sponsor_type: Attribute.Relation<
+      'api::sponsor.sponsor',
+      'manyToOne',
+      'api::sponsor-type.sponsor-type'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sponsor.sponsor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sponsor.sponsor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSponsorTypeSponsorType extends Schema.CollectionType {
+  collectionName: 'sponsor_types';
+  info: {
+    singularName: 'sponsor-type';
+    pluralName: 'sponsor-types';
+    displayName: 'Sponsor Type';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    sponsors: Attribute.Relation<
+      'api::sponsor-type.sponsor-type',
+      'oneToMany',
+      'api::sponsor.sponsor'
+    >;
+    order: Attribute.Integer;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sponsor-type.sponsor-type',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sponsor-type.sponsor-type',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -871,6 +945,8 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::judge.judge': ApiJudgeJudge;
       'api::mentor.mentor': ApiMentorMentor;
+      'api::sponsor.sponsor': ApiSponsorSponsor;
+      'api::sponsor-type.sponsor-type': ApiSponsorTypeSponsorType;
     }
   }
 }
