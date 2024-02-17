@@ -9,6 +9,7 @@ import TrackPage from "./pages/TrackPage";
 import BenefitsPage from "./pages/BenefitsPage";
 import SponsorPage from "./pages/SponsorsPage";
 import Faq from "./sections/FAQ/FAQ";
+import RegisterPage from "./pages/RegisterPage";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
       <JudgesSection />
       <Faq />
       <SponsorPage />
+      <RegisterPage/>
       <Footer />
     </>
   );
