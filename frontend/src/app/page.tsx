@@ -1,21 +1,30 @@
-import localFont from "next/font/local";
-// import { cabinetLight, cabinetBold } from "./utils/fonts";
-
-import { cabinetBold, satoshiRegular } from "@/fonts";
-
+import Hero from "./sections/home/Hero";
+import Footer from "./components/Footer/Footer";
+import JudgesSection from "./sections/Judges/Judges";
+import PrizesPage from "./pages/Prizes";
+import ExpectationsPage from "./pages/Expectations";
+import AboutTheEventPage from "./pages/AboutTheEventPage";
+import DeerhackStatsPage from "./pages/DeerhackStatsPage";
+import TrackPage from "./pages/TrackPage";
+import BenefitsPage from "./pages/BenefitsPage";
+import SponsorPage from "./pages/SponsorsPage";
+import Faq from "./sections/FAQ/FAQ";
+import RegisterPage from "./pages/RegisterPage";
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 bg-dark-purple`}
-    >
-      <p
-        className={`bg-gradient-to-r from-primary to-secondary  bg-clip-text text-transparent text-5xl ${cabinetBold.className}`}
-      >
-        Hello to The DeerHack 2024!
-      </p>
-      <p className={`${satoshiRegular.className} text-white font-[500]`}>
-        This is satoshiiiii
-      </p>
-    </main>
+    <>
+      <Hero />
+      <AboutTheEventPage />
+      <BenefitsPage />
+      <TrackPage />
+      <PrizesPage />
+      <ExpectationsPage />
+      <DeerhackStatsPage />
+      <JudgesSection />
+      <Faq />
+      <SponsorPage />
+      <RegisterPage/>
+      <Footer />
+    </>
   );
 }

@@ -1,21 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from "next/font/local";
-
-// export const cabinetFont = localFont({
-//   // src: "./assets/fonts/cabinet_grotesk/CabinetGrotesk-Regular.woff2",
-//   // style: "bold",
-//   src: [
-//     {
-//       path: "./assets/fonts/cabinet_grotesk/CabinetGrotesk-Regular.woff2",
-//       style: "normal",
-//     },
-//     {
-//       path: "./assets/fonts/cabinet_grotesk/CabinetGrotesk-Extrabold.woff2",
-//       style: "bold",
-//     },
-//   ],
-// });
+import Navbar from "./components/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Deerhack 2024",
@@ -28,8 +13,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html>
+      <body className=" bg-dark-purple">
+        <header className="fixed w-full mx-auto z-10">
+          <Navbar />
+        </header>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
