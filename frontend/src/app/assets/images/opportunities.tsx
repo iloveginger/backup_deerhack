@@ -1,12 +1,14 @@
 import { ReactElement } from "react";
 
-export default function OpportunitiesSVG({
-  height = 93,
-  width = 93,
-}: {
-  height?: number;
-  width?: number;
-}): ReactElement {
+export default function OpportunitiesSVG(
+    {
+        height = 93,
+        width = 93
+    }: {
+        height?: number;
+        width?: number;
+    }
+): ReactElement {
   return (
     <svg
       width={`${width}`}

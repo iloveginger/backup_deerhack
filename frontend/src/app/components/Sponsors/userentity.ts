@@ -1,5 +1,5 @@
 type UserEntity = {
-  image: string;
-};
-
-export default UserEntity;
+    image: string;
+  };
+  
+  export default UserEntity;

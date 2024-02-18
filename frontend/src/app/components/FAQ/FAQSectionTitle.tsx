@@ -16,9 +16,7 @@ const FAQSectionTitle: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`cursor-pointer flex flex-row items-center ${
-        isActive ? "text-secondary" : "text-white"
-      }`}
+      className={`cursor-pointer flex flex-row items-center ${isActive ? "text-secondary" : "text-white"}`}
       onClick={onClick}
     >
       <div className="inline">{link}</div>
