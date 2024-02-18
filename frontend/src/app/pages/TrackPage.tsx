@@ -2,7 +2,6 @@ import { cabinetExtraBold } from '../utils/fonts';
 import TracksCard from '@/app/sections/Tracks/TracksCard';
 import TrackLeftLeaf from '@/app/assets/icons/TrackLeftLeaf.svg';
 import Image from 'next/image';
-import TracksBodyCard from '../components/Tracks/TracksBodyCard';
 
 const TrackPage = () => {
     return (
@@ -19,7 +18,6 @@ const TrackPage = () => {
                         Tracks
                     </p>
                     <TracksCard />
-                    <TracksBodyCard/>
                 </div>
             </div>
         </>
