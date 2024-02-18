@@ -32,18 +32,12 @@ const FAQQuestion: React.FC<Props> = ({ question }) => {
             className={`absolute top-0 left-0 w-full h-full transition-transform duration-500  ease-in-out transform`}
           />
           <PlusVerticalSVG
-            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out transform ${
-              isAnswerVisible ? "-rotate-90" : "rotate-0"
-            }`}
+            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out transform ${isAnswerVisible ? "-rotate-90" : "rotate-0"}`}
           />
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${
-          isAnswerVisible
-            ? "max-h-screen mb-2 opacity-100"
-            : "max-h-0 opacity-5 -mb-2"
-        }`}
+        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${isAnswerVisible ? "max-h-screen mb-2 opacity-100" : "max-h-0 opacity-5 -mb-2"}`}
       >
         {isAnswerVisible && (
           <p

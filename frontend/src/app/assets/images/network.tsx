@@ -1,16 +1,16 @@
 import { ReactElement } from "react";
 
 export default function NetworkSVG({
-  height = 93,
-  width = 107,
+    height = 93,
+    width = 107
 }: {
-  height?: number;
-  width?: number;
+    height?: number;
+    width?: number;
 }): ReactElement {
   return (
     <svg
-      width={`${width}`}
-      height={`${height}`}
+      width= {`${width}`}
+      height= {`${height}`}
       viewBox="0 0 107 93"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

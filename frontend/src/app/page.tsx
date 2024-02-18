@@ -23,7 +23,7 @@ export default function Home() {
       <JudgesSection />
       <Faq />
       <SponsorPage />
-      <RegisterPage />
+      <RegisterPage/>
       <Footer />
     </>
   );
