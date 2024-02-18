@@ -25,13 +25,13 @@ export default function BenefitsPage() {
       <div className="flex justify-center">
         <BenefitsCards />
       </div>
-      <Image
-        src={leaf_deerhack2023_right}
-        alt="leaf"
-        height={250}
-        style={{ transform: "scaleX(-1)" }}
-        className="absolute left-1 bottom-0 hidden lg:block"
-      />
+        <Image
+          src={leaf_deerhack2023_right}
+          alt="leaf"
+          height={250}
+          style={{ transform: "scaleX(-1)" }}
+          className="absolute left-1 bottom-0 hidden lg:block"
+        />
     </div>
   );
 }

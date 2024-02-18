@@ -1,36 +1,28 @@
-import { ReactElement } from "react";
+import { ReactElement } from "react"
 import {
-  cabinetBlack,
-  cabinetBold,
-  cabinetExtraBold,
-  cabinetMedium,
-  cabinetRegular,
-} from "@/app/utils/fonts";
+    cabinetBlack,
+    cabinetBold,
+    cabinetExtraBold,
+    cabinetMedium,
+    cabinetRegular,
+  } from "@/app/utils/fonts";
 
 export default function CardLight({
-  title,
-  description,
-  svg,
+    title,
+    description,
+    svg
 }: {
-  title: string;
-  description: string;
-  svg: ReactElement;
-}) {
-  return (
-    <div className=" bg-violet w-[20.4375rem] h-fit md:w-[33.125rem] md:h-[21.25rem] rounded-[3.6rem] flex flex-col px-12 pt-9 pb-10 gap-5 justify-start">
-      <div
-        className={`${cabinetExtraBold.className} text-primary-gradient-color text-base  md:text-2xl w-full md:w-48`}
-      >
-        {title}
-      </div>
-      <div className="flex flex-col items-left gap-10 h-[70%] md:h-auto  md:flex-row  md:items-center">
-        <div
-          className={`${cabinetRegular.className}  text-white w-52 md:w-72 text-sm md:text-base`}
-        >
-          {description}
+    title: string,
+    description: string,
+    svg: ReactElement
+}){
+    return(
+        <div className = " bg-violet w-[20.4375rem] h-fit md:w-[33.125rem] md:h-[21.25rem] rounded-[3.6rem] flex flex-col px-12 pt-9 pb-10 gap-5 justify-start">
+            <div className={`${cabinetExtraBold.className} text-primary-gradient-color text-base  md:text-2xl w-full md:w-48`}>{title}</div>
+            <div className="flex flex-col items-left gap-10 h-[70%] md:h-auto  md:flex-row  md:items-center">
+                <div className={`${cabinetRegular.className}  text-white w-52 md:w-72 text-sm md:text-base`}>{description}</div>
+                <div className="">{svg}</div>
+            </div>
         </div>
-        <div className="">{svg}</div>
-      </div>
-    </div>
-  );
+    )
 }
