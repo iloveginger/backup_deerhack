@@ -23,7 +23,7 @@ const Navbar = () => {
       </ul>
       <Link href="/register">
         <button
-          className={` ${satoshiBlack.className} font-[20px] bg-secondary text-dark-purple text-xl p-3 rounded lg:mr-20 bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
+          className={` ${satoshiBlack.className} font-[20px] bg-secondary text-dark-purple text-xl px-3 py-2 rounded lg:mr-20 bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
         >
           Register Now
         </button>
