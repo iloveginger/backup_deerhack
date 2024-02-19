@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html>
       <body className=" bg-dark-purple">
-        <header className="fixed w-full mx-auto z-10">
+        <header className="fixed w-screen mx-auto z-10 isolate shadow-lg backdrop-blur-lg">
           <Navbar />
         </header>
         <main>{children}</main>
