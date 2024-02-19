@@ -856,14 +856,20 @@ export interface ApiSponsorSponsor extends Schema.CollectionType {
   info: {
     singularName: 'sponsor';
     pluralName: 'sponsors';
-    displayName: 'Sponsors';
-    description: '';
+    displayName: 'Sponsor';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Sponsors: Attribute.Media & Attribute.Required;
+    name: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+    logo: Attribute.Media;
+    sponsor_type: Attribute.Relation<
+      'api::sponsor.sponsor',
+      'manyToOne',
+      'api::sponsor-type.sponsor-type'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -875,6 +881,43 @@ export interface ApiSponsorSponsor extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::sponsor.sponsor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSponsorTypeSponsorType extends Schema.CollectionType {
+  collectionName: 'sponsor_types';
+  info: {
+    singularName: 'sponsor-type';
+    pluralName: 'sponsor-types';
+    displayName: 'Sponsor Type';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    sponsors: Attribute.Relation<
+      'api::sponsor-type.sponsor-type',
+      'oneToMany',
+      'api::sponsor.sponsor'
+    >;
+    order: Attribute.Integer;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::sponsor-type.sponsor-type',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::sponsor-type.sponsor-type',
       'oneToOne',
       'admin::user'
     > &
@@ -903,6 +946,7 @@ declare module '@strapi/types' {
       'api::judge.judge': ApiJudgeJudge;
       'api::mentor.mentor': ApiMentorMentor;
       'api::sponsor.sponsor': ApiSponsorSponsor;
+      'api::sponsor-type.sponsor-type': ApiSponsorTypeSponsorType;
     }
   }
 }

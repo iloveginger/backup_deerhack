@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function BenefitsPage() {
   return (
-    <div className=" bg-dark-purple flex flex-col py-20  overflow-hidden">
+    <div className=" bg-dark-purple flex flex-col py-20  overflow-hidden relative">
       <div className="relative">
         <Image
           src={leaf_prizes_right}
@@ -16,27 +16,20 @@ export default function BenefitsPage() {
         />
       </div>
       <div
-        className={`${cabinetExtraBold.className}  flex justify-center items-center text-2xl sm:text-3xl md:text-5xl`}
+        className={`${cabinetExtraBold.className}  text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
       >
-        <div className="text-primary-gradient-color">
-          Benefits of Participating
-        </div>
+        Benefits of Participating
       </div>
       <div className="flex justify-center">
         <BenefitsCards />
       </div>
-
-      <div className="h-40">
-        <div className="relative h-fit">
-          <Image
-            src={leaf_deerhack2023_right}
-            alt="leaf"
-            height={250}
-            style={{ transform: "scaleX(-1)" }}
-            className="absolute left-1 top-46 hidden lg:block"
-          />
-        </div>
-      </div>
+      <Image
+        src={leaf_deerhack2023_right}
+        alt="leaf"
+        height={250}
+        style={{ transform: "scaleX(-1)" }}
+        className="absolute left-1 bottom-0 hidden lg:block"
+      />
     </div>
   );
 }

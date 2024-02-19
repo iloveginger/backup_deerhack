@@ -8,7 +8,9 @@ import DeerhackStatsPage from "./pages/DeerhackStatsPage";
 import TrackPage from "./pages/TrackPage";
 import BenefitsPage from "./pages/BenefitsPage";
 import SponsorPage from "./pages/SponsorsPage";
-import FAQ from "./pages/FAQ";
+import Faq from "./sections/FAQ/FAQ";
+import RegisterPage from "./pages/RegisterPage";
+import ImageCarouselPage from "./pages/ImageCarouselPage";
 export default function Home() {
   return (
     <>
@@ -19,9 +21,11 @@ export default function Home() {
       <PrizesPage />
       <ExpectationsPage />
       <DeerhackStatsPage />
+      <ImageCarouselPage />
       <JudgesSection />
       <FAQ />
       <SponsorPage />
+      <RegisterPage/>
       <Footer />
     </>
   );
