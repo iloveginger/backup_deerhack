@@ -1,6 +1,6 @@
 import React from "react";
 import FetchData from "./data";
-import { cabinetBold } from "@/fonts";
+import { cabinetBold, cabinetExtraBold } from "@/fonts";
 import UserEntity from "@/app/types/userentity";
 import UserCard from "../core/UserCard";
 import { BACKEND_URL, SERVER_URL } from "@/app/utils/config";
@@ -23,13 +23,13 @@ const JudgesList = async () => {
     <div key="JudgeContainer" className="w-full m-auto py-10 bg-dark-purple">
       <div key="judgeContainer" className="flex items-center flex-col my-20">
         <h1
-          className={`text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto ${cabinetBold.className}`}
+          className={`text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto ${cabinetExtraBold.className}`}
         >
           Judges for DeerHack 2024
         </h1>
         <div
           key="JudgeCards"
-          className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-5 gap-16 justify-center"
+          className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-14 gap-16 justify-center"
         >
           {judges_real.map((judge: UserEntity) => (
             <UserCard
