@@ -11,7 +11,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="flex flex-col md:flex-row justify-between mx-auto p-5 items-center container-fluid isolate shadow-lg backdrop-blur-lg">
+    <nav className="flex flex-col md:flex-row justify-between mx-auto px-5 py-3 items-center container-fluid isolate shadow-lg backdrop-blur-lg">
       <Link href={"/"} className="lg:ml-20">
         <DeerhackLogo />
       </Link>
