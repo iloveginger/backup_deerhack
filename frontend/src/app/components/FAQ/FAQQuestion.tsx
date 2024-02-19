@@ -15,7 +15,12 @@ interface Props {
   setExpandedIndex: (index: number) => void; // Added setExpandedIndex prop
 }
 
-const FAQQuestion: React.FC<Props> = ({ question, index, expandedIndex, setExpandedIndex }) => {
+const FAQQuestion: React.FC<Props> = ({
+  question,
+  index,
+  expandedIndex,
+  setExpandedIndex,
+}) => {
   const isExpanded = expandedIndex === index;
 
   const toggleAnswerVisibility = () => {
@@ -34,12 +39,18 @@ const FAQQuestion: React.FC<Props> = ({ question, index, expandedIndex, setExpan
             className={`top-0 left-0 w-5 h-full transition-transform duration-500  ease-in-out transform`}
           />
           <PlusVerticalSVG
-            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out transform ${isExpanded ? "-rotate-90" : "rotate-0"}`}
+            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out transform ${
+              isExpanded ? "-rotate-90" : "rotate-0"
+            }`}
           />
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${isExpanded ? "max-h-screen mb-2 opacity-100" : "max-h-0 opacity-5 -mb-2"}`}
+        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${
+          isExpanded
+            ? "max-h-screen mb-2 opacity-100"
+            : "max-h-0 opacity-5 -mb-2"
+        }`}
       >
         {isExpanded && (
           <p

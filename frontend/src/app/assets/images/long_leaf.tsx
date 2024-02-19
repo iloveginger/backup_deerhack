@@ -6,10 +6,10 @@ export default function longLeafSVG({
 }: {
   height?: number;
   width?: number;
-}):ReactElement {
+}): ReactElement {
   return (
     <svg
-      width= {`${width}`}
+      width={`${width}`}
       height={`${height}`}
       viewBox="0 0 92 495"
       fill="none"

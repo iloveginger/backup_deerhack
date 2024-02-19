@@ -16,11 +16,15 @@ const FAQSectionTitle: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`cursor-pointer min-w-56 w-96 flex flex-row mb-2 items-center ${isActive ? "text-secondary" : "text-white"}`}
+      className={`cursor-pointer min-w-56 w-96 flex flex-row mb-2 items-center ${
+        isActive ? "text-secondary" : "text-white"
+      }`}
       onClick={onClick}
     >
       <div className="inline">{link}</div>
-      <h2 className={`p-4 font-[200] md:font-[300] ${cabinetBold.className}`}>{title}</h2>
+      <h2 className={`p-4 font-[200] md:font-[300] ${cabinetBold.className}`}>
+        {title}
+      </h2>
     </div>
   );
 };

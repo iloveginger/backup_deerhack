@@ -1,14 +1,12 @@
 import { ReactElement } from "react";
 
-export default function PuzzleSVG(
-    {
-        height = 132,
-        width = 119
-    }: {
-        height?: number;
-        width?: number;
-    }
-):ReactElement {
+export default function PuzzleSVG({
+  height = 132,
+  width = 119,
+}: {
+  height?: number;
+  width?: number;
+}): ReactElement {
   return (
     <svg
       width={`${width}`}
