@@ -1,3 +1,4 @@
+
 "use client"
 import { useState } from "react";
 import Link from "next/link";
@@ -22,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className={`flex flex-row justify-between gap-5 p-5 mx-10 items-center container-fluid isolate shadow-lg backdrop-blur-lg ${isMenuOpen ? "flex-col" : "flex-row"}`}>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center w-full lg:w-auto">
         <Link href={"/"}>
           <DeerhackLogo />
         </Link>
@@ -33,16 +34,24 @@ const Navbar = () => {
             <Image src={menuSVG} alt="Open Menu" width={24} height={24} />
           )}
         </button>
+
       </div>
-      <div className={`flex flex-col  lg:flex-row justify-center items-center ${isMenuOpen ? "block" : "hidden lg:flex"} `}>
+
+      <div className={`lg:flex lg:items-center ${isMenuOpen ? "block" : "hidden"} `}>
         <Counter />
-        <ul className={`flex flex-col lg:flex-row gap-6 my-4 font-[16px] text-magnolia ${cabinetBold.className} ${isMenuOpen ? "block" : "hidden lg:flex"}`}>
-          <NavLinks /> 
-        </ul>
+      </div>
+
+      <ul className={`lg:flex lg:flex-row lg:gap-10 ${isMenuOpen ? "block" : "hidden"} font-[16px] text-magnolia ${cabinetBold.className}`}>
+        <NavLinks />
+      </ul>
+
+      <div className={`lg:flex lg:items-center ${isMenuOpen ? "block" : "hidden"} `}>
         <Link href="/register">
-          <button className={` ${satoshiBlack.className} font-[20px] bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem] lg:inline-block ${isMenuOpen ? "block" : "hidden lg:flex"}`}>
-            Register Now 
+
+          <button className={` ${satoshiBlack.className} font-[20px] bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}>
+            Register Now
           </button>
+
         </Link>
       </div>
     </nav>
