@@ -17,7 +17,6 @@ export default function ExpectationCards(): ReactElement {
 
   const toggleImageIndex = (index: number) => {
     setCurrentIndex(index);
-    console.log(currentIndex);
   };
   return (
     <div className="flex lg:flex-row flex-col justify-around w-[90vw] lg:w-[80vw] lg:max-w-[60vw] mx-auto mt-10 items-center lg:items-start gap-5">
