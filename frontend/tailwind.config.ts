@@ -31,6 +31,20 @@ const config: Config = {
         lg: "1024px",
         xl: "1280px",
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 40s linear infinite',
+        'inf-scroll': 'inf-scroll 40s linear infinite'
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)'},
+          to:  { transform: 'translateX(-100%)' },
+        },
+        'inf-scroll':{
+          from: {transform: 'translateX(-100%)'},
+          to: {transform: 'translateX(0)'}
+        }
+      },
     },
   },
   plugins: [],

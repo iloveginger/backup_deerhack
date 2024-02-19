@@ -7,7 +7,7 @@ import { cabinetExtraBold } from "../utils/fonts";
 
 export default function ExpectationPage(): ReactElement {
   return (
-    <div className="bg-dark-purple pb-20 h-fit">
+    <div className="bg-dark-purple pb-20">
       <Image
         src={leaf_prizes_right}
         alt="leaf"
@@ -20,10 +20,13 @@ export default function ExpectationPage(): ReactElement {
       >
         What Else Can You Expect at DeerHack?
       </div>
-      <div className="flex lg:flex-row flex-wrap flex-col justify-around w-[80vw] lg:max-w-[60vw] mx-auto mt-10 items-center lg:items-start lg:h-[60vh]">
+      <ExpectationCards />
+      {/* <div className="flex lg:flex-row flex-col justify-around w-[90vw] lg:w-[80vw] lg:max-w-[60vw] mx-auto mt-10 items-center lg:items-start gap-5">
         <ExpectationCards />
-        <ExpectationImage />
-      </div>
+        <div className="hidden lg:block cursor-pointer">
+          <ExpectationImage />
+        </div>
+      </div> */}
     </div>
   );
 }
