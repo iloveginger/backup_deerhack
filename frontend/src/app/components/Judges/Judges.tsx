@@ -3,7 +3,7 @@ import FetchData from "./data";
 import { cabinetBold } from "@/fonts";
 import UserEntity from "@/app/types/userentity";
 import UserCard from "../core/UserCard";
-import { BACKEND_URL, SERVER_URL } from "@/app/utils/config"
+import { BACKEND_URL, SERVER_URL } from "@/app/utils/config";
 
 const JudgesList = async () => {
   const response = await FetchData();
@@ -13,8 +13,7 @@ const JudgesList = async () => {
     let entity: UserEntity = {
       name: judge.attributes.name,
       position: judge.attributes.position,
-      image:
-        SERVER_URL + judge.attributes.image.data.attributes.url,
+      image: SERVER_URL + judge.attributes.image.data.attributes.url,
       linkedin_url: judge.attributes.linkedin_url,
     };
     judges_real.push(entity);
@@ -24,13 +23,13 @@ const JudgesList = async () => {
     <div key="JudgeContainer" className="w-full m-auto py-10 bg-dark-purple">
       <div key="judgeContainer" className="flex items-center flex-col my-20">
         <h1
-          className={`bg-gradient-to-r from-primary to-secondary text-4xl bg-clip-text text-transparent font-[800] mb-6 ${cabinetBold.className}`}
+          className={`text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto ${cabinetBold.className}`}
         >
           Judges for DeerHack 2024
         </h1>
         <div
           key="JudgeCards"
-          className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-2 gap-16 justify-center"
+          className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-5 gap-16 justify-center"
         >
           {judges_real.map((judge: UserEntity) => (
             <UserCard

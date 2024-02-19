@@ -16,22 +16,20 @@ export default function BenefitsPage() {
         />
       </div>
       <div
-        className={`${cabinetExtraBold.className}  flex justify-center items-center text-2xl sm:text-3xl md:text-5xl`}
+        className={`${cabinetExtraBold.className}  text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
       >
-        <div className="text-primary-gradient-color">
-          Benefits of Participating
-        </div>
+        Benefits of Participating
       </div>
       <div className="flex justify-center">
         <BenefitsCards />
       </div>
-        <Image
-          src={leaf_deerhack2023_right}
-          alt="leaf"
-          height={250}
-          style={{ transform: "scaleX(-1)" }}
-          className="absolute left-1 bottom-0 hidden lg:block"
-        />
+      <Image
+        src={leaf_deerhack2023_right}
+        alt="leaf"
+        height={250}
+        style={{ transform: "scaleX(-1)" }}
+        className="absolute left-1 bottom-0 hidden lg:block"
+      />
     </div>
   );
 }
