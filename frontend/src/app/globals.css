@@ -22,4 +22,7 @@
   .font-cabinet-bold {
     font-family: var(--font-cabinet-bold);
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

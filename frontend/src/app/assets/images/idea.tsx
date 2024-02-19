@@ -1,12 +1,12 @@
 import { ReactElement } from "react";
 
 export default function IdeaSVG({
-    height = 90,
-    width = 66
+  height = 90,
+  width = 66,
 }: {
-    height?: number;
-    width?: number;
-}): ReactElement{
+  height?: number;
+  width?: number;
+}): ReactElement {
   return (
     <svg
       width={`${width}`}
