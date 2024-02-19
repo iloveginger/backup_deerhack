@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import { cabinetBold, cabinetRegular } from "@/app/utils/fonts";
 import PlusHorizontalSVG from "@/app/assets/images/plusHorizontal";
@@ -11,43 +10,40 @@ interface Question {
 
 interface Props {
   question: Question;
+  index: number; // Added index prop
+  expandedIndex: number; // Added expandedIndex prop
+  setExpandedIndex: (index: number) => void; // Added setExpandedIndex prop
 }
 
-const FAQQuestion: React.FC<Props> = ({ question }) => {
-  const [isAnswerVisible, setIsAnswerVisible] = useState<boolean>(false);
+const FAQQuestion: React.FC<Props> = ({ question, index, expandedIndex, setExpandedIndex }) => {
+  const isExpanded = expandedIndex === index;
 
   const toggleAnswerVisibility = () => {
-    setIsAnswerVisible(!isAnswerVisible);
+    setExpandedIndex(isExpanded ? -1 : index); // Collapse if already expanded, otherwise expand
   };
 
   return (
-    <div className="flex flex-col justify-center items-end bg-dark-purple text-white text-xl border-b border-secondary">
+    <div className="flex flex-col justify-center items-start bg-dark-purple text-white text-lg md:text-xl  border-b border-secondary mb-5">
       <button
-        className={`flex items-center justify-between text-left py-2 w-full mb-2 text-2xl ${cabinetBold.className}`}
+        className={`flex items-center justify-between text-left gap-8 py-2 w-full md:mb-2 md-1 ${cabinetBold.className}`}
         onClick={toggleAnswerVisibility}
       >
         {question.question}
-        <span className="relative w-6 h-6">
+        <span className="relative ml-2 w-5 h-5">
           <PlusHorizontalSVG
-            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500  ease-in-out transform`}
+            className={`top-0 left-0 w-5 h-full transition-transform duration-500  ease-in-out transform`}
           />
           <PlusVerticalSVG
-            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out transform ${
-              isAnswerVisible ? "-rotate-90" : "rotate-0"
-            }`}
+            className={`absolute top-0 left-0 w-full h-full transition-transform duration-500 ease-in-out transform ${isExpanded ? "-rotate-90" : "rotate-0"}`}
           />
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${
-          isAnswerVisible
-            ? "max-h-screen mb-2 opacity-100"
-            : "max-h-0 opacity-5 -mb-2"
-        }`}
+        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${isExpanded ? "max-h-screen mb-2 opacity-100" : "max-h-0 opacity-5 -mb-2"}`}
       >
-        {isAnswerVisible && (
+        {isExpanded && (
           <p
-            className={`mt-2 text-sm ${cabinetRegular.className} transition-opacity ease-in-out duration-400 text-lg`}
+            className={`text-sm ${cabinetRegular.className} transition-opacity ease-in-out duration-400`}
           >
             {question.answer}
           </p>
