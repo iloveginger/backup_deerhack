@@ -8,7 +8,7 @@ import DeerhackStatsPage from "./pages/DeerhackStatsPage";
 import TrackPage from "./pages/TrackPage";
 import BenefitsPage from "./pages/BenefitsPage";
 import SponsorPage from "./pages/SponsorsPage";
-import Faq from "./sections/FAQ/FAQ";
+import FAQ from "./pages/FAQ";
 export default function Home() {
   return (
     <>
@@ -20,7 +20,7 @@ export default function Home() {
       <ExpectationsPage />
       <DeerhackStatsPage />
       <JudgesSection />
-      <Faq />
+      <FAQ />
       <SponsorPage />
       <Footer />
     </>
