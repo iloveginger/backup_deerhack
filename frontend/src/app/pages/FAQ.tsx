@@ -11,10 +11,10 @@ const FAQ = () => {
         alt="leaf"
         height={250}
         style={{ transform: "scaleX(-1)" }}
-        className="absolute left-1 top-46 hidden lg:block"
+        className="absolute left-1 top-46 hidden xl:block"
       />
       <h1
-        className={`text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto mb-20 ${cabinetExtraBold.className}`}
+        className={`text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto mb-20 ${cabinetExtraBold.className}`}
       >
         FAQ
       </h1>

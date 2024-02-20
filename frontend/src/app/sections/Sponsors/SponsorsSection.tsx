@@ -10,7 +10,7 @@ export default function SponsorsSection() {
     <div>
       <div className="mb-[5rem] flex flex-col justify-center items-center">
         <div
-          className={`mb-8 ${cabinetExtraBold.className} text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
+          className={`mb-8 ${cabinetExtraBold.className} text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
         >
           Our Sponsors
         </div>

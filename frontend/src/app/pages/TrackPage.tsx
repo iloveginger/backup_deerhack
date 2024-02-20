@@ -11,11 +11,11 @@ const TrackPage = () => {
           src={TrackLeftLeaf}
           alt="left leaf"
           height={400}
-          className="absolute bottom-0 left-0 lg:block hidden"
+          className="absolute bottom-0 left-0 xl:block hidden"
         />
         <div className="py-20 mt-16">
           <p
-            className={`mb-8 ${cabinetExtraBold.className} text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
+            className={`mb-8 ${cabinetExtraBold.className} text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
           >
             Tracks
           </p>

@@ -11,10 +11,10 @@ export default function PrizesPage(): ReactElement {
         src={leaf_prizes_right}
         alt="leaf"
         height={350}
-        className="absolute z-0 right-9 hidden lg:block"
+        className="absolute z-0 right-9 hidden xl:block"
       />
       <p
-        className={`${cabinetExtraBold.className} text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
+        className={`${cabinetExtraBold.className} text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
       >
         Prizes
       </p>
