@@ -92,15 +92,13 @@ const TracksCard = () => {
         ref={containerRef}
       >
         {trackData.map((track, index) => (
-          <div className="">
-            <TracksHeading
-              key={index}
-              headStyling={track.headStyling}
-              svg={track.svg}
-              title={track.title}
-              onClick={() => handleTrackSelection(track.title)}
-            />
-          </div>
+          <TracksHeading
+            key={index}
+            headStyling={track.headStyling}
+            svg={track.svg}
+            title={track.title}
+            onClick={() => handleTrackSelection(track.title)}
+          />
         ))}
       </div>
 
@@ -121,6 +119,3 @@ const TracksCard = () => {
 };
 
 export default TracksCard;
-
-
-
