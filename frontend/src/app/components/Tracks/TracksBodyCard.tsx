@@ -19,30 +19,32 @@ const TracksBodyCard: React.FC<TracksBodyCardProps> = ({
   bodyStyling = "",
 }: TracksBodyCardProps) => {
   return (
-    <div className="w-full h-full flex justify-center mt-5">
-      <div
-        className={`w-[70%] max-h-full flex flex-row cursor-pointer gap-16 p-3 pb-44 text-lg ${cabinetBold.className} rounded-2xl bg-grape ${bodyStyling} `}
-      >
-        <div className="w-1/2 p-10">
-          <div className="rounded-full w-20 h-20 flex items-center justify-center">
-            {svg}
-          </div>
-          <div className={`${bodyStyling} flex flex-col`}>
-            <p className={`text-3xl mt-4 ${cabinetBold.className}`}>{title}</p>
-            <span className={`text-xl mt-10 ${cabinetRegular.className}`}>
-              {description}
-            </span>
-          </div>
+    <div
+      className={`max-w-[1150px] mx-auto flex xl:items-center justify-start align-start flex-col xl:flex-row cursor-pointer px-8 lg:pb-44 pb-24 pt-10 text-lg ${cabinetBold.className} rounded-2xl bg-grape ${bodyStyling} gap-8`}
+    >
+      <div className="xl:w-3/5 self-start">
+        <div className="rounded-full w-16 h-16 flex items-center justify-start">
+          {svg}
         </div>
-
-        <div className="container-fluid flex flex-col w-1/2 justify-center p-10 pt-16 mx-auto">
-          <p className={`text-base ${cabinetExtraBold.className}`}>
-            WINNER GETS
+        <div className={`${bodyStyling} flex flex-col`}>
+          <p
+            className={`lg:text-3xl text-2xl xl:mt-4 mt-2 ${cabinetBold.className}`}
+          >
+            {title}
           </p>
-          <span className={`${cabinetExtraBold.className} text-7xl`}>
-            Rs. 15,000
+          <span
+            className={`lg:text-xl text-lg xl:mt-10 mt-4 ${cabinetRegular.className}`}
+          >
+            {description}
           </span>
         </div>
+      </div>
+
+      <div className="flex flex-col">
+        <p className={`text-base ${cabinetExtraBold.className}`}>WINNER GETS</p>
+        <span className={`${cabinetExtraBold.className} lg:text-6xl text-5xl`}>
+          Rs. 15,000
+        </span>
       </div>
     </div>
   );

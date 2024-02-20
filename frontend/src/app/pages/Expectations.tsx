@@ -13,10 +13,10 @@ export default function ExpectationPage(): ReactElement {
         alt="leaf"
         height={350}
         style={{ transform: "scaleX(-1)" }}
-        className="absolute left-3 hidden lg:block"
+        className="absolute left-3 hidden xl:block"
       />
       <div
-        className={`${cabinetExtraBold.className} text-center text-2xl sm:text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto pt-36`}
+        className={`${cabinetExtraBold.className} text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto pt-36`}
       >
         What Else Can You Expect at DeerHack?
       </div>
