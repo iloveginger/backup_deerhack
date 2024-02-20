@@ -13,23 +13,28 @@ export default function ExpectationCard({
   description,
   index,
   imageSrc,
+  currentIndex,
+  setCurrentIndex,
 }: {
   svg?: ReactElement;
   title?: string;
   description?: string;
   index: number;
   imageSrc: StaticImageData;
+  currentIndex: number;
+  setCurrentIndex: (index: number) => void;
 }): ReactElement {
   const [visibility, setVisibility] = useState<boolean>(false);
 
   const toggleImageVisibility = (): void => {
     setVisibility((prev) => !prev);
+    setCurrentIndex(index === currentIndex ? 1 : index);
   };
 
   return (
-    <div onClick={toggleImageVisibility}>
+    <div onClick={() => toggleImageVisibility()}>
       <div
-        className={`hover:cursor-pointer w-[70vw] lg:w-[30vw] py-8 justify-start px-6 border-grape hover:bg-grape border-[3px] rounded-xl flex flex-col lg:flex-row gap-5 sm:gap-8 expectation_root ${
+        className={`hover:cursor-pointer w-[70vw] lg:w-[40rem] py-8 justify-start px-6 border-grape hover:bg-grape border-[3px] rounded-xl flex flex-col lg:flex-row gap-5 sm:gap-8 expectation_root ${
           visibility ? "bg-grape" : "bg-dark-purple"
         }`}
       >

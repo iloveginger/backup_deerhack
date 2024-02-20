@@ -28,6 +28,8 @@ export default function ExpectationCards(): ReactElement {
             title="Fun Games"
             description="Get ready to unleash your competitive spirit and bond with fellow participants in a series of exciting challenges and friendly competitions."
             index={0}
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
           />
         </div>
         <div onClick={() => toggleImageIndex(1)}>
@@ -37,6 +39,8 @@ export default function ExpectationCards(): ReactElement {
             index={1}
             imageSrc={teaching}
             description="Dive deep into cutting-edge technologies, sharpen your skills, and gain invaluable insights from industry experts through interactive workshops tailored to enhance your expertise and ignite your innovation."
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
           />
         </div>
         <div onClick={() => toggleImageIndex(2)}>
@@ -46,6 +50,8 @@ export default function ExpectationCards(): ReactElement {
             imageSrc={guitar}
             index={2}
             description="Take a break from coding and immerse yourself in the soulful melodies and electrifying beats of live music performances, adding rhythm and energy to your DeerHack experience."
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
           />
         </div>
       </div>
@@ -55,10 +61,10 @@ export default function ExpectationCards(): ReactElement {
             currentIndex == 0
               ? expectation_image
               : currentIndex == 1
-                ? teaching
-                : currentIndex == 2
-                  ? guitar
-                  : expectation_image
+              ? teaching
+              : currentIndex == 2
+              ? guitar
+              : expectation_image
           }
         />
       </div>

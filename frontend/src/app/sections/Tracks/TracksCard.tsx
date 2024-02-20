@@ -6,10 +6,13 @@ import DataScienceSVG from "@/app/assets/icons/DataScience";
 import BlockchainSVG from "@/app/assets/icons/Blockchain";
 import OpenInnovationSVG from "@/app/assets/icons/OpenInnovation";
 import TracksBodyCard from "@/app/components/Tracks/TracksBodyCard";
+import ArrowSVG from "@/app/assets/icons/ArrowSVG";
+import { useRef } from "react";
+import styles from "./styles.module.css";
 
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
-    "Interactive Technology",
+    "Interactive Technology"
   );
 
   const trackData = [
@@ -67,9 +70,27 @@ const TracksCard = () => {
     setSelectedTrack(title);
   };
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleArrowClick = () => {
+    console.log(containerRef.current);
+    if (containerRef.current) {
+      containerRef.current.scrollLeft += 250;
+    }
+  };
+
   return (
-    <>
-      <div className="flex justify-center items-start text-magnolia gap-8 ">
+    <div className="w-[85vw] mx-auto">
+      <div
+        className="flex xl:hidden mb-5 hover:cursor-pointer justify-end p-4 items-center"
+        onClick={handleArrowClick}
+      >
+        <ArrowSVG />
+      </div>
+      <div
+        className={`flex justify-start xl:justify-center items-start text-magnolia gap-8 overflow-x-auto pb-4 ${styles.scrollbar_hide}`}
+        ref={containerRef}
+      >
         {trackData.map((track, index) => (
           <TracksHeading
             key={index}
@@ -91,9 +112,9 @@ const TracksCard = () => {
               description={track.description}
               bodyStyling={track.bodyStyling}
             />
-          ),
+          )
       )}
-    </>
+    </div>
   );
 };
 

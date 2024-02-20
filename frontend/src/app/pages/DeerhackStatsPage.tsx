@@ -13,11 +13,11 @@ export default function DeerhackStatsPage(): ReactElement {
           src={leaf_deerhack2023_right}
           alt="leaf"
           height={250}
-          className="absolute right-3 top-52 hidden lg:block"
+          className="absolute right-3 top-52 hidden xl:block"
         />
       </div>
       <div
-        className={`${cabinetExtraBold.className} text-center text-2xl sm:text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
+        className={`${cabinetExtraBold.className} text-center text-2xl sm:text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
       >
         DeerHack 2023
       </div>
