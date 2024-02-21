@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ImageCarouselPage() {
   return (
-    <div className=" py-40 relative">
+    <div className=" py-12 relative">
       <div>
         <ImageCarouselSection />
       </div>

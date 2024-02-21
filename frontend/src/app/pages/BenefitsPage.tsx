@@ -15,9 +15,7 @@ export default function BenefitsPage() {
           className="absolute right-3 top-46 hidden xl:block -rotate-12"
         />
       </div>
-      <div
-        className={`${cabinetExtraBold.className}  text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
-      >
+      <div className={`${cabinetExtraBold.className}  headings`}>
         Benefits of Participating
       </div>
       <div className="flex justify-center">

@@ -16,9 +16,7 @@ export default function DeerhackStatsPage(): ReactElement {
           className="absolute right-3 top-52 hidden xl:block"
         />
       </div>
-      <div
-        className={`${cabinetExtraBold.className} text-center text-2xl sm:text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
-      >
+      <div className={`${cabinetExtraBold.className} headings`}>
         DeerHack 2023
       </div>
       <div className="flex justify-center mt-10">

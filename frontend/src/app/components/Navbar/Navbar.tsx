@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex flex-row justify-between gap-5 p-5 mx-10 items-center container-fluid isolate shadow-lg backdrop-blur-lg ${
+      className={`flex flex-row justify-between gap-5 py-5 px-14 w-screen items-center container-fluid isolate shadow-lg backdrop-blur-lg ${
         isMenuOpen ? "flex-col" : "flex-row"
       }`}
     >

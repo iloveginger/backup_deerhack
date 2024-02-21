@@ -13,11 +13,7 @@ export default function PrizesPage(): ReactElement {
         height={350}
         className="absolute z-0 right-9 hidden xl:block"
       />
-      <p
-        className={`${cabinetExtraBold.className} text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto`}
-      >
-        Prizes
-      </p>
+      <p className={`${cabinetExtraBold.className} headings`}>Prizes</p>
       <PrizesGrid />
     </div>
   );
