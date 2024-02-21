@@ -1,23 +1,10 @@
 import React from "react";
-import FetchData from "./data";
 import { cabinetBold, cabinetExtraBold } from "@/fonts";
 import UserEntity from "@/app/types/userentity";
 import UserCard from "../core/UserCard";
-import { BACKEND_URL, SERVER_URL } from "@/app/utils/config";
+import mentors from "./data";
 
 const MentorsList = async () => {
-  const response = await FetchData();
-  const mentors_ = response.data;
-  let mentors: UserEntity[] = [];
-  for (let mentor of mentors_) {
-    let entity: UserEntity = {
-      name: mentor.attributes.name,
-      position: mentor.attributes.position,
-      image: SERVER_URL + mentor.attributes.image.data.attributes.url,
-      linkedin_url: mentor.attributes.linkedin_url,
-    };
-    mentors.push(entity);
-  }
 
   return (
     <div
