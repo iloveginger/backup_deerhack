@@ -2,6 +2,6 @@
  * sponsor-type service
  */
 
-import { factories } from '@strapi/strapi';
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreService('api::sponsor-type.sponsor-type');
+export default factories.createCoreService("api::sponsor-type.sponsor-type");
