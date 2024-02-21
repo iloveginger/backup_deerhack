@@ -7,7 +7,7 @@ import { cabinetExtraBold } from "../utils/fonts";
 
 export default function ExpectationPage(): ReactElement {
   return (
-    <div className="bg-dark-purple pb-20">
+    <div className="bg-dark-purple pb-20 mt-32">
       <Image
         src={leaf_prizes_right}
         alt="leaf"
@@ -15,9 +15,7 @@ export default function ExpectationPage(): ReactElement {
         style={{ transform: "scaleX(-1)" }}
         className="absolute left-3 hidden xl:block"
       />
-      <div
-        className={`${cabinetExtraBold.className} text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto pt-36`}
-      >
+      <div className={`${cabinetExtraBold.className} headings px-2 md:px-0`}>
         What Else Can You Expect at DeerHack?
       </div>
       <ExpectationCards />

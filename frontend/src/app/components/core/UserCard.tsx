@@ -27,11 +27,11 @@ const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
         >
           <div>
             <p
-              className={`text-white text-xs font-[700] ${cabinetRegular.className}`}
+              className={`text-white text-lg font-[600] ${cabinetRegular.className}`}
             >
               {name}
             </p>
-            <p className={`text-white font-[150] text-xs`}>{position}</p>
+            <p className={`text-white font-[150] text-sm`}>{position}</p>
           </div>
           <div key="icon">
             <Link href={linkedin_url}>
