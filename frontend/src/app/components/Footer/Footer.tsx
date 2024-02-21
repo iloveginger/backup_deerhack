@@ -16,9 +16,9 @@ export default function Footer(): ReactElement {
   return (
     <div
       key="footer_container"
-      className="relative flex min-h-screen flex-col flex-grow w-full bg-violet "
+      className="relative flex flex-col flex-grow w-full bg-violet "
     >
-      <div className="relative flex flex-grow flex-col w-[85%] m-auto mt-10 mb-16 md:mb-0">
+      <div className="relative flex flex-grow flex-col w-[85%] mx-auto mt-16">
         <div className="flex md:items-center md:flex-row justify-between gap-10 mb-10 sm:flex-col flex-col">
           <div className="flex flex-col ">
             <div
@@ -57,16 +57,26 @@ export default function Footer(): ReactElement {
               </p>
               <div className="flex gap-7">
                 <span className=" w-[20px] px-0 cursor-pointer">
-                  <FacebookSVG />
+                  <Link href="">
+                    <FacebookSVG />
+                  </Link>
+                  
                 </span>
                 <span className="w-[20px] cursor-pointer">
+                <Link href="">
                   <InstagramSVG />
+                  </Link>
                 </span>
                 <span className="w-[20px] cursor-pointer">
+                <Link href="">
                   <DiscordSVG />
+                  </Link>
+
                 </span>
                 <span className="w-[20px] cursor-pointer">
+                <Link href="">
                   <LinkedInSVG />
+                </Link>
                 </span>
               </div>
             </div>
