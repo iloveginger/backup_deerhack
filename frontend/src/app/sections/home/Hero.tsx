@@ -1,21 +1,17 @@
 import MainLogo from "@/app/assets/icons/MainLogo";
-import HeroIcon from "@/icons/Hero.svg";
-import Image from "next/image";
-import { cabinetBold, cabinetRegular } from "@/fonts";
-// import Footer from "@/app/components/Footer/Footer";
+import HeroIcon from "@/app/assets/icons/Hero";
+import { cabinetBold } from "@/fonts";
 
 const Hero = () => {
   return (
-    <div className="relative w-full flex justify-center items-center">
-      <Image src={HeroIcon} alt="Hero Image" className="w-screen" />
-      <div className="absolute gap-[25px] top-0 mt-[10rem] flex flex-col text-center">
-        <p
-          className={`text-3xl font-extrabold text-secondary ${cabinetBold.className}`}
-        >
+    <div className="relative flex justify-center items-center  ">
+      <HeroIcon className="w-fit h-fit mt-5 md:mt-10" />
+      <div className="absolute gap-[25px] top-[80px] flex flex-col text-center lg:top-64 ">
+        <p className={`text-3xl font-extrabold text-secondary ${cabinetBold.className}`}>
           26th - 29th April
         </p>
+        <MainLogo className="w-fit h-fit sm:w-1 sm:h-3 " />
       </div>
-      <MainLogo />
     </div>
   );
 };
