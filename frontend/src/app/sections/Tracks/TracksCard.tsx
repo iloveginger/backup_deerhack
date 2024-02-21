@@ -12,7 +12,7 @@ import styles from "./styles.module.css";
 
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
-    "Interactive Technology"
+    "Interactive Technology",
   );
 
   const trackData = [
@@ -112,7 +112,7 @@ const TracksCard = () => {
               description={track.description}
               bodyStyling={track.bodyStyling}
             />
-          )
+          ),
       )}
     </div>
   );
