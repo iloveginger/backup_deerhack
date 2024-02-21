@@ -25,7 +25,5 @@ const FetchData = async (): Promise<UserEntity[]>=> {
     return []; // Return an empty array if there's an error
   }
 }
-
-let judges_list = FetchData();
-
+let judges_list =FetchData();
 export default judges_real;
