@@ -9,7 +9,6 @@ export default function GenderEllipseSVG({
 }): ReactElement {
   return (
     <svg
-      className="hover:scale-110 transition-all cursor-pointer hover:rotate-180 ease-in-out hover:ease-in-out"
       height={`${height}`}
       width={`${width}`}
       viewBox="0 0 274 274"

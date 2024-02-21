@@ -11,7 +11,7 @@ import GenderEllipseSVG from "@/app/assets/images/genderEllipse";
 export default function CardLarge(): ReactElement {
   return (
     // Divide to Two Sections (GenderDistribution icon and title) and (Graph, Numbers)
-    <div className="h-[33rem] w-80 bg-violet rounded-xl gap flex flex-col px-6 pt-4 pb-16 justify-between">
+    <div className="md:h-full h-[30rem] w-80 lg:w-[24rem] bg-violet rounded-xl gap flex flex-col px-6 pt-4 pb-16 justify-between">
       {/* Divide the Title into two sections:  icons and title  */}
       <div className="flex flex-col gap-2">
         <GenderSVG height={40} width={40} />
