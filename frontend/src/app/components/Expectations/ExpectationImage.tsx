@@ -14,6 +14,7 @@ export default function ExpectationImage({
           src={imageSrc}
           alt="Placeholder"
           fill
+          priority
           className="object-cover rounded-lg"
         />
       </div>

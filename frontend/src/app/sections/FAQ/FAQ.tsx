@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import AboutEventSVG from "@/app/assets/icons/AboutEventSVG";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import EventLogSVG from "@/app/assets/icons/EventLogSVG";
@@ -7,7 +7,7 @@ import ParticipationSVG from "@/app/assets/icons/ParticipationSVG";
 import FAQQuestion from "@/app/components/FAQ/FAQQuestion";
 import FAQSectionTitle from "@/app/components/FAQ/FAQSectionTitle";
 import { cabinetBold } from "@/app/utils/fonts";
-import { useState,useEffect,ReactElement,useRef } from "react";
+import { useState, useEffect, ReactElement, useRef } from "react";
 
 interface Section {
   title: string;
@@ -19,7 +19,6 @@ interface Question {
   question: string;
   answer: string;
 }
-
 
 const Faq = () => {
   const [activeSectionIndex, setActiveSectionIndex] = useState<number>(0);
@@ -44,7 +43,13 @@ const Faq = () => {
             "Anyone can participate in DeerHack, regardless of their background or skill level. But do make sure that you have the skill set to make your solution a reality.",
         },
       ],
-      link: <AboutEventSVG className = {`${activeSectionIndex===0  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
+      link: (
+        <AboutEventSVG
+          className={`${
+            activeSectionIndex === 0 ? "fill-secondary" : "fill-[#FCF7FF]"
+          }`}
+        />
+      ),
     },
     {
       title: "Event Logistics",
@@ -65,7 +70,13 @@ const Faq = () => {
             "DeerHack is a team-based event, but don't hesitate to register even if you're alone, we will conduct a pre-event where all the individuals who signed up will be assigned teams respective to their interests and expertise.",
         },
       ],
-      link: <EventLogSVG className = {`${activeSectionIndex===1  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
+      link: (
+        <EventLogSVG
+          className={`${
+            activeSectionIndex === 1 ? "fill-secondary" : "fill-[#FCF7FF]"
+          }`}
+        />
+      ),
     },
     {
       title: "Participation Guidelines",
@@ -86,7 +97,13 @@ const Faq = () => {
             "With our experienced set of guides and mentors. DeerHack will make sure that if you encounter a problem, it will not go unsolved. Just don't be reluctant to reach out to us if you're facing a problem.",
         },
       ],
-      link: <ParticipationSVG className = {`${activeSectionIndex===2  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
+      link: (
+        <ParticipationSVG
+          className={`${
+            activeSectionIndex === 2 ? "fill-secondary" : "fill-[#FCF7FF]"
+          }`}
+        />
+      ),
     },
     {
       title: "Other",
@@ -102,33 +119,43 @@ const Faq = () => {
             "No need to worry. We are available to help and answer any questions you may have. You can send us an email at deerhack@deerwalk.edu.np or contact us through our social media accounts.",
         },
       ],
-      link: <OtherSVG className = {`${activeSectionIndex===3  ? "fill-secondary" : "fill-[#FCF7FF]"}`}/>,
+      link: (
+        <OtherSVG
+          className={`${
+            activeSectionIndex === 3 ? "fill-secondary" : "fill-[#FCF7FF]"
+          }`}
+        />
+      ),
     },
   ];
-  
 
-const handleSectionOnClick = (index:number)=>{
-  setActiveSectionIndex(index); 
-  setExpandedIndex(-1);
-}
+  const handleSectionOnClick = (index: number) => {
+    setActiveSectionIndex(index);
+    setExpandedIndex(-1);
+  };
 
-const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-
-const handleArrowClick = ()=>{
-  if (containerRef.current){
-    containerRef.current.scrollLeft +=250;
-  }
-}
+  const handleArrowClick = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft += 250;
+    }
+  };
 
   return (
-      <div key="faqContainer" className="bg-dark-purple md:w-[70%] w-[80%] pb-24 ">
+    <div
+      key="faqContainer"
+      className="bg-dark-purple md:w-[70%] w-[80%] pb-24 "
+    >
       <div className=" box-border flex flex-col items-center sm:items-center md:flex-row nowrap  w-full justify-between">
         <div className="sm:block md:hidden mb-5" onClick={handleArrowClick}>
-          <ArrowSVG/>
+          <ArrowSVG />
         </div>
-        <div ref={containerRef} className="flex flex-row static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto no-scrollbar md:mb-20 mb-8 ">
-        {sections.map((section, index) => (
+        <div
+          ref={containerRef}
+          className="flex flex-row static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto no-scrollbar md:mb-20 mb-8 "
+        >
+          {sections.map((section, index) => (
             <FAQSectionTitle
               key={index}
               title={section.title}
@@ -140,8 +167,13 @@ const handleArrowClick = ()=>{
         </div>
         <div className="sm:w-[80%] w-[80%] ">
           {sections[activeSectionIndex].questions.map((question, index) => (
-            <FAQQuestion key={index} question={question} index={index} expandedIndex={expandedIndex}
-            setExpandedIndex={setExpandedIndex}/>
+            <FAQQuestion
+              key={index}
+              question={question}
+              index={index}
+              expandedIndex={expandedIndex}
+              setExpandedIndex={setExpandedIndex}
+            />
           ))}
         </div>
       </div>

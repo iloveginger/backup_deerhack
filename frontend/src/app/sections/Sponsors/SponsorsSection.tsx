@@ -9,9 +9,7 @@ export default function SponsorsSection() {
   return (
     <div>
       <div className="mb-[5rem] flex flex-col justify-center items-center">
-        <div
-          className={`mb-8 ${cabinetExtraBold.className} text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
-        >
+        <div className={`mb-8 ${cabinetExtraBold.className} headings`}>
           Our Sponsors
         </div>
         <TitleSponsor image={<NetworkSVG height={100} width={100} />} />

@@ -13,10 +13,11 @@ import teaching from "@/app/assets/images/teaching.jpg";
 import Hero from "@/app/assets/images/Hero.jpg";
 
 export default function ExpectationCards(): ReactElement {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(-1);
 
   const toggleImageIndex = (index: number) => {
-    setCurrentIndex(index);
+    console.log("Expectation cards is triggered");
+    setCurrentIndex((prev) => (prev == index ? -1 : index));
   };
   return (
     <div className="flex lg:flex-row flex-col justify-around w-[90vw] lg:w-[80vw] lg:max-w-[60vw] mx-auto mt-10 items-center lg:items-start gap-5">
@@ -28,6 +29,7 @@ export default function ExpectationCards(): ReactElement {
             title="Fun Games"
             description="Get ready to unleash your competitive spirit and bond with fellow participants in a series of exciting challenges and friendly competitions."
             index={0}
+            isActive={currentIndex == 0}
           />
         </div>
         <div onClick={() => toggleImageIndex(1)}>
@@ -37,6 +39,7 @@ export default function ExpectationCards(): ReactElement {
             index={1}
             imageSrc={teaching}
             description="Dive deep into cutting-edge technologies, sharpen your skills, and gain invaluable insights from industry experts through interactive workshops tailored to enhance your expertise and ignite your innovation."
+            isActive={currentIndex == 1}
           />
         </div>
         <div onClick={() => toggleImageIndex(2)}>
@@ -46,6 +49,7 @@ export default function ExpectationCards(): ReactElement {
             imageSrc={guitar}
             index={2}
             description="Take a break from coding and immerse yourself in the soulful melodies and electrifying beats of live music performances, adding rhythm and energy to your DeerHack experience."
+            isActive={currentIndex == 2}
           />
         </div>
       </div>

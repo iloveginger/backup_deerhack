@@ -11,7 +11,7 @@ export default function SponsorPage(): ReactElement {
           src={leaf_prizes_right}
           alt="leaf"
           height={250}
-          className="absolute right-3 top-46 hidden lg:block -rotate-12"
+          className="absolute right-3 top-46 hidden xl:block -rotate-12"
         />
       </div>
       <div>
@@ -24,7 +24,7 @@ export default function SponsorPage(): ReactElement {
             alt="leaf"
             height={250}
             style={{ transform: "scaleX(-1)" }}
-            className="absolute left-1 top-46 hidden lg:block"
+            className="absolute left-1 top-46 hidden xl:block"
           />
         </div>
       </div>

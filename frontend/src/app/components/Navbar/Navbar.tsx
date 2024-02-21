@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";

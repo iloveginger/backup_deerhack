@@ -13,24 +13,20 @@ export default function ExpectationCard({
   description,
   index,
   imageSrc,
+  isActive,
 }: {
   svg?: ReactElement;
   title?: string;
   description?: string;
   index: number;
   imageSrc: StaticImageData;
+  isActive: boolean;
 }): ReactElement {
-  const [visibility, setVisibility] = useState<boolean>(false);
-
-  const toggleImageVisibility = (): void => {
-    setVisibility((prev) => !prev);
-  };
-
   return (
-    <div onClick={toggleImageVisibility}>
+    <div>
       <div
-        className={`hover:cursor-pointer w-[70vw] lg:w-[30vw] py-8 justify-start px-6 border-grape hover:bg-grape border-[3px] rounded-xl flex flex-col lg:flex-row gap-5 sm:gap-8 expectation_root ${
-          visibility ? "bg-grape" : "bg-dark-purple"
+        className={`hover:cursor-pointer w-[70vw] lg:w-[40rem] py-8 justify-start px-6 border-grape hover:bg-grape border-[3px] rounded-xl flex flex-col lg:flex-row gap-5 sm:gap-8 expectation_root ${
+          isActive ? "bg-grape" : "bg-dark-purple"
         }`}
       >
         <div>{svg}</div>
@@ -44,7 +40,7 @@ export default function ExpectationCard({
             className={`text-white ${
               cabinetRegular.className
             } text-sm md:text-lg expectation_description ${
-              visibility ? "block" : "hidden"
+              isActive ? "block" : "hidden"
             }`}
           >
             {description}
@@ -55,7 +51,7 @@ export default function ExpectationCard({
       {/* Image that comes below the div when clicking, comes only in mobile, hidden in large screens */}
       <div
         className={`${
-          visibility ? "block lg:hidden" : "hidden"
+          isActive ? "block lg:hidden" : "hidden"
         } flex justify-center`}
       >
         <ExpectationImage imageSrc={imageSrc} />

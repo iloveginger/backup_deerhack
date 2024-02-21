@@ -1,6 +1,5 @@
 import Hero from "./sections/home/Hero";
 import Footer from "./components/Footer/Footer";
-import JudgesSection from "./sections/Judges/Judges";
 import PrizesPage from "./pages/Prizes";
 import ExpectationsPage from "./pages/Expectations";
 import AboutTheEventPage from "./pages/AboutTheEventPage";
@@ -11,6 +10,8 @@ import SponsorPage from "./pages/SponsorsPage";
 import RegisterPage from "./pages/RegisterPage";
 import ImageCarouselPage from "./pages/ImageCarouselPage";
 import FAQ from "./pages/FAQ";
+import Judges from "./pages/Judges";
+import Mentors from "./pages/Mentors";
 export default function Home() {
   return (
     <>
@@ -22,10 +23,11 @@ export default function Home() {
       <ExpectationsPage />
       <DeerhackStatsPage />
       <ImageCarouselPage />
-      <JudgesSection />
+      <Judges />
+      <Mentors/>
       <FAQ />
       <SponsorPage />
-      <RegisterPage/>
+      <RegisterPage />
       <Footer />
     </>
   );

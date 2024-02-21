@@ -13,7 +13,7 @@ const AboutTheEventPage = () => {
           src={about_right}
           alt="right leaf"
           height={400}
-          className="absolute top-0 right-0 lg:block hidden"
+          className="absolute top-0 right-0 xl:block hidden"
         />
         <Image
           src={about_left}
@@ -22,11 +22,9 @@ const AboutTheEventPage = () => {
           className="absolute top-1/2 transform -translate-y-1/2 lg:block hidden"
         />
         <div className="py-20 mt-16">
-          <p
-            className={`mb-8 ${cabinetExtraBold.className} text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
-          >
+          <h1 className={`mb-8 ${cabinetExtraBold.className} headings`}>
             About The Event
-          </p>
+          </h1>
           <AboutTheEventCards />I
         </div>
       </div>

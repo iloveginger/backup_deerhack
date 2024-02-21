@@ -12,12 +12,10 @@ export default function BenefitsPage() {
           src={leaf_prizes_right}
           alt="leaf"
           height={250}
-          className="absolute right-3 top-46 hidden lg:block -rotate-12"
+          className="absolute right-3 top-46 hidden xl:block -rotate-12"
         />
       </div>
-      <div
-        className={`${cabinetExtraBold.className}  text-center text-3xl lg:text-5xl text-primary-gradient-color w-fit mx-auto`}
-      >
+      <div className={`${cabinetExtraBold.className}  headings`}>
         Benefits of Participating
       </div>
       <div className="flex justify-center">

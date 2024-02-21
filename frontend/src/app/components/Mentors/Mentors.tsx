@@ -1,22 +1,27 @@
-// import FetchData from "./data";
-import { cabinetBold, satoshiRegular, cabinetRegular } from "@/fonts";
+import React from "react";
+import { cabinetBold, cabinetExtraBold } from "@/fonts";
+import UserEntity from "@/app/types/userentity";
+import UserCard from "../core/UserCard";
+import mentors from "./data";
 
-const Judges = async () => {
+const MentorsList = async () => {
+
   return (
-    <div key="container" className="w-[85%] m-auto py-10">
-      <div key="judgeContainer" className="flex items-center flex-col my-20">
-        <h1
-          className={`bg-gradient-to-r from-primary to-secondary text-4xl bg-clip-text text-transparent font-[800] mb-6 ${cabinetBold.className}`}
-        >
-          Mentors for DeerHack 2024
-        </h1>
-        <div
-          key="JudgeCards"
-          className="flex flex-wrap lg:w-full xl:w-[70%] mt-2 gap-16 justify-center"
-        ></div>
-      </div>
+    <div
+      key="MentorCards"
+      className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-14 gap-16 justify-center"
+    >
+      {mentors.map((mentor: UserEntity) => (
+        <UserCard
+          key={mentor.name}
+          name={mentor.name}
+          position={mentor.position}
+          image={mentor.image}
+          linkedin_url={mentor.linkedin_url}
+        />
+      ))}
     </div>
   );
 };
 
-export default Judges;
+export default MentorsList;

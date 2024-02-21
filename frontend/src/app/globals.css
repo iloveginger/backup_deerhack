@@ -22,7 +22,12 @@
   .font-cabinet-bold {
     font-family: var(--font-cabinet-bold);
   }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
-}
+  }
+
+  .headings {
+    @apply text-center text-3xl lg:text-6xl text-primary-gradient-color w-fit mx-auto px-4 md:px-0;
+  }
 }
