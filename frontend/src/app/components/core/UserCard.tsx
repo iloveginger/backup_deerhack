@@ -17,7 +17,7 @@ const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
             src={image}
             width={300}
             height={375}
-            alt="test"
+            alt={`Image of ${name}`}
             className="rounded-xl object-cover w-full h-full"
           />
         </div>
