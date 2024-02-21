@@ -6,14 +6,6 @@ import Image from "next/image";
 export default function RegisterPage() {
   return (
     <div className="overflow-hidden mb-[3rem]">
-      <div className="relative">
-        <Image
-          src={leaf_prizes_right}
-          alt="leaf"
-          height={250}
-          className="absolute right-3 top-46 hidden xl:block -rotate-12"
-        />
-      </div>
       <Register />
     </div>
   );
