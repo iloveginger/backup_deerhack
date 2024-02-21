@@ -59,10 +59,10 @@ export default function ExpectationCards(): ReactElement {
             currentIndex == 0
               ? expectation_image
               : currentIndex == 1
-              ? teaching
-              : currentIndex == 2
-              ? guitar
-              : expectation_image
+                ? teaching
+                : currentIndex == 2
+                  ? guitar
+                  : expectation_image
           }
         />
       </div>
