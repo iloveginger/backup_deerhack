@@ -1,11 +1,11 @@
-import React from "react";
+// import React from "react";
 import { cabinetBold, cabinetExtraBold } from "@/fonts";
 import UserEntity from "@/app/types/userentity";
 import UserCard from "../core/UserCard";
-import mentors from "./data";
+import FetchMentors from "./data";
 
 const MentorsList = async () => {
-
+  const mentors = await FetchMentors();
   return (
     <div
       key="MentorCards"

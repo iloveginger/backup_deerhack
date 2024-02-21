@@ -1,29 +1,33 @@
-import { BACKEND_URL ,SERVER_URL} from "@/app/utils/config";
+import { BACKEND_URL, SERVER_URL } from "@/app/utils/config";
 import UserEntity from "@/app/types/userentity";
 
-let mentors: UserEntity[] = [];
+const transformMentorData = (mentor: any) => ({
+  name: mentor.attributes.name,
+  position: mentor.attributes.position,
+  image: SERVER_URL + mentor.attributes.image.data.attributes.url,
+  linkedin_url: mentor.attributes.linkedin_url,
+});
 
-
-const FetchData=async ()=> {
+const fetchData = async () => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/mentors?populate=image`, {
       cache: "no-store",
     });
-    const data = await response.json();
-    for (let mentor of data.data) {
-      let entity: UserEntity = {
-        name: mentor.attributes.name,
-        position: mentor.attributes.position,
-        image: SERVER_URL + mentor.attributes.image.data.attributes.url,
-        linkedin_url: mentor.attributes.linkedin_url,
-      };
-      mentors.push(entity);
+
+    if (!response.ok) {
+      console.log(`Failed to fetch data. Status: ${response.status}`);
+      return [];
     }
+
+    const data = await response.json();
+
+    const mentors: UserEntity[] = data.data.map(transformMentorData);
+
     return mentors;
-  } catch (error){
+  } catch (error) {
+    console.error("Error fetching judges");
     return [];
   }
-}
+};
 
-let mentors_list = FetchData();
-export default mentors; 
+export default fetchData;
