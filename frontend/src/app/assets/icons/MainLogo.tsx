@@ -9,6 +9,8 @@ export default function MainLogo({
 }) {
   return (
     <svg
+      width={width}
+      height={height}
       className={className}
       viewBox="0 0 343 152"
       fill="none"

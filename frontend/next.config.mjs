@@ -2,14 +2,14 @@
 const nextConfig = {
   output: "standalone",
   images: {
-    unoptimized:true,
+    unoptimized: true,
     domains: ["localhost", "deerwalk.edu.np", "54.164.230.35"],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/photo-*',
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/photo-*",
       },
       // {
       //   protocol:"http",
@@ -23,7 +23,7 @@ const nextConfig = {
       //   port:'',
       //   pathname:'/*'
       // }
-    ]
+    ],
   },
 };
 

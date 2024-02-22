@@ -8,26 +8,16 @@ export default function SponsorPage(): ReactElement {
     <div className="overflow-hidden">
       <div className="relative">
         <Image
-          src={leaf_prizes_right}
+          src={leaf_deerhack2023_right}
           alt="leaf"
           height={250}
-          className="absolute right-3 top-46 hidden xl:block -rotate-12"
+          className="absolute right-3 top-52 hidden xl:block"
         />
       </div>
       <div>
         <SponsorsSection />
       </div>
-      <div className="h-40">
-        <div className="relative h-fit">
-          <Image
-            src={leaf_deerhack2023_right}
-            alt="leaf"
-            height={250}
-            style={{ transform: "scaleX(-1)" }}
-            className="absolute left-1 top-46 hidden xl:block"
-          />
-        </div>
-      </div>
+      <div className="h-40"></div>
     </div>
   );
 }

@@ -147,13 +147,13 @@ const Faq = () => {
       key="faqContainer"
       className="bg-dark-purple md:w-[70%] w-[80%] pb-24 "
     >
-      <div className=" box-border flex flex-col items-center sm:items-start md:flex-row nowrap  w-full justify-between">
+      <div className=" box-border flex flex-col items-center md:items-start md:flex-row nowrap  w-full justify-between">
         <div className="sm:block md:hidden mb-5" onClick={handleArrowClick}>
           <ArrowSVG />
         </div>
         <div
           ref={containerRef}
-          className="flex flex-row static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto no-scrollbar md:mb-20 mb-8 "
+          className="flex flex-row static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto md:overflow-hidden no-scrollbar md:mb-20 mb-8 "
         >
           {sections.map((section, index) => (
             <FAQSectionTitle
