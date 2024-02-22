@@ -26,7 +26,7 @@ const TracksCard = () => {
           : "bg-violet hover:bg-grape hover:text-magnolia",
       bodyStyling: "bg-grape text-magnolia",
       description:
-        "The track is about the development of interactive technology and its applications in various fields.",
+        "Enter the World of IoT with DeerHack. Explore connectivity, innovation, and the future of global interaction.",
     },
     {
       title: "Data Science / Machine Learning",
@@ -38,7 +38,7 @@ const TracksCard = () => {
           : "bg-violet hover:bg-purpures hover:text-magnolia",
       bodyStyling: "bg-purpures text-magnolia",
       description:
-        "The track is about the development of data science and machine learning and their applications in various fields.",
+        "Dive deep into the captivating realm of Data Analysis and Predictive Modeling, Leveraging algorithms to extract meaningful patterns and trends",
     },
     {
       title: "Blockchain",
@@ -50,7 +50,7 @@ const TracksCard = () => {
           : "bg-violet hover:bg-magnolia hover:text-dark-purple",
       bodyStyling: "bg-magnolia text-dark-purple",
       description:
-        "The track is about the development of blockchain technology and its applications in various fields.",
+        "Embrace Decentralization with DeerHack. Explore smart contracts, secure transactions, and reshape industries at the forefront of innovation.",
     },
     {
       title: "Open Innovation",
@@ -62,7 +62,7 @@ const TracksCard = () => {
           : "bg-violet hover:bg-secondary hover:text-dark-purple",
       bodyStyling: "bg-secondary text-dark-purple",
       description:
-        "The track is about fostering open innovation and collaboration across various domains.",
+        "Transforming Challenges into Opportunities at DeerHack. Be part of the solution, forging a brighter future for all.",
     },
   ];
 

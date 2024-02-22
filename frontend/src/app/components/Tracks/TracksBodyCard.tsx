@@ -3,6 +3,7 @@ import {
   cabinetBold,
   cabinetExtraBold,
   cabinetRegular,
+  cabinetMedium,
 } from "@/app/utils/fonts";
 
 interface TracksBodyCardProps {
@@ -33,7 +34,7 @@ const TracksBodyCard: React.FC<TracksBodyCardProps> = ({
             {title}
           </p>
           <span
-            className={`lg:text-xl text-lg xl:mt-10 mt-4 ${cabinetRegular.className}`}
+            className={`lg:text-xl text-lg xl:mt-10 mt-4 ${cabinetMedium.className}`}
           >
             {description}
           </span>
