@@ -21,7 +21,9 @@ const Navbar = () => {
   };
 
   return (
+    
     <nav className={`flex flex-row  gap-x-28 gap-y-8 py-4 lg:px-[120px] items-start ${isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"}`}>
+
       <div className="flex justify-between items-start w-full lg:w-auto md:px-10 sm:px-16">
         <Link href={"/"}>
           <DeerhackLogo />
