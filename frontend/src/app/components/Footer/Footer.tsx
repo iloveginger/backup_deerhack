@@ -60,23 +60,21 @@ export default function Footer(): ReactElement {
                   <Link href="">
                     <FacebookSVG />
                   </Link>
-                  
                 </span>
                 <span className="w-[20px] cursor-pointer">
-                <Link href="">
-                  <InstagramSVG />
+                  <Link href="">
+                    <InstagramSVG />
                   </Link>
                 </span>
                 <span className="w-[20px] cursor-pointer">
-                <Link href="">
-                  <DiscordSVG />
+                  <Link href="">
+                    <DiscordSVG />
                   </Link>
-
                 </span>
                 <span className="w-[20px] cursor-pointer">
-                <Link href="">
-                  <LinkedInSVG />
-                </Link>
+                  <Link href="">
+                    <LinkedInSVG />
+                  </Link>
                 </span>
               </div>
             </div>
