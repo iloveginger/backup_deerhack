@@ -1,8 +1,17 @@
-const FooterGrapicSVG = ({ className }: { className: string }) => {
+const FooterGrapicSVG = ({width = 1535,
+  height = 295,
+  className = "",
+}: {
+  width?: number;
+  height?: number;
+  className?: string;
+}) => {
   return (
     <svg
       className={className}
       viewBox="0 0 1536 295"
+      width = {width}
+      height = {height}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

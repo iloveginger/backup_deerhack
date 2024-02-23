@@ -125,7 +125,7 @@ export default function Footer(): ReactElement {
         </span>
       </div>
       <div className="w-full">
-        <FooterGrapicSVG className="hidden lg:block w-fit" />
+        <FooterGrapicSVG className="hidden lg:block max-w-screen h-fit" />
       </div>
       <div className="lg:hidden w-full">
         <FooterMobileSVG className="w-fit" />
