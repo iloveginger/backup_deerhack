@@ -56,22 +56,22 @@ export default function Footer(): ReactElement {
                 Visit Our Socials
               </p>
               <div className="flex gap-7">
-                <span className=" w-[20px] px-0 cursor-pointer">
+                <span className=" w-[25px] px-0">
                   <Link href="">
                     <FacebookSVG />
                   </Link>
                 </span>
-                <span className="w-[20px] cursor-pointer">
+                <span className="w-[25px]">
                   <Link href="">
                     <InstagramSVG />
                   </Link>
                 </span>
-                <span className="w-[20px] cursor-pointer">
+                <span className="w-[25px]">
                   <Link href="">
                     <DiscordSVG />
                   </Link>
                 </span>
-                <span className="w-[20px] cursor-pointer">
+                <span className="w-[25px]">
                   <Link href="">
                     <LinkedInSVG />
                   </Link>
