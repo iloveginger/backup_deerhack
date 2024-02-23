@@ -55,7 +55,7 @@ export default function Footer(): ReactElement {
               >
                 Visit Our Socials
               </p>
-              <div className="flex gap-7">
+              <div className="flex gap-4">
                 <span className=" w-[25px] px-0">
                   <Link href="">
                     <FacebookSVG />
