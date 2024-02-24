@@ -34,7 +34,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="relative flex justify-center ">
       <HeroIcon className="w-screen h-fit mt-5 " />
       <div className="absolute gap-[30px] top-[90px] flex flex-col text-center lg:top-48">
         <p className={`${textSize} font-bold text-secondary ${cabinetBold.className}`}>
