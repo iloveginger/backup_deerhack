@@ -1,7 +1,17 @@
-const FooterMobileSVG = ({ className }: { className: string }) => {
+const FooterMobileSVG = ({
+  className,
+  height = 149,
+  width = 374,
+}: {
+  className?: string;
+  width?: number;
+  height?: number;
+}) => {
   return (
     <svg
       className={className}
+      width={width}
+      height={height}
       viewBox="0 0 374 149"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

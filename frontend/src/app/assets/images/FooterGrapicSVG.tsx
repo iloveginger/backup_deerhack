@@ -1,4 +1,5 @@
-const FooterGrapicSVG = ({width = 1535,
+const FooterGrapicSVG = ({
+  width = 1536,
   height = 295,
   className = "",
 }: {
@@ -8,11 +9,11 @@ const FooterGrapicSVG = ({width = 1535,
 }) => {
   return (
     <svg
+      width={width}
+      height={height}
+      fill="none"
       className={className}
       viewBox="0 0 1536 295"
-      width = {width}
-      height = {height}
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0_750_1066)">
