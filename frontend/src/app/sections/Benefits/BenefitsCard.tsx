@@ -4,6 +4,10 @@ import NetworkSVG from "@/app/assets/images/network";
 import IdeaSVG from "@/app/assets/images/idea";
 import OpportunitiesSVG from "@/app/assets/images/opportunities";
 import PuzzleSVG from "@/app/assets/images/puzzle";
+import UpdatedDevelopmentSVG from "@/app/assets/images/Updated_Development";
+import UpdatedIdeasSVG from "@/app/assets/images/Updated_ideas";
+import UpdatedNetwrokSVG from "@/app/assets/images/Updated_Network";
+import UpdatedOpportunitiesSVG from "@/app/assets/images/Updated_Opportunities";
 
 export default function BenefitsCards() {
   return (
@@ -12,12 +16,12 @@ export default function BenefitsCards() {
         <CardDark
           title="Build a Powerful Network"
           description="DeerHack is the perfect platform to find like-minded people and build your connections."
-          svg={<NetworkSVG height={100} width={100} />}
+          svg={<UpdatedNetwrokSVG height={100} width={100} />}
         />
         <CardLight
           title="Career Opportunities"
           description="Showcase talents, gain hands-on experience, and develop crucial skills like problem-solving and teamwork for career success."
-          svg={<OpportunitiesSVG />}
+          svg={<UpdatedOpportunitiesSVG />}
         />
       </div>
 
@@ -25,12 +29,12 @@ export default function BenefitsCards() {
         <CardLight
           title="Support for Your Ideas"
           description="DeerHack is dedicated to fostering ideas that drive global change and provide new solutions."
-          svg={<IdeaSVG />}
+          svg={<UpdatedIdeasSVG />}
         />
         <CardDark
           title="Interpersonal Development"
           description="Embrace the challenge at DeerHack and watch as your interpersonal skills evolve under pressure, transforming you into a more resilient and effective collaborator."
-          svg={<PuzzleSVG height={100} width={100} />}
+          svg={<UpdatedDevelopmentSVG height={100} width={100} />}
         />
       </div>
     </div>
