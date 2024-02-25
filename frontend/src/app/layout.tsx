@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 
@@ -29,7 +28,7 @@ export const metadata = {
     siteName: "Deerhack 2024 - Fawning Over Innovation",
     images: [
       {
-        url: "https://deerhack.deerwalk.edu.np/banner.webp",
+        url: "/banner.webp",
         width: 400,
         height: 250,
         alt: "Deerhack 2024 Banner",
@@ -43,7 +42,7 @@ export const metadata = {
     title: "Deerhack 2024",
     description:
       "DeerHack 2024 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
-    images: ["https://deerhack.deerwalk.edu.np/banner.webp"],
+    images: ["/banner.webp"],
   },
   category: "technology",
 };

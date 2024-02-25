@@ -22,12 +22,16 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex flex-row  gap-x-28 gap-y-8 py-4 lg:px-[120px] items-start ${isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"}`}
+      className={`flex flex-row justify-${
+        isMenuOpen ? "" : "evenly"
+      } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
+        isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
+      }`}
     >
-      <div className="flex justify-between items-start w-full lg:w-auto md:px-10 sm:px-16">
-        <Link href={"/"}>
-          <DeerhackLogo />
-        </Link>
+      <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
+        <a href="/">
+          <DeerhackLogo width="50" height="50" />
+        </a>
         <button
           onClick={toggleMenu}
           className="lg:hidden mt-2 md:mt-2 lg:right-0"
@@ -41,7 +45,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`lg:flex lg:items-between ${isMenuOpen ? cabinetMedium.className + " block " : "hidden"} `}
+        className={`lg:flex lg:items-between ${
+          isMenuOpen ? cabinetMedium.className + " block " : "hidden"
+        } `}
       >
         <Counter />
       </div>
