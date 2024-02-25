@@ -21,10 +21,15 @@ const Navbar = () => {
   };
 
   return (
-
-<nav className={`flex flex-row justify-${isMenuOpen ? "" : "evenly"} lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"}`}>
+    <nav
+      className={`flex flex-row justify-${
+        isMenuOpen ? "" : "evenly"
+      } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
+        isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
+      }`}
+    >
       <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
-        <Link href={"/"}>
+        <Link href="/">
           <DeerhackLogo width="50" height="50" />
         </Link>
         <button
@@ -40,17 +45,21 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`lg:flex lg:items-between ${isMenuOpen ? cabinetMedium.className + " block " : "hidden"} `}
+        className={`lg:flex lg:items-between ${
+          isMenuOpen ? cabinetMedium.className + " block " : "hidden"
+        } `}
       >
         <Counter />
       </div>
 
       <div
-        className={`lg:flex ${cabinetBold.className
-          } lg:flex-row lg:items-between mt-4 lg:gap-10  ${isMenuOpen
+        className={`lg:flex ${
+          cabinetBold.className
+        } lg:flex-row lg:items-between mt-4 lg:gap-10  ${
+          isMenuOpen
             ? cabinetMedium.className + " flex-col mt-5 text-2xl space-y-5"
             : "hidden"
-          } font-[16px] text-magnolia`}
+        } font-[16px] text-magnolia`}
       >
         <Link
           href="/schedule"
@@ -80,8 +89,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`lg:flex lg:items-between ${isMenuOpen ? cabinetMedium.className + " block" : "hidden"
-          } `}
+        className={`lg:flex lg:items-between ${
+          isMenuOpen ? cabinetMedium.className + " block" : "hidden"
+        } `}
       >
         <Link href="/register">
           <button

@@ -17,7 +17,7 @@ export default function NotFound() {
         </p>
         <Link
           className={`bg-secondary w-48 ${cabinetExtraBold.className} text-center py-3 px-4 text-lg rounded-md`}
-          href={`/`}
+          href="/"
         >
           Go Back to home
         </Link>
