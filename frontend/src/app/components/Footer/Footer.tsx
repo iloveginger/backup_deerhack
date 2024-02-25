@@ -119,7 +119,7 @@ export default function Footer(): ReactElement {
           </div>
         </div>
         <span
-          className={`text-white flex justify-center text-xs/[24px] md:text-sm/[24px] font-[500] ${cabinetRegular.className}`}
+          className={`text-white flex text-xs/[24px] md:text-sm/[24px] font-[500] ${cabinetRegular.className}`}
         >
           All Rights Reserved © DWIT Software Club 2024
         </span>
