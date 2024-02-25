@@ -2,6 +2,6 @@
  * sponsor controller
  */
 
-import { factories } from '@strapi/strapi'
+import { factories } from "@strapi/strapi";
 
-export default factories.createCoreController('api::sponsor.sponsor');
+export default factories.createCoreController("api::sponsor.sponsor");

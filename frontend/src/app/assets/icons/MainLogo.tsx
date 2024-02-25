@@ -1,9 +1,17 @@
-export default function MainLogo() {
+export default function MainLogo({
+  height = 100,
+  width = 100,
+  className = "",
+}: {
+  height?: number;
+  width?: number;
+  className?: string;
+}) {
   return (
     <svg
-      className="absolute top-60 hidden xl:block"
-      width="340"
-      height="150"
+      width={width}
+      height={height}
+      className={className}
       viewBox="0 0 343 152"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

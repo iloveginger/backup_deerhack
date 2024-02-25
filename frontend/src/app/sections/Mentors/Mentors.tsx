@@ -1,8 +1,7 @@
-import MentorsList from "@/app/components/Mentors/Mentors"
+import MentorsList from "@/app/components/Mentors/Mentors";
 
+const MentorsSection = () => {
+  return <MentorsList />;
+};
 
-const MentorsSection = () =>{
-    return (<MentorsList/>)
-}
-
-export default MentorsSection
+export default MentorsSection;

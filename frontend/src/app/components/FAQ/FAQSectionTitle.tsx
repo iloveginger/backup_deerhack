@@ -16,7 +16,7 @@ const FAQSectionTitle: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`cursor-pointer min-w-56 w-96 flex flex-row mb-2 items-center ${
+      className={`cursor-pointer min-w-56 text-[20px] md:text-[28px]  flex flex-row mb-2 items-center ${
         isActive ? "text-secondary" : "text-white"
       }`}
       onClick={onClick}

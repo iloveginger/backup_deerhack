@@ -30,7 +30,7 @@ const FAQQuestion: React.FC<Props> = ({
   return (
     <div className="flex flex-col justify-center items-start bg-dark-purple text-white text-lg md:text-xl  border-b border-secondary mb-5">
       <button
-        className={`flex items-center justify-between text-left gap-8 py-2 w-full md:mb-2 md-1 ${cabinetBold.className}`}
+        className={`flex items-center justify-between text-left text-2xl md:text-3xl gap-8 py-2 w-full md:mb-2 md-1 ${cabinetBold.className}`}
         onClick={toggleAnswerVisibility}
       >
         {question.question}
@@ -54,7 +54,7 @@ const FAQQuestion: React.FC<Props> = ({
       >
         {isExpanded && (
           <p
-            className={`text-sm ${cabinetRegular.className} transition-opacity ease-in-out duration-400`}
+            className={`text-base ${cabinetRegular.className} transition-opacity ease-in-out duration-400`}
           >
             {question.answer}
           </p>

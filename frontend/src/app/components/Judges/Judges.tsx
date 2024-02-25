@@ -1,16 +1,17 @@
-import React from "react";
+// import React from "react";
 import { cabinetBold, cabinetExtraBold } from "@/fonts";
 import UserEntity from "@/app/types/userentity";
 import UserCard from "../core/UserCard";
-import judges_real from "./data";
+import JudgesFetcher from "./data";
 
 const JudgesList = async () => {
+  const judges = await JudgesFetcher();
   return (
     <div
       key="JudgeCards"
       className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-14 gap-16 justify-center"
     >
-      {judges_real.map((judge: UserEntity) => (
+      {judges.map((judge: UserEntity) => (
         <UserCard
           key={judge.name}
           name={judge.name}
