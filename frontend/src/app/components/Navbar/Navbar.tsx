@@ -29,9 +29,9 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
-        <Link href="/">
+        <a href="/">
           <DeerhackLogo width="50" height="50" />
-        </Link>
+        </a>
         <button
           onClick={toggleMenu}
           className="lg:hidden mt-2 md:mt-2 lg:right-0"
