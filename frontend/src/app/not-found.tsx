@@ -13,7 +13,7 @@ export default function NotFound() {
         <p
           className={`${cabinetExtraBold.className} text-primary-gradient-color-reverse w-fit text-5xl text-center`}
         >
-          Nobody Seems to be here
+          Nobody Seems to be here!
         </p>
         <Link
           className={`bg-secondary w-48 ${cabinetExtraBold.className} text-center py-3 px-4 text-lg rounded-md`}
