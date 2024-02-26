@@ -143,17 +143,14 @@ const Faq = () => {
   };
 
   return (
-    <div
-      key="faqContainer"
-      className="bg-dark-purple md:w-[70%] w-[80%] pb-32"
-    >
-      <div className=" box-border flex flex-col items-center md:items-start md:flex-row nowrap  w-full justify-between">
+    <div key="faqContainer" className="bg-dark-purple md:w-[70%] w-[80%] pb-32">
+      <div className=" box-border flex flex-col items-end sm:items-center md:items-start md:flex-row nowrap  w-full justify-between">
         <div className="sm:block md:hidden mb-5" onClick={handleArrowClick}>
           <ArrowSVG />
         </div>
         <div
           ref={containerRef}
-          className="flex flex-row static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto md:overflow-hidden no-scrollbar md:mb-20 mb-8 "
+          className="flex flex-row  mx-auto static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto md:overflow-hidden no-scrollbar md:mb-20 mb-8 "
         >
           {sections.map((section, index) => (
             <FAQSectionTitle
@@ -165,7 +162,7 @@ const Faq = () => {
             />
           ))}
         </div>
-        <div className="sm:w-[80%] w-[80%] ">
+        <div className="sm:w-[80%] w-[80%] mx-auto ">
           {sections[activeSectionIndex].questions.map((question, index) => (
             <FAQQuestion
               key={index}
