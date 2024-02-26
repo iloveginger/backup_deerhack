@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import { cabinetBlack, cabinetBold, cabinetExtraBold } from "./utils/fonts";
 import { redirect } from "next/navigation";
+import GoBackToHome from "./components/GoBack/GoBackToHome";
 
 export default function NotFound() {
   return (
@@ -18,12 +19,7 @@ export default function NotFound() {
         >
           Nobody Seems to be here!
         </p>
-        <a
-          className={`bg-secondary w-48 ${cabinetExtraBold.className} text-center py-3 px-4 text-lg rounded-md`}
-          href="/"
-        >
-          Go Back to home
-        </a>
+        <GoBackToHome/>
       </div>
     </div>
   );
