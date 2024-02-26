@@ -19,6 +19,10 @@
     @apply bg-gradient-to-bl from-primary from-1% to-secondary bg-clip-text text-transparent;
   }
 
+  .text-secondary-gradient-color-reverse {
+    @apply bg-gradient-to-tl from-secondary from-1% to-primary bg-clip-text text-transparent;
+  }
+
   .font-cabinet-light {
     font-family: var(--font-cabinet-light);
   }
