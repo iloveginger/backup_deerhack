@@ -55,7 +55,7 @@ export default function Footer(): ReactElement {
               >
                 Visit Our Socials
               </p>
-              <div className="flex gap-7">
+              <div className="flex gap-4">
                 <span className=" w-[25px] px-0">
                   <Link href="">
                     <FacebookSVG />
@@ -119,16 +119,16 @@ export default function Footer(): ReactElement {
           </div>
         </div>
         <span
-          className={`text-white flex justify-center text-xs/[24px] md:text-sm/[24px] font-[500] ${cabinetRegular.className}`}
+          className={`text-white flex text-xs/[24px] md:text-sm/[24px] font-[500] ${cabinetRegular.className}`}
         >
           All Rights Reserved © DWIT Software Club 2024
         </span>
       </div>
       <div className="w-full">
-        <FooterGrapicSVG className="hidden lg:block w-fit" />
+        <FooterGrapicSVG className="hidden lg:block w-full lg:h-fit" />
       </div>
       <div className="lg:hidden w-full">
-        <FooterMobileSVG className="w-fit" />
+        <FooterMobileSVG className="w-full h-fit" />
       </div>
     </div>
   );
