@@ -851,6 +851,40 @@ export interface ApiMentorMentor extends Schema.CollectionType {
   };
 }
 
+export interface ApiOrganizerOrganizer extends Schema.CollectionType {
+  collectionName: 'organizers';
+  info: {
+    singularName: 'organizer';
+    pluralName: 'organizers';
+    displayName: 'Organizer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    position: Attribute.String;
+    description: Attribute.String;
+    linkedin_url: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::organizer.organizer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::organizer.organizer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSponsorSponsor extends Schema.CollectionType {
   collectionName: 'sponsors';
   info: {
@@ -925,6 +959,69 @@ export interface ApiSponsorTypeSponsorType extends Schema.CollectionType {
   };
 }
 
+export interface ApiTeamTeam extends Schema.CollectionType {
+  collectionName: 'teams';
+  info: {
+    singularName: 'team';
+    pluralName: 'teams';
+    displayName: 'Team';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    organizers: Attribute.Relation<
+      'api::team.team',
+      'oneToMany',
+      'api::organizer.organizer'
+    >;
+    order: Attribute.Integer;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::team.team', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::team.team', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiVolunteerVolunteer extends Schema.CollectionType {
+  collectionName: 'volunteers';
+  info: {
+    singularName: 'volunteer';
+    pluralName: 'volunteers';
+    displayName: 'Volunteer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    description: Attribute.String;
+    position: Attribute.String;
+    linkedin_url: Attribute.String;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::volunteer.volunteer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::volunteer.volunteer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -945,8 +1042,11 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::judge.judge': ApiJudgeJudge;
       'api::mentor.mentor': ApiMentorMentor;
+      'api::organizer.organizer': ApiOrganizerOrganizer;
       'api::sponsor.sponsor': ApiSponsorSponsor;
       'api::sponsor-type.sponsor-type': ApiSponsorTypeSponsorType;
+      'api::team.team': ApiTeamTeam;
+      'api::volunteer.volunteer': ApiVolunteerVolunteer;
     }
   }
 }
