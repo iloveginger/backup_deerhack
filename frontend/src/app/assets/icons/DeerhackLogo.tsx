@@ -1,7 +1,7 @@
 export default function DeerhackLogo({
   height = "40",
   width = "40",
-}:{
+}: {
   height?: string;
   width?: string;
 }) {
