@@ -35,7 +35,7 @@ const Hero = () => {
       {
         window.innerWidth < 576 ?
           <HomeNewHero className=" object-fit w-screen h-fit " /> :
-          <HeroIcon className="w-screen h-fit mt-5 " />
+          <HeroIcon className="w-screen h-fit" />
       }
       <div className="absolute gap-[30px] top-[90px] flex flex-col text-center lg:top-48">
         <p
