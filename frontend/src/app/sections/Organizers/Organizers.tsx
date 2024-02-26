@@ -27,6 +27,7 @@ export default async function Organizers() {
               <div className="flex justify-center flex-wrap items-center gap-x-6 mb-20">
                 {team.organizers.map((organizer, index) => (
                   <UserCard
+                    key={index}
                     image={organizer.image}
                     linkedin_url={organizer.linkedin_url}
                     name={organizer.name}
@@ -37,7 +38,7 @@ export default async function Organizers() {
               <div className="flex flex-wrap justify-center items-center align-middle gap-x-6 gap-y-3">
                 {team.organizers.map((organizer, index) =>
                   index == 0 ? (
-                    <div className="w-full">
+                    <div className="w-full" key={index}>
                       <UserCard
                         image={organizer.image}
                         linkedin_url={organizer.linkedin_url}
@@ -46,6 +47,7 @@ export default async function Organizers() {
                     </div>
                   ) : (
                     <UserCard
+                      key={index}
                       image={organizer.image}
                       linkedin_url={organizer.linkedin_url}
                       name={organizer.name}
