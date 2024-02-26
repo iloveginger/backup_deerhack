@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 export const metadata = {
   metadataBase: "https://deerhack.deerwalk.edu.np",
@@ -59,6 +60,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

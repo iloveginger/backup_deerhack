@@ -1,6 +1,7 @@
 type UserEntity = {
+  id?: number;
   name: string;
-  position: string;
+  position?: string;
   image: string;
   linkedin_url: string;
 };
