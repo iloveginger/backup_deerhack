@@ -12,7 +12,7 @@ export default function ExpectationImage({
       <div className="absolute bottom-3 left-2 z-[5] rounded-lg h-full w-full">
         <Image
           src={imageSrc}
-          alt="Placeholder"
+          alt="Some Fun Games Played at Deerhack 2023"
           fill
           priority
           className="object-cover rounded-lg"
