@@ -11,7 +11,7 @@ export default async function Organizers() {
   return (
     <div className="pb-9">
       <h1
-        className={`headings ${cabinetExtraBold.className} text-4xl mb-16 pt-32`}
+        className={`headings ${cabinetExtraBold.className} text-5xl mb-16 pt-32`}
       >
         Meet The Organizers
       </h1>
@@ -52,7 +52,7 @@ export default async function Organizers() {
                       linkedin_url={organizer.linkedin_url}
                       name={organizer.name}
                     />
-                  )
+                  ),
                 )}
               </div>
             )}

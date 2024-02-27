@@ -13,7 +13,7 @@ import teaching from "@/app/assets/images/teaching.jpg";
 import Hero from "@/app/assets/images/Hero.jpg";
 
 export default function ExpectationCards(): ReactElement {
-  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const toggleImageIndex = (index: number) => {
     console.log("Expectation cards is triggered");

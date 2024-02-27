@@ -11,7 +11,7 @@ export default function CardMedium() {
           Total Applicants
         </p>
       </div>
-      <p className={`${cabinetRegular.className} text-white text-4xl`}>983</p>
+      <p className={`${cabinetRegular.className} text-white text-4xl`}>1107</p>
     </div>
   );
 }
