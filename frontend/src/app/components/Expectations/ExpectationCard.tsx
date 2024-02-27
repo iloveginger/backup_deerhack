@@ -1,10 +1,7 @@
 "use client";
 import { ReactElement } from "react";
-import FunGamesSVG from "@/app/assets/images/funGames";
 import { cabinetBlack, cabinetRegular, cabinetBold } from "@/app/utils/fonts";
-import styles from "./styles.module.css";
 import ExpectationImage from "./ExpectationImage";
-import { useState } from "react";
 import { StaticImageData } from "next/image";
 
 export default function ExpectationCard({
