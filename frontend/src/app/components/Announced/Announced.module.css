@@ -1,0 +1,16 @@
+.announced_background_container {
+    background-image: url("../../assets/images/Hero.webp");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .announced_background_container {
+        background-position: left;
+
+    }
+}
