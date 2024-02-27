@@ -13,12 +13,10 @@ const Hero = () => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         setLogoSize({ width: 200, height: 87 });
-        setTextSize('text-lg');
-      }
-
-      else {
+        setTextSize("text-lg");
+      } else {
         setLogoSize({ width: 345, height: 150 });
-        setTextSize('text-3xl');
+        setTextSize("text-3xl");
       }
     };
 
@@ -32,11 +30,11 @@ const Hero = () => {
 
   return (
     <div className="relative flex justify-center ">
-      {
-        window.innerWidth < 576 ?
-          <HomeNewHero className=" object-fit w-screen h-fit " /> :
-          <HeroIcon className="w-screen h-fit" />
-      }
+      {window.innerWidth < 576 ? (
+        <HomeNewHero className=" object-fit w-screen h-fit " />
+      ) : (
+        <HeroIcon className="w-screen h-fit" />
+      )}
       <div className="absolute gap-[30px] top-[90px] flex flex-col text-center lg:top-48">
         <p
           className={`${textSize} font-bold text-secondary ${cabinetBold.className}`}
