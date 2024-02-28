@@ -9,7 +9,7 @@ const Counter = () => {
     minutes: number;
     seconds: number;
   } => {
-    const countDownDate = new Date("Apr 26, 2024 00:00:00").getTime();
+    const countDownDate = new Date("May 10, 2024 00:00:00").getTime();
     const now = new Date().getTime();
     const timeLeft = countDownDate - now;
     return {

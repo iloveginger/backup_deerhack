@@ -31,8 +31,8 @@ const config: Config = {
         lg: "1280px",
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 40s linear infinite",
-        "inf-scroll": "inf-scroll 40s linear infinite",
+        "infinite-scroll": "infinite-scroll 50s linear infinite",
+        "inf-scroll": "inf-scroll 50s linear infinite",
       },
       keyframes: {
         "infinite-scroll": {
