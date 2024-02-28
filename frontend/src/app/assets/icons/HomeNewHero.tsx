@@ -811,35 +811,35 @@ export default function HomeNewHero({
           <path
             d="M54.0434 506.413L160.236 465.226"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
           <path
             d="M54.5948 507.926L160.731 466.67"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
           <path
             d="M55.1172 509.296L161.202 468.056"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
           <path
             d="M55.5836 510.627L161.748 469.608"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
           <path
             d="M56.0765 512.009L162.2 470.972"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -852,7 +852,7 @@ export default function HomeNewHero({
             d="M55.6991 512.009C55.6991 511.806 55.8644 511.642 56.0683 511.642C56.2723 511.642 56.4376 511.806 56.4376 512.009C56.4376 512.212 56.2723 512.376 56.0683 512.376C55.8644 512.376 55.6991 512.212 55.6991 512.009Z"
             fill="#5329A6"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -860,7 +860,7 @@ export default function HomeNewHero({
             d="M55.2458 510.61C55.2458 510.407 55.4111 510.243 55.6146 510.243C55.8186 510.243 55.9839 510.407 55.9839 510.61C55.9839 510.813 55.8186 510.977 55.6146 510.977C55.4111 510.977 55.2458 510.813 55.2458 510.61Z"
             fill="#5329A6"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -868,7 +868,7 @@ export default function HomeNewHero({
             d="M54.7483 509.277C54.7483 509.075 54.9136 508.91 55.1171 508.91C55.3211 508.91 55.4864 509.075 55.4864 509.277C55.4864 509.48 55.3211 509.644 55.1171 509.644C54.9136 509.644 54.7483 509.48 54.7483 509.277Z"
             fill="#5329A6"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -876,7 +876,7 @@ export default function HomeNewHero({
             d="M54.2831 507.917C54.2831 507.715 54.4484 507.551 54.6523 507.551C54.8563 507.551 55.0216 507.715 55.0216 507.917C55.0216 508.12 54.8563 508.284 54.6523 508.284C54.4484 508.284 54.2831 508.12 54.2831 507.917Z"
             fill="#5329A6"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -884,7 +884,7 @@ export default function HomeNewHero({
             d="M53.7744 506.381C53.7744 506.178 53.9397 506.014 54.1433 506.014C54.3472 506.014 54.5125 506.178 54.5125 506.381C54.5125 506.584 54.3472 506.748 54.1433 506.748C53.9397 506.748 53.7744 506.584 53.7744 506.381Z"
             fill="#5329A6"
             stroke="#855ED3"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -951,7 +951,7 @@ export default function HomeNewHero({
           <path
             d="M76.7449 437.919C76.7449 437.919 79.3554 435.249 81.7513 437.872"
             stroke="#100C25"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -959,7 +959,7 @@ export default function HomeNewHero({
             d="M64.1753 438.708C64.1753 435.216 67.0061 432.385 70.4977 432.385C73.9893 432.385 76.8197 435.216 76.8197 438.708C76.8197 442.201 73.9893 445.032 70.4977 445.032C67.0061 445.032 64.1753 442.201 64.1753 438.708Z"
             fill="url(#paint69_linear_1690_5650)"
             stroke="#100C25"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -967,7 +967,7 @@ export default function HomeNewHero({
             d="M81.6616 438.844C81.6616 435.352 84.492 432.521 87.9837 432.521C91.4757 432.521 94.3061 435.352 94.3061 438.844C94.3061 442.336 91.4757 445.168 87.9837 445.168C86.5019 445.168 85.1393 444.658 84.0615 443.804C82.5992 442.645 81.6616 440.854 81.6616 438.844Z"
             fill="url(#paint70_linear_1690_5650)"
             stroke="#100C25"
-            stroke-width="0.427146"
+            strokeWidth="0.427146"
             stroke-miterlimit="10"
             stroke-linejoin="round"
           />
@@ -1202,8 +1202,8 @@ export default function HomeNewHero({
             fill="url(#paint110_linear_1690_5650)"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M-53.2814 604.067C-51.8943 603.026 -52.3244 598.488 -48.2188 586.308C-45.1828 584.882 -34.4275 579.636 -27.1676 574.189C-21.0206 569.578 -16.8169 564.428 -19.2982 561.118C-22.0834 557.402 -29.3228 561.057 -34.6892 565.136C-37.8746 567.533 -40.6886 570.387 -43.0404 573.605C-41.8227 570.635 -36.251 557.504 -34.4503 554.67C-31.6084 554.952 -22.0128 556.47 -16.226 556.428C-9.5367 556.381 -0.0420285 555.309 3.64623 552.542C5.65029 551.039 6.06204 548.847 3.88384 545.941C-1.06256 539.343 -23.5644 546.01 -24.4528 546.435C-24.4768 546.447 -30.3123 549.447 -30.3329 549.377C-26.1453 543.9 -22.8796 540.102 -17.8643 535.614C-14.5742 536.446 10.0433 541.982 15.8801 537.486C16.3802 537.096 16.7499 536.562 16.939 535.957C17.2757 535.074 17.0947 534.078 16.4697 533.37C13.2135 529.027 -2.73797 527.955 -8.80807 528.086L0.600923 521.027C5.87035 522.427 11.2413 523.412 16.665 523.973C22.4565 524.485 31.4632 522.203 35.2875 519.253C36.935 517.98 37.6659 516.632 36.7 515.254C36.2998 514.731 35.8042 514.288 35.2402 513.947C28.9995 509.908 15.1888 513.908 9.77426 515.614C12.4268 513.813 15.3157 512.388 18.3591 511.378C19.3344 511.074 30.0957 506.163 37.9989 500.318C44.067 495.831 48.78 490.202 46.587 487.263C44.0949 483.923 37.0473 486.344 30.477 491.266C23.2631 496.67 16.076 505.018 12.1275 510.91C7.5934 514.079 5.20755 515.337 0.954552 518.557C0.954552 518.557 17.4303 500.335 12.8391 494.211C8.10163 487.892 -7.8559 517.393 -8.45444 525.616C-11.601 527.968 -14.6238 530.481 -17.5106 533.144C-14.2068 526.397 -6.32262 511.791 -9.97593 506.918C-11.4433 504.961 -14.1962 505.676 -15.8548 506.92C-23.5638 512.703 -25.7442 540.791 -25.7442 540.791C-28.4165 543.506 -30.9299 546.373 -33.2725 549.378C-33.2725 549.378 -23.137 526.205 -32.8247 523.232C-42.4054 520.292 -42.5851 549.359 -38.6842 557.846C-39.34 559.077 -46.5418 575.902 -49.2753 581.957C-49.2584 581.824 -48.9205 576.547 -48.9205 576.547C-48.9205 576.547 -45.9747 547.422 -56.6705 548.562C-66.0593 549.562 -61.7204 580.064 -53.5116 591.013C-56.3081 599.22 -55.9851 602.421 -55.9851 602.421C-55.9331 603.047 -55.7317 603.652 -55.3978 604.185C-54.9615 604.794 -54.422 604.922 -53.2814 604.067Z"
             fill="url(#paint111_linear_1690_5650)"
           />
@@ -1218,8 +1218,8 @@ export default function HomeNewHero({
           y2="37.627"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#2E2168" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#2E2168" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1690_5650"
@@ -1229,9 +1229,9 @@ export default function HomeNewHero({
           y2="491.641"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4E2F81" />
-          <stop offset="0.37" stop-color="#482F81" />
-          <stop offset="1" stop-color="#271355" />
+          <stop stopColor="#4E2F81" />
+          <stop offset="0.37" stopColor="#482F81" />
+          <stop offset="1" stopColor="#271355" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1690_5650"
@@ -1241,9 +1241,9 @@ export default function HomeNewHero({
           y2="516.201"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#674297" />
-          <stop offset="0.345" stop-color="#372269" />
-          <stop offset="0.73" stop-color="#2A1657" />
+          <stop stopColor="#674297" />
+          <stop offset="0.345" stopColor="#372269" />
+          <stop offset="0.73" stopColor="#2A1657" />
         </linearGradient>
         <radialGradient
           id="paint3_radial_1690_5650"
@@ -1253,9 +1253,9 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(-156.668 540.064) rotate(2.63722) scale(698.552 698.764)"
         >
-          <stop stop-color="#6633CC" />
-          <stop offset="0.371069" stop-color="#A968A9" />
-          <stop offset="0.790132" stop-color="#6633CC" />
+          <stop stopColor="#6633CC" />
+          <stop offset="0.371069" stopColor="#A968A9" />
+          <stop offset="0.790132" stopColor="#6633CC" />
         </radialGradient>
         <linearGradient
           id="paint4_linear_1690_5650"
@@ -1265,7 +1265,7 @@ export default function HomeNewHero({
           y2="663.323"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
+          <stop stopColor="#6633CC" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -1276,9 +1276,9 @@ export default function HomeNewHero({
           y2="525.263"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#45256E" />
-          <stop offset="0.37" stop-color="#2B1956" />
-          <stop offset="1" stop-color="#1D0D41" />
+          <stop stopColor="#45256E" />
+          <stop offset="0.37" stopColor="#2B1956" />
+          <stop offset="1" stopColor="#1D0D41" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_1690_5650"
@@ -1288,9 +1288,9 @@ export default function HomeNewHero({
           y2="739.681"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#331559" />
-          <stop offset="0.175831" stop-color="#23114C" />
-          <stop offset="0.435202" stop-color="#0F0526" />
+          <stop stopColor="#331559" />
+          <stop offset="0.175831" stopColor="#23114C" />
+          <stop offset="0.435202" stopColor="#0F0526" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_1690_5650"
@@ -1301,8 +1301,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_1690_5650"
@@ -1312,8 +1312,8 @@ export default function HomeNewHero({
           y2="502.462"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_1690_5650"
@@ -1324,8 +1324,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_1690_5650"
@@ -1336,8 +1336,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <radialGradient
           id="paint11_radial_1690_5650"
@@ -1347,8 +1347,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(225.682 558.729) rotate(-4.75184) scale(503.166 499.089)"
         >
-          <stop stop-color="#8C548B" />
-          <stop offset="0.107383" stop-color="#4F26A1" />
+          <stop stopColor="#8C548B" />
+          <stop offset="0.107383" stopColor="#4F26A1" />
           <stop offset="0.772634" />
         </radialGradient>
         <linearGradient
@@ -1359,7 +1359,7 @@ export default function HomeNewHero({
           y2="948.521"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
+          <stop stopColor="#6633CC" />
           <stop offset="0.567593" />
         </linearGradient>
         <radialGradient
@@ -1370,8 +1370,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(80.3151 70.7648) rotate(-37.0522) scale(165.083 165.105)"
         >
-          <stop stop-color="#FF9CAA" />
-          <stop offset="0.396043" stop-color="#6633CC" />
+          <stop stopColor="#FF9CAA" />
+          <stop offset="0.396043" stopColor="#6633CC" />
           <stop offset="1" />
         </radialGradient>
         <linearGradient
@@ -1383,7 +1383,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_1690_5650"
@@ -1394,8 +1394,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.488319" stop-color="#321964" />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="0.488319" stopColor="#321964" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_1690_5650"
@@ -1405,8 +1405,8 @@ export default function HomeNewHero({
           y2="451.625"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3A2400" />
-          <stop offset="1" stop-color="#110600" />
+          <stop stopColor="#3A2400" />
+          <stop offset="1" stopColor="#110600" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_1690_5650"
@@ -1416,8 +1416,8 @@ export default function HomeNewHero({
           y2="518.286"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#997034" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#997034" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_1690_5650"
@@ -1427,8 +1427,8 @@ export default function HomeNewHero({
           y2="550.551"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBA064" />
-          <stop offset="1" stop-color="#BE5C23" />
+          <stop stopColor="#DBA064" />
+          <stop offset="1" stopColor="#BE5C23" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_1690_5650"
@@ -1438,8 +1438,8 @@ export default function HomeNewHero({
           y2="578.314"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_1690_5650"
@@ -1449,8 +1449,8 @@ export default function HomeNewHero({
           y2="550.551"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBA064" />
-          <stop offset="1" stop-color="#BE5C23" />
+          <stop stopColor="#DBA064" />
+          <stop offset="1" stopColor="#BE5C23" />
         </linearGradient>
         <linearGradient
           id="paint21_linear_1690_5650"
@@ -1460,8 +1460,8 @@ export default function HomeNewHero({
           y2="577.879"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint22_linear_1690_5650"
@@ -1472,8 +1472,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint23_linear_1690_5650"
@@ -1484,8 +1484,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint24_linear_1690_5650"
@@ -1495,8 +1495,8 @@ export default function HomeNewHero({
           y2="581.75"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#484559" />
-          <stop offset="0.997763" stop-color="#F39E72" />
+          <stop stopColor="#484559" />
+          <stop offset="0.997763" stopColor="#F39E72" />
         </linearGradient>
         <linearGradient
           id="paint25_linear_1690_5650"
@@ -1506,8 +1506,8 @@ export default function HomeNewHero({
           y2="596.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint26_linear_1690_5650"
@@ -1517,8 +1517,8 @@ export default function HomeNewHero({
           y2="602.215"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint27_linear_1690_5650"
@@ -1528,8 +1528,8 @@ export default function HomeNewHero({
           y2="576.899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint28_linear_1690_5650"
@@ -1539,8 +1539,8 @@ export default function HomeNewHero({
           y2="580.216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint29_linear_1690_5650"
@@ -1550,8 +1550,8 @@ export default function HomeNewHero({
           y2="584.03"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint30_linear_1690_5650"
@@ -1561,8 +1561,8 @@ export default function HomeNewHero({
           y2="583.856"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#484559" />
-          <stop offset="0.997763" stop-color="#F39E72" />
+          <stop stopColor="#484559" />
+          <stop offset="0.997763" stopColor="#F39E72" />
         </linearGradient>
         <linearGradient
           id="paint31_linear_1690_5650"
@@ -1572,8 +1572,8 @@ export default function HomeNewHero({
           y2="596.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint32_linear_1690_5650"
@@ -1583,8 +1583,8 @@ export default function HomeNewHero({
           y2="602.215"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint33_linear_1690_5650"
@@ -1594,8 +1594,8 @@ export default function HomeNewHero({
           y2="576.899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint34_linear_1690_5650"
@@ -1605,8 +1605,8 @@ export default function HomeNewHero({
           y2="580.216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint35_linear_1690_5650"
@@ -1616,8 +1616,8 @@ export default function HomeNewHero({
           y2="584.03"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9CB9B" />
-          <stop offset="0.997763" stop-color="white" />
+          <stop stopColor="#F9CB9B" />
+          <stop offset="0.997763" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint36_linear_1690_5650"
@@ -1627,8 +1627,8 @@ export default function HomeNewHero({
           y2="451.908"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBA064" />
-          <stop offset="1" stop-color="#BE5C23" />
+          <stop stopColor="#DBA064" />
+          <stop offset="1" stopColor="#BE5C23" />
         </linearGradient>
         <linearGradient
           id="paint37_linear_1690_5650"
@@ -1638,8 +1638,8 @@ export default function HomeNewHero({
           y2="410.587"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBA064" />
-          <stop offset="1" stop-color="#BE5C23" />
+          <stop stopColor="#DBA064" />
+          <stop offset="1" stopColor="#BE5C23" />
         </linearGradient>
         <linearGradient
           id="paint38_linear_1690_5650"
@@ -1649,8 +1649,8 @@ export default function HomeNewHero({
           y2="460.122"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCE3A7" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FCE3A7" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint39_linear_1690_5650"
@@ -1660,8 +1660,8 @@ export default function HomeNewHero({
           y2="442.067"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCE3A7" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FCE3A7" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint40_linear_1690_5650"
@@ -1671,8 +1671,8 @@ export default function HomeNewHero({
           y2="443.437"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCE3A7" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FCE3A7" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint41_linear_1690_5650"
@@ -1682,8 +1682,8 @@ export default function HomeNewHero({
           y2="426.424"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCE3A7" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FCE3A7" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint42_linear_1690_5650"
@@ -1693,8 +1693,8 @@ export default function HomeNewHero({
           y2="425.936"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCE3A7" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FCE3A7" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint43_linear_1690_5650"
@@ -1704,8 +1704,8 @@ export default function HomeNewHero({
           y2="434.947"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B55F48" />
-          <stop offset="1" stop-color="#3D271B" />
+          <stop stopColor="#B55F48" />
+          <stop offset="1" stopColor="#3D271B" />
         </linearGradient>
         <linearGradient
           id="paint44_linear_1690_5650"
@@ -1715,8 +1715,8 @@ export default function HomeNewHero({
           y2="435.523"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B55F48" />
-          <stop offset="1" stop-color="#3D271B" />
+          <stop stopColor="#B55F48" />
+          <stop offset="1" stopColor="#3D271B" />
         </linearGradient>
         <linearGradient
           id="paint45_linear_1690_5650"
@@ -1726,8 +1726,8 @@ export default function HomeNewHero({
           y2="456.293"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#261300" />
-          <stop offset="1" stop-color="#6F4731" />
+          <stop stopColor="#261300" />
+          <stop offset="1" stopColor="#6F4731" />
         </linearGradient>
         <linearGradient
           id="paint46_linear_1690_5650"
@@ -1737,9 +1737,9 @@ export default function HomeNewHero({
           y2="425.325"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFDCB7" />
-          <stop offset="0.839416" stop-color="#BE5C23" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FFDCB7" />
+          <stop offset="0.839416" stopColor="#BE5C23" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint47_linear_1690_5650"
@@ -1749,9 +1749,9 @@ export default function HomeNewHero({
           y2="425.325"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFDCB7" />
-          <stop offset="0.839416" stop-color="#BE5C23" />
-          <stop offset="1" stop-color="#BE5C23" stop-opacity="0" />
+          <stop stopColor="#FFDCB7" />
+          <stop offset="0.839416" stopColor="#BE5C23" />
+          <stop offset="1" stopColor="#BE5C23" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint48_linear_1690_5650"
@@ -1761,8 +1761,8 @@ export default function HomeNewHero({
           y2="463.888"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F4D9AB" />
-          <stop offset="1" stop-color="#93796A" />
+          <stop stopColor="#F4D9AB" />
+          <stop offset="1" stopColor="#93796A" />
         </linearGradient>
         <linearGradient
           id="paint49_linear_1690_5650"
@@ -1772,9 +1772,9 @@ export default function HomeNewHero({
           y2="477.31"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0122868" stop-color="#FFC9AB" />
-          <stop offset="0.585238" stop-color="#F2F3D9" />
-          <stop offset="1" stop-color="#1E0C00" />
+          <stop offset="0.0122868" stopColor="#FFC9AB" />
+          <stop offset="0.585238" stopColor="#F2F3D9" />
+          <stop offset="1" stopColor="#1E0C00" />
         </linearGradient>
         <radialGradient
           id="paint50_radial_1690_5650"
@@ -1784,8 +1784,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(90.8838 528.769) rotate(-124.26) scale(114.88 114.871)"
         >
-          <stop stop-color="#FF9CAA" />
-          <stop offset="0.373462" stop-color="#6633CC" />
+          <stop stopColor="#FF9CAA" />
+          <stop offset="0.373462" stopColor="#6633CC" />
           <stop offset="1" />
         </radialGradient>
         <radialGradient
@@ -1796,8 +1796,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(88.7938 524.266) rotate(-121.745) scale(129.842 129.829)"
         >
-          <stop stop-color="#FF9CAA" />
-          <stop offset="0.373462" stop-color="#6633CC" />
+          <stop stopColor="#FF9CAA" />
+          <stop offset="0.373462" stopColor="#6633CC" />
           <stop offset="1" />
         </radialGradient>
         <radialGradient
@@ -1808,7 +1808,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(85.2356 498.417) rotate(-0.468176) scale(27.618 27.6239)"
         >
-          <stop stop-color="#6633CC" />
+          <stop stopColor="#6633CC" />
           <stop offset="1" />
         </radialGradient>
         <linearGradient
@@ -1819,7 +1819,7 @@ export default function HomeNewHero({
           y2="525.365"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
+          <stop stopColor="#6633CC" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -1831,7 +1831,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint55_linear_1690_5650"
@@ -1842,7 +1842,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint56_linear_1690_5650"
@@ -1853,7 +1853,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint57_linear_1690_5650"
@@ -1864,7 +1864,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint58_linear_1690_5650"
@@ -1875,7 +1875,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint59_linear_1690_5650"
@@ -1886,7 +1886,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint60_linear_1690_5650"
@@ -1897,7 +1897,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint61_linear_1690_5650"
@@ -1908,7 +1908,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint62_linear_1690_5650"
@@ -1919,7 +1919,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint63_linear_1690_5650"
@@ -1929,8 +1929,8 @@ export default function HomeNewHero({
           y2="479.833"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBA064" />
-          <stop offset="1" stop-color="#BE5C23" />
+          <stop stopColor="#DBA064" />
+          <stop offset="1" stopColor="#BE5C23" />
         </linearGradient>
         <linearGradient
           id="paint64_linear_1690_5650"
@@ -1940,8 +1940,8 @@ export default function HomeNewHero({
           y2="500.343"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBA064" />
-          <stop offset="1" stop-color="#BE5C23" />
+          <stop stopColor="#DBA064" />
+          <stop offset="1" stopColor="#BE5C23" />
         </linearGradient>
         <linearGradient
           id="paint65_linear_1690_5650"
@@ -1951,9 +1951,9 @@ export default function HomeNewHero({
           y2="469.193"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0122868" stop-color="#FFC9AB" />
-          <stop offset="0.585238" stop-color="#F2F3D9" />
-          <stop offset="1" stop-color="#1E0C00" />
+          <stop offset="0.0122868" stopColor="#FFC9AB" />
+          <stop offset="0.585238" stopColor="#F2F3D9" />
+          <stop offset="1" stopColor="#1E0C00" />
         </linearGradient>
         <linearGradient
           id="paint66_linear_1690_5650"
@@ -1963,9 +1963,9 @@ export default function HomeNewHero({
           y2="458.157"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.00856404" stop-color="#F7717C" />
-          <stop offset="0.352978" stop-color="#F7C851" />
-          <stop offset="1" stop-color="#997034" />
+          <stop offset="0.00856404" stopColor="#F7717C" />
+          <stop offset="0.352978" stopColor="#F7C851" />
+          <stop offset="1" stopColor="#997034" />
         </linearGradient>
         <linearGradient
           id="paint67_linear_1690_5650"
@@ -1975,9 +1975,9 @@ export default function HomeNewHero({
           y2="460.726"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.00856404" stop-color="#F7717C" />
-          <stop offset="0.352978" stop-color="#F7C851" />
-          <stop offset="1" stop-color="#997034" />
+          <stop offset="0.00856404" stopColor="#F7717C" />
+          <stop offset="0.352978" stopColor="#F7C851" />
+          <stop offset="1" stopColor="#997034" />
         </linearGradient>
         <linearGradient
           id="paint68_linear_1690_5650"
@@ -1987,9 +1987,9 @@ export default function HomeNewHero({
           y2="442.466"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.00856404" stop-color="#F7717C" />
-          <stop offset="0.352978" stop-color="#F7C851" />
-          <stop offset="1" stop-color="#997034" />
+          <stop offset="0.00856404" stopColor="#F7717C" />
+          <stop offset="0.352978" stopColor="#F7C851" />
+          <stop offset="1" stopColor="#997034" />
         </linearGradient>
         <linearGradient
           id="paint69_linear_1690_5650"
@@ -1999,8 +1999,8 @@ export default function HomeNewHero({
           y2="444.616"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F2F3D9" stop-opacity="0.0624134" />
-          <stop offset="1" stop-color="#FFBB66" stop-opacity="0.641162" />
+          <stop stopColor="#F2F3D9" stop-opacity="0.0624134" />
+          <stop offset="1" stopColor="#FFBB66" stop-opacity="0.641162" />
         </linearGradient>
         <linearGradient
           id="paint70_linear_1690_5650"
@@ -2010,8 +2010,8 @@ export default function HomeNewHero({
           y2="444.327"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F2F3D9" stop-opacity="0.0804462" />
-          <stop offset="1" stop-color="#FFBB66" stop-opacity="0.628759" />
+          <stop stopColor="#F2F3D9" stop-opacity="0.0804462" />
+          <stop offset="1" stopColor="#FFBB66" stop-opacity="0.628759" />
         </linearGradient>
         <radialGradient
           id="paint71_radial_1690_5650"
@@ -2021,8 +2021,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(72.545 449.294) rotate(-108.195) scale(10.5248 10.523)"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#F8C543" stop-opacity="0.299733" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#F8C543" stop-opacity="0.299733" />
         </radialGradient>
         <radialGradient
           id="paint72_radial_1690_5650"
@@ -2032,8 +2032,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(89.5697 447.596) rotate(-102.045) scale(8.79541 8.7937)"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#F8C543" stop-opacity="0.299733" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#F8C543" stop-opacity="0.299733" />
         </radialGradient>
         <linearGradient
           id="paint73_linear_1690_5650"
@@ -2044,7 +2044,7 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#6633CC" />
+          <stop offset="1" stopColor="#6633CC" />
         </linearGradient>
         <linearGradient
           id="paint74_linear_1690_5650"
@@ -2054,8 +2054,8 @@ export default function HomeNewHero({
           y2="498.409"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#4842B3" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#4842B3" />
         </linearGradient>
         <linearGradient
           id="paint75_linear_1690_5650"
@@ -2065,9 +2065,9 @@ export default function HomeNewHero({
           y2="448.685"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFDCB4" />
-          <stop offset="0.227384" stop-color="#FF9CA4" />
-          <stop offset="1" stop-color="#D1AA92" />
+          <stop stopColor="#FFDCB4" />
+          <stop offset="0.227384" stopColor="#FF9CA4" />
+          <stop offset="1" stopColor="#D1AA92" />
         </linearGradient>
         <linearGradient
           id="paint76_linear_1690_5650"
@@ -2077,8 +2077,8 @@ export default function HomeNewHero({
           y2="489.591"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F98891" />
-          <stop offset="1" stop-color="#270C54" />
+          <stop stopColor="#F98891" />
+          <stop offset="1" stopColor="#270C54" />
         </linearGradient>
         <linearGradient
           id="paint77_linear_1690_5650"
@@ -2088,8 +2088,8 @@ export default function HomeNewHero({
           y2="490.538"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F98891" />
-          <stop offset="1" stop-color="#270C54" />
+          <stop stopColor="#F98891" />
+          <stop offset="1" stopColor="#270C54" />
         </linearGradient>
         <linearGradient
           id="paint78_linear_1690_5650"
@@ -2099,8 +2099,8 @@ export default function HomeNewHero({
           y2="515.326"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B76090" stop-opacity="0" />
-          <stop offset="1" stop-color="#FF9180" />
+          <stop stopColor="#B76090" stop-opacity="0" />
+          <stop offset="1" stopColor="#FF9180" />
         </linearGradient>
         <linearGradient
           id="paint79_linear_1690_5650"
@@ -2110,8 +2110,8 @@ export default function HomeNewHero({
           y2="484.305"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B76090" stop-opacity="0" />
-          <stop offset="1" stop-color="#FF9180" />
+          <stop stopColor="#B76090" stop-opacity="0" />
+          <stop offset="1" stopColor="#FF9180" />
         </linearGradient>
         <linearGradient
           id="paint80_linear_1690_5650"
@@ -2121,8 +2121,8 @@ export default function HomeNewHero({
           y2="485.295"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#4842B3" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#4842B3" />
         </linearGradient>
         <linearGradient
           id="paint81_linear_1690_5650"
@@ -2132,9 +2132,9 @@ export default function HomeNewHero({
           y2="602.275"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#17142C" />
-          <stop offset="0.612975" stop-color="#6646A8" />
-          <stop offset="1" stop-color="#F99595" />
+          <stop stopColor="#17142C" />
+          <stop offset="0.612975" stopColor="#6646A8" />
+          <stop offset="1" stopColor="#F99595" />
         </linearGradient>
         <linearGradient
           id="paint82_linear_1690_5650"
@@ -2144,9 +2144,9 @@ export default function HomeNewHero({
           y2="640.024"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#17142C" />
-          <stop offset="0.612975" stop-color="#6646A8" />
-          <stop offset="1" stop-color="#F99595" />
+          <stop stopColor="#17142C" />
+          <stop offset="0.612975" stopColor="#6646A8" />
+          <stop offset="1" stopColor="#F99595" />
         </linearGradient>
         <linearGradient
           id="paint83_linear_1690_5650"
@@ -2156,9 +2156,9 @@ export default function HomeNewHero({
           y2="605.294"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#17142C" />
-          <stop offset="0.612975" stop-color="#6646A8" />
-          <stop offset="1" stop-color="#F99595" />
+          <stop stopColor="#17142C" />
+          <stop offset="0.612975" stopColor="#6646A8" />
+          <stop offset="1" stopColor="#F99595" />
         </linearGradient>
         <linearGradient
           id="paint84_linear_1690_5650"
@@ -2168,9 +2168,9 @@ export default function HomeNewHero({
           y2="645.628"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#17142C" />
-          <stop offset="0.612975" stop-color="#6646A8" />
-          <stop offset="1" stop-color="#F99595" />
+          <stop stopColor="#17142C" />
+          <stop offset="0.612975" stopColor="#6646A8" />
+          <stop offset="1" stopColor="#F99595" />
         </linearGradient>
         <linearGradient
           id="paint85_linear_1690_5650"
@@ -2180,9 +2180,9 @@ export default function HomeNewHero({
           y2="548.278"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9A8FA4" />
-          <stop offset="0.58613" stop-color="#EEEEEE" />
-          <stop offset="1" stop-color="#FFD096" />
+          <stop stopColor="#9A8FA4" />
+          <stop offset="0.58613" stopColor="#EEEEEE" />
+          <stop offset="1" stopColor="#FFD096" />
         </linearGradient>
         <linearGradient
           id="paint86_linear_1690_5650"
@@ -2192,8 +2192,8 @@ export default function HomeNewHero({
           y2="553.216"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#59309C" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#59309C" />
         </linearGradient>
         <linearGradient
           id="paint87_linear_1690_5650"
@@ -2203,8 +2203,8 @@ export default function HomeNewHero({
           y2="546.132"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#59309C" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#59309C" />
         </linearGradient>
         <linearGradient
           id="paint88_linear_1690_5650"
@@ -2214,8 +2214,8 @@ export default function HomeNewHero({
           y2="547.529"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#59309C" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#59309C" />
         </linearGradient>
         <linearGradient
           id="paint89_linear_1690_5650"
@@ -2225,9 +2225,9 @@ export default function HomeNewHero({
           y2="594.728"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFDCB4" />
-          <stop offset="0.227384" stop-color="#FF9CA4" />
-          <stop offset="1" stop-color="#D1AA92" />
+          <stop stopColor="#FFDCB4" />
+          <stop offset="0.227384" stopColor="#FF9CA4" />
+          <stop offset="1" stopColor="#D1AA92" />
         </linearGradient>
         <linearGradient
           id="paint90_linear_1690_5650"
@@ -2237,8 +2237,8 @@ export default function HomeNewHero({
           y2="554.844"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7717C" />
-          <stop offset="1" stop-color="#59309C" />
+          <stop stopColor="#F7717C" />
+          <stop offset="1" stopColor="#59309C" />
         </linearGradient>
         <linearGradient
           id="paint91_linear_1690_5650"
@@ -2248,8 +2248,8 @@ export default function HomeNewHero({
           y2="635.974"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7A5641" />
-          <stop offset="1" stop-color="#3D271B" />
+          <stop stopColor="#7A5641" />
+          <stop offset="1" stopColor="#3D271B" />
         </linearGradient>
         <radialGradient
           id="paint92_radial_1690_5650"
@@ -2259,8 +2259,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(88.7924 644.048) rotate(-89.6694) scale(64.2937 64.28)"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#F7717C" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#F7717C" />
         </radialGradient>
         <linearGradient
           id="paint93_linear_1690_5650"
@@ -2270,8 +2270,8 @@ export default function HomeNewHero({
           y2="579.774"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#F7717C" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#F7717C" />
         </linearGradient>
         <linearGradient
           id="paint94_linear_1690_5650"
@@ -2281,8 +2281,8 @@ export default function HomeNewHero({
           y2="575.439"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#F7717C" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#F7717C" />
         </linearGradient>
         <linearGradient
           id="paint95_linear_1690_5650"
@@ -2292,8 +2292,8 @@ export default function HomeNewHero({
           y2="567.6"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#F7717C" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#F7717C" />
         </linearGradient>
         <linearGradient
           id="paint96_linear_1690_5650"
@@ -2303,8 +2303,8 @@ export default function HomeNewHero({
           y2="597.175"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#F7717C" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#F7717C" />
         </linearGradient>
         <linearGradient
           id="paint97_linear_1690_5650"
@@ -2314,8 +2314,8 @@ export default function HomeNewHero({
           y2="574.348"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F8C543" />
-          <stop offset="1" stop-color="#F7717C" />
+          <stop stopColor="#F8C543" />
+          <stop offset="1" stopColor="#F7717C" />
         </linearGradient>
         <radialGradient
           id="paint98_radial_1690_5650"
@@ -2325,8 +2325,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(88.1862 605.831) scale(37.4292 37.4372)"
         >
-          <stop stop-color="#D55661" stop-opacity="0" />
-          <stop offset="1" stop-color="#F8B143" />
+          <stop stopColor="#D55661" stop-opacity="0" />
+          <stop offset="1" stopColor="#F8B143" />
         </radialGradient>
         <radialGradient
           id="paint99_radial_1690_5650"
@@ -2336,8 +2336,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(88.1862 605.831) scale(84.357 84.3751)"
         >
-          <stop stop-color="#D55661" stop-opacity="0" />
-          <stop offset="1" stop-color="#F8B143" />
+          <stop stopColor="#D55661" stop-opacity="0" />
+          <stop offset="1" stopColor="#F8B143" />
         </radialGradient>
         <radialGradient
           id="paint100_radial_1690_5650"
@@ -2347,8 +2347,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(88.1862 605.831) scale(63.1465 63.16)"
         >
-          <stop stop-color="#D55661" stop-opacity="0" />
-          <stop offset="1" stop-color="#F8B143" />
+          <stop stopColor="#D55661" stop-opacity="0" />
+          <stop offset="1" stopColor="#F8B143" />
         </radialGradient>
         <linearGradient
           id="paint101_linear_1690_5650"
@@ -2358,8 +2358,8 @@ export default function HomeNewHero({
           y2="634.383"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7A5641" />
-          <stop offset="1" stop-color="#3D271B" />
+          <stop stopColor="#7A5641" />
+          <stop offset="1" stopColor="#3D271B" />
         </linearGradient>
         <linearGradient
           id="paint102_linear_1690_5650"
@@ -2369,9 +2369,9 @@ export default function HomeNewHero({
           y2="770.766"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#763EC9" />
-          <stop offset="0.376032" stop-color="#4A2593" />
-          <stop offset="1" stop-color="#1F0F44" />
+          <stop stopColor="#763EC9" />
+          <stop offset="0.376032" stopColor="#4A2593" />
+          <stop offset="1" stopColor="#1F0F44" />
         </linearGradient>
         <linearGradient
           id="paint103_linear_1690_5650"
@@ -2382,8 +2382,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint104_linear_1690_5650"
@@ -2393,8 +2393,8 @@ export default function HomeNewHero({
           y2="626.338"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6633CC" />
-          <stop offset="0.582926" stop-color="#1B0E33" />
+          <stop stopColor="#6633CC" />
+          <stop offset="0.582926" stopColor="#1B0E33" />
         </linearGradient>
         <linearGradient
           id="paint105_linear_1690_5650"
@@ -2405,8 +2405,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint106_linear_1690_5650"
@@ -2417,8 +2417,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint107_linear_1690_5650"
@@ -2429,8 +2429,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint108_linear_1690_5650"
@@ -2441,8 +2441,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#4D2899" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#4D2899" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint109_linear_1690_5650"
@@ -2453,8 +2453,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <linearGradient
           id="paint110_linear_1690_5650"
@@ -2464,9 +2464,9 @@ export default function HomeNewHero({
           y2="1106.98"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.474817" stop-color="#2B0B44" />
-          <stop offset="0.680794" stop-color="#1E0C48" />
-          <stop offset="1" stop-color="#0A031B" />
+          <stop offset="0.474817" stopColor="#2B0B44" />
+          <stop offset="0.680794" stopColor="#1E0C48" />
+          <stop offset="1" stopColor="#0A031B" />
         </linearGradient>
         <linearGradient
           id="paint111_linear_1690_5650"
@@ -2477,8 +2477,8 @@ export default function HomeNewHero({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.60345" stop-color="#6633CC" />
-          <stop offset="1" stop-color="#FF9CAA" />
+          <stop offset="0.60345" stopColor="#6633CC" />
+          <stop offset="1" stopColor="#FF9CAA" />
         </linearGradient>
         <clipPath id="clip0_1690_5650">
           <rect width="375" height="812" fill="white" />
