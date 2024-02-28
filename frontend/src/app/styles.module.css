@@ -1,21 +1,21 @@
 .background_container {
-    background-image: url("./assets/images/404.jpg");
-    background-position: top;
+  background-image: url("./assets/images/404.jpg");
+  background-position: top;
 }
 
 .muted_color {
-    background-color: rgba(17, 12, 36, 0.6);
+  background-color: rgba(17, 12, 36, 0.6);
 }
 
 @media screen and (max-width: 700px) {
-    .background_container {
-        background-image: url("./assets/images/404_mobile.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
+  .background_container {
+    background-image: url("./assets/images/404_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
 }
 
 .background_container_hero {
-    background-image: url("./assets/images/Hero.webp");
+  background-image: url("./assets/images/Hero.webp");
 }

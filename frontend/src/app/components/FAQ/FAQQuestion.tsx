@@ -10,9 +10,9 @@ interface Question {
 
 interface Props {
   question: Question;
-  index: number; // Added index prop
-  expandedIndex: number; // Added expandedIndex prop
-  setExpandedIndex: (index: number) => void; // Added setExpandedIndex prop
+  index: number;
+  expandedIndex: number;
+  setExpandedIndex: (index: number) => void; 
 }
 
 const FAQQuestion: React.FC<Props> = ({
@@ -46,19 +46,16 @@ const FAQQuestion: React.FC<Props> = ({
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all opacity-0 ease-in-out duration-500 ${
-          isExpanded
-            ? "max-h-screen mb-2 opacity-100"
-            : "max-h-0 opacity-5 -mb-2"
-        }`}
+        className={`overflow-hidden`}
       >
-        {isExpanded && (
           <p
-            className={`text-xs sm:text-base md:text-lg ${cabinetRegular.className} transition-opacity ease-in-out duration-400`}
+            className={`text-xs sm:text-base transition-all ease-in-out md:text-lg ${cabinetRegular.className} ${isExpanded
+              ? "max-h-screen mb-2 opacity-100"
+              : "max-h-0 opacity-0 -mb-2  "
+          } duration-500`}
           >
             {question.answer}
           </p>
-        )}
       </div>
     </div>
   );

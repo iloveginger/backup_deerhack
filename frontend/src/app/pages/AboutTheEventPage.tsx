@@ -21,7 +21,7 @@ const AboutTheEventPage = () => {
           height={250}
           className="absolute top-1/2 transform -translate-y-1/2 lg:block hidden"
         />
-        <div className="py-20 mt-16">
+        <div className="py-20 ">
           <h1 className={`mb-8 ${cabinetExtraBold.className} headings`}>
             About The Event
           </h1>

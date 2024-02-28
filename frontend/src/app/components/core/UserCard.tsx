@@ -27,7 +27,7 @@ const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
         >
           <div>
             <p
-              className={`text-white text-lg font-[600] ${cabinetRegular.className}`}
+              className={`text-white text-base font-[600] ${cabinetRegular.className}`}
             >
               {name}
             </p>

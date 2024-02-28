@@ -19,7 +19,7 @@ export default function NotFound() {
         >
           Nobody Seems to be here!
         </p>
-        <GoBackToHome/>
+        <GoBackToHome />
       </div>
     </div>
   );
