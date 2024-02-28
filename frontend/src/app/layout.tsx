@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { ANALYTICS_ID } from "./utils/config";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   metadataBase: "https://deerhack.deerwalk.edu.np",
@@ -58,11 +58,8 @@ export default function RootLayout({
   return (
     <html>
       <body className=" bg-dark-purple">
-        <GoogleAnalytics gaId={`${ANALYTICS_ID}`}/>
-
-        <header className="fixed w-screen mx-auto z-10 isolate shadow-lg backdrop-blur-lg ">
-          <Navbar />
-        </header>
+        {/* <Navbar /> */}
+        <GoogleAnalytics gaId={`${ANALYTICS_ID}`} />
         <main>{children}</main>
         {/* <Footer /> */}
       </body>

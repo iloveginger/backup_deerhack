@@ -21,87 +21,89 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`flex flex-row justify-${
-        isMenuOpen ? "" : "evenly"
-      } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
-        isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
-      }`}
-    >
-      <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
-        <a href="/">
-          <DeerhackLogo width="50" height="50" />
-        </a>
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden mt-2 md:mt-2 lg:right-0"
-        >
-          {isMenuOpen ? (
-            <Image src={crossSVG} alt="Close Menu" width={40} height={40} />
-          ) : (
-            <Image src={menuSVG} alt="Open Menu" width={40} height={40} />
-          )}
-        </button>
-      </div>
-
-      <div
-        className={`lg:flex lg:items-between ${
-          isMenuOpen ? cabinetMedium.className + " block " : "hidden"
-        } `}
+    <header className="fixed w-screen mx-auto z-10 isolate shadow-lg backdrop-blur-lg ">
+      <nav
+        className={`flex flex-row justify-${
+          isMenuOpen ? "" : "evenly"
+        } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
+          isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
+        }`}
       >
-        <Counter />
-      </div>
-
-      <div
-        className={`lg:flex ${
-          cabinetBold.className
-        } lg:flex-row lg:items-between mt-4 lg:gap-10  ${
-          isMenuOpen
-            ? cabinetMedium.className + " flex-col mt-5 text-2xl space-y-5"
-            : "hidden"
-        } font-[16px] text-magnolia`}
-      >
-        <Link
-          href="/schedule"
-          className="hover:text-secondary block lg:inline-block "
-        >
-          Schedule
-        </Link>
-        <Link
-          href="/organizers"
-          className="hover:text-secondary block lg:inline-block 
-        "
-        >
-          Organizers
-        </Link>
-        <Link
-          href="/winners"
-          className="hover:text-secondary block lg:inline-block "
-        >
-          Winners
-        </Link>
-        <Link
-          href="/resources"
-          className="hover:text-secondary block lg:inline-block "
-        >
-          Resources
-        </Link>
-      </div>
-
-      <div
-        className={`lg:flex lg:items-between ${
-          isMenuOpen ? cabinetMedium.className + " block" : "hidden"
-        } `}
-      >
-        <Link href="/register">
+        <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
+          <a href="/">
+            <DeerhackLogo width="50" height="50" />
+          </a>
           <button
-            className={` ${satoshiBlack.className} font-[20px] md:text-md bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
+            onClick={toggleMenu}
+            className="lg:hidden mt-2 md:mt-2 lg:right-0"
           >
-            Register Now
+            {isMenuOpen ? (
+              <Image src={crossSVG} alt="Close Menu" width={40} height={40} />
+            ) : (
+              <Image src={menuSVG} alt="Open Menu" width={40} height={40} />
+            )}
           </button>
-        </Link>
-      </div>
-    </nav>
+        </div>
+
+        <div
+          className={`lg:flex lg:items-between w-40 ${
+            isMenuOpen ? cabinetMedium.className + " block " : "hidden"
+          } `}
+        >
+          <Counter />
+        </div>
+
+        <div
+          className={`lg:flex ${
+            cabinetBold.className
+          } lg:flex-row lg:items-between mt-4 lg:gap-10  ${
+            isMenuOpen
+              ? cabinetMedium.className + " flex-col mt-5 text-2xl space-y-5"
+              : "hidden"
+          } font-[16px] text-magnolia`}
+        >
+          <Link
+            href="/schedule"
+            className="hover:text-secondary block lg:inline-block "
+          >
+            Schedule
+          </Link>
+          <Link
+            href="/organizers"
+            className="hover:text-secondary block lg:inline-block 
+        "
+          >
+            Organizers
+          </Link>
+          <Link
+            href="/winners"
+            className="hover:text-secondary block lg:inline-block "
+          >
+            Winners
+          </Link>
+          <Link
+            href="/resources"
+            className="hover:text-secondary block lg:inline-block "
+          >
+            Resources
+          </Link>
+        </div>
+
+        <div
+          className={`lg:flex lg:items-between ${
+            isMenuOpen ? cabinetMedium.className + " block" : "hidden"
+          } `}
+        >
+          <Link href="/register">
+            <button
+              className={` ${satoshiBlack.className} font-[20px] md:text-md bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
+            >
+              Register Now
+            </button>
+          </Link>
+        </div>
+      </nav>
+    </header>
   );
 };
 
