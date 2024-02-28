@@ -28,7 +28,8 @@ export default function Home() {
       <FAQ />
       <SponsorPage />
       <RegisterPage />
-      {/* <Footer /> */}
+      <Footer />
+      
     </>
   );
 }
