@@ -11,7 +11,7 @@ export default function AboutCard({
   description?: string;
 }): ReactElement {
   return (
-    <div className="bg-violet rounded-3xl lg:w-[32%] w-[80%] flex flex-col items-start pb-24 justify-start py-14 px-6 gap-2">
+    <div className="bg-violet rounded-3xl lg:w-[32%] w-[80%] flex flex-col items-start pb-24 justify-start py-14 px-6 md:px-14 gap-2">
       <div className="bg-dark-purple rounded-full w-12 lg:w-20 h-12 lg:h-20 flex items-center justify-center">
         {svg}
       </div>
