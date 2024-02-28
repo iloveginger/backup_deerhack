@@ -8,7 +8,7 @@ export default function ImageCard({ image }: { image: string }): ReactElement {
         <Image
           // className=" w-[15.125rem] h-[8.25rem] md:w-[29.5rem] md:h-[16.375rem] rounded-xl"
           src={image}
-          alt="Carousel Component"
+          // alt="Carousel Component"
           width={100}
           height={100}
           // objectFit="contain"
