@@ -1,19 +1,19 @@
 .hero_background_container {
-    background-image: url("../../assets/images/Hero.webp");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 125vh;
-    width: 100%;
-    position: relative;
-    background-position: left;
+  background-image: url("../../assets/images/Hero.webp");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 125vh;
+  width: 100%;
+  position: relative;
+  background-position: left;
 }
 
 @media screen and (max-width: 700px) {
-    .hero_background_container {
-        background-image: url("../../assets/images/Hero_mobile.svg");
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-    }
+  .hero_background_container {
+    background-image: url("../../assets/images/Hero_mobile.svg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
 }
