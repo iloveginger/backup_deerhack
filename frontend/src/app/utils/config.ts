@@ -11,20 +11,14 @@ const ANALYTICS_ID = "G-MZMTQJ9HQX";
 if (mode == "dev") {
   SERVER_URL = "http://localhost:1337";
 } else {
-  SERVER_URL = "http://54.164.230.35";
+  SERVER_URL = "https://deerhack.deerwalk.edu.np";
 }
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const supaBaseConfig = {
   projectUrl: "https://fpcjfskxjhrksbwelapd.supabase.co",
   supabaseKey:
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwY2pmc2t4amhya3Nid2VsYXBkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDkyMzA0MzAsImV4cCI6MjAyNDgwNjQzMH0.nMCu3H6u8XHKIe_bgNJynusqcvC6pyZoI1F34RDbNUw",
 };
-
-// Initialize Firebase
 
 console.info(`Backend URL: ${BACKEND_URL} | Server URL: ${SERVER_URL}`);
 
