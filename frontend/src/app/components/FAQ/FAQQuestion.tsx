@@ -12,7 +12,7 @@ interface Props {
   question: Question;
   index: number;
   expandedIndex: number;
-  setExpandedIndex: (index: number) => void; 
+  setExpandedIndex: (index: number) => void;
 }
 
 const FAQQuestion: React.FC<Props> = ({
@@ -45,17 +45,16 @@ const FAQQuestion: React.FC<Props> = ({
           />
         </span>
       </button>
-      <div
-        className={`overflow-hidden`}
-      >
-          <p
-            className={`text-xs sm:text-base transition-all ease-in-out md:text-lg ${cabinetRegular.className} ${isExpanded
+      <div className={`overflow-hidden`}>
+        <p
+          className={`text-xs sm:text-base transition-all ease-in-out md:text-lg ${cabinetRegular.className} ${
+            isExpanded
               ? "max-h-screen mb-2 opacity-100"
               : "max-h-0 opacity-0 -mb-2  "
           } duration-500`}
-          >
-            {question.answer}
-          </p>
+        >
+          {question.answer}
+        </p>
       </div>
     </div>
   );
