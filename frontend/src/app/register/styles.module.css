@@ -6,13 +6,12 @@
   background-repeat: no-repeat;
 }
 
-
 .muted_color {
   background-color: rgba(17, 12, 36, 0.6);
 }
 
 @media (max-width: 700px) {
-  .background_container{
+  .background_container {
     background-image: url("../assets/images/Hero_mobile.svg");
   }
 }

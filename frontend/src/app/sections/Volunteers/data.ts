@@ -10,9 +10,12 @@ const transformVolunteerData = (volunteer: any) => ({
 
 const fetchData = async () => {
   try {
-    const response = await fetch(`${BACKEND_URL}/api/volunteers?populate=image`, {
-      cache: "no-store",
-    });
+    const response = await fetch(
+      `${BACKEND_URL}/api/volunteers?populate=image`,
+      {
+        cache: "no-store",
+      },
+    );
 
     if (!response.ok) {
       console.log(`Failed to fetch data. Status: ${response.status}`);

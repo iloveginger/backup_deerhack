@@ -1,8 +1,8 @@
 .hero_background_container {
-    background-image: url("../../assets/icons/Hero.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
-    position: relative;
-    background-position-x: left;
+  background-image: url("../../assets/icons/Hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
+  position: relative;
+  background-position-x: left;
 }

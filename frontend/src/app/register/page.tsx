@@ -1,3 +1,5 @@
+"use client";
+
 import Register from "../sections/Register/RegisterSection";
 import RegisterCard from "@/app/components/Register/RegisterCard";
 import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
@@ -5,12 +7,48 @@ import { cabinetExtraBold, cabinetRegular } from "../utils/fonts";
 import Navbar from "../components/Navbar/Navbar";
 import Image from "next/image";
 import styles from "./styles.module.css";
+import { useState } from "react";
 
 export default function Page() {
+  const [email, setEmail] = useState<string>("");
+  const [color, setColor] = useState<string>("bg-secondary");
+  const [submitStatus, setSubmitStatus] = useState<string>("Submit");
+  const [disabled, setDisabled] = useState<boolean>(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const submitData = { email };
+
+    try {
+      const res = await fetch("/api/email", {
+        method: "POST",
+        body: JSON.stringify(submitData),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+      if (res.status == 200 || res.status == 409) {
+        setColor("bg-green");
+        setSubmitStatus("Submitted");
+        setEmail("");
+        setDisabled(true);
+      } else {
+        setSubmitStatus("Failed!");
+        setColor("bg-red text-white");
+        setEmail("");
+        setDisabled(true);
+      }
+    } catch {
+      setSubmitStatus("Failed!");
+      setColor("bg-red text-white");
+      setEmail("");
+      setDisabled(true);
+    }
+  };
   return (
     <div>
       <Navbar />
-      <form>
+      <form onSubmit={handleSubmit}>
         <div
           className={`${styles.background_container} h-screen flex justify-center items-center`}
         >
@@ -29,16 +67,22 @@ export default function Page() {
             </p>
 
             <div className="flex flex-col justify-center items-center  gap-8 w-full">
-            <div className="w-full h-[3rem] primary-gradient-background p-[3px] flex justify-center items-center rounded ">
-              <input
-                type="email"
-                placeholder="example@mail.com"
-                className={`w-full h-full rounded bg-violet pl-4 py-2 ${cabinetRegular.className}`}
-              ></input>
-            </div>
-            <button className="w-full h-[2.9rem] bg-saffron p-[3px] flex justify-center items-center rounded font-bold mx-2 py-5">
-              Submit
-            </button>
+              <div className="w-full h-[3rem] primary-gradient-background p-[3px] flex justify-center items-center rounded ">
+                <input
+                  type="email"
+                  placeholder="example@mail.com"
+                  className={`w-full h-full rounded bg-violet pl-4 py-2 ${cabinetRegular.className} text-white`}
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                />
+              </div>
+              <button
+                type="submit"
+                className={`w-full h-[2.9rem] ${color} p-[3px] flex justify-center items-center rounded font-bold mx-2 py-5`}
+                disabled={disabled}
+              >
+                {submitStatus}
+              </button>
             </div>
           </div>
         </div>
