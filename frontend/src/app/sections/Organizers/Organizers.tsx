@@ -60,13 +60,14 @@ export default async function Organizers() {
           </div>
         </div>
       ))}
-      <div key = "volunteers" className="flex justify-center items-center flex-col">
-      <h1
-            className={`headings ${cabinetExtraBold.className} text-3xl`}
-          >
-            Volunteers
-          </h1>    
-            <VolunteerSection/>
+      <div
+        key="volunteers"
+        className="flex justify-center items-center flex-col"
+      >
+        <h1 className={`headings ${cabinetExtraBold.className} text-3xl`}>
+          Volunteers
+        </h1>
+        <VolunteerSection />
       </div>
     </div>
   );
