@@ -11,7 +11,7 @@ const Announced = ({ description }: { description: string }) => {
       >
         <div className="absolute gap-[40px] top-[190px] flex flex-col text-center lg:top-48 sm:top-56">
           <p
-            className={`${cabinetExtraBold.className} text-primary-gradient-color w-fit text-5xl text-center`}
+            className={`${cabinetExtraBold.className} text-primary-gradient-color px-4 w-fit text-5xl text-center`}
           >
             {description}
           </p>
