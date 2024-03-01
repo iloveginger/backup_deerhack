@@ -6,6 +6,7 @@ import shortFatLeaf from "../assets/images/leaf_deerhack2023_right.svg";
 import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
 import Navbar from "../components/Navbar/Navbar";
+import VolunteerSection from "../sections/Volunteers/VolunteerSection";
 
 export default function Page(): ReactElement {
   return (
