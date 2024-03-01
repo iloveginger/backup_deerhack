@@ -53,7 +53,7 @@ export default async function Organizers() {
                       linkedin_url={organizer.linkedin_url}
                       name={organizer.name}
                     />
-                  ),
+                  )
                 )}
               </div>
             )}
@@ -62,9 +62,9 @@ export default async function Organizers() {
       ))}
       <div
         key="volunteers"
-        className="flex justify-center items-center flex-col"
+        className="flex justify-center items-center flex-col mt-10"
       >
-        <h1 className={`headings ${cabinetExtraBold.className} text-3xl`}>
+        <h1 className={`headings ${cabinetExtraBold.className} text-4xl`}>
           Volunteers
         </h1>
         <VolunteerSection />
