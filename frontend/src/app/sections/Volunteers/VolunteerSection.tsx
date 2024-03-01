@@ -3,12 +3,10 @@ import volunteerFetcher from "./data";
 import UserCard from "@/app/components/core/UserCard";
 
 const VolunteerSection = async () => {
-    const volunteers = await volunteerFetcher();
+  const volunteers = await volunteerFetcher();
   return (
-          
-          
-    <div className="flex flex-wrap lg:w-[80%] xl:w-[80%] mt-8 gap-16 justify-center">
-        {volunteers.map((volunteer: UserEntity) => (
+    <div className="flex flex-wrap lg:w-[80%] mt-8 gap-16 justify-center">
+      {volunteers.map((volunteer: UserEntity) => (
         <UserCard
           key={volunteer.name}
           name={volunteer.name}
@@ -18,7 +16,7 @@ const VolunteerSection = async () => {
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default VolunteerSection
+export default VolunteerSection;

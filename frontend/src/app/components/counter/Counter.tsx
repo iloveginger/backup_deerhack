@@ -34,8 +34,8 @@ const Counter = () => {
   };
 
   return (
-    <div className="text-magnolia w-75 h-[65] ">
-      <div className="flex justify-between">
+    <div className="text-magnolia">
+      <div className="flex justify-center">
         <div className="flex flex-col items-center">
           <p
             className={`text-2xl font-bold tracking-[.25rem] ${cabinetBold.className} `}

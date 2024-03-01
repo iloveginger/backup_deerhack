@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <header className="fixed w-screen mx-auto z-10 isolate shadow-lg backdrop-blur-lg ">
       <nav
-        className={`flex flex-row justify-${
+        className={`flex w-screen flex-row justify-${
           isMenuOpen ? "" : "evenly"
         } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
           isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`lg:flex lg:items-between w-40 ${
+          className={`lg:flex lg:items-between md:w-[800px] h-[55px] lg:h-auto ${
             isMenuOpen ? cabinetMedium.className + " block " : "hidden"
           } `}
         >
