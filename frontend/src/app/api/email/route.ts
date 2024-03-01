@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       { error: "Email Already in our Records!" },
       {
-        status: 404,
+        status: 409,
       },
     );
   }
@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       { error: "Something Went Wrong!" },
       {
-        status: 404,
+        status: 500,
       },
     );
   }
