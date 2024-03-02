@@ -13,7 +13,7 @@ const Hero = () => {
         >
           10th - 12th May
         </p>
-        <MainLogo width={350} height={135} />
+        <MainLogo width={300} height={135} />
       </div>
     </div>
   );
