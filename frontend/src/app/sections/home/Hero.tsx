@@ -9,7 +9,7 @@ const Hero = () => {
         <p className={` text-3xl font-bold text-center text-secondary ${cabinetBold.className}`}>
           10th - 12th May
         </p>
-        <MainLogo width={350} height={135} />
+        <MainLogo width={300} height={135} />
       </div>
     </div>
   );
