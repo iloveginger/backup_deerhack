@@ -28,8 +28,8 @@ export default function Page() {
         },
       });
       if (res.status == 200 || res.status == 409) {
-        setColor("bg-green");
-        setSubmitStatus("Submitted");
+        setColor("bg-green text-white");
+        setSubmitStatus("Email Submitted");
         setEmail("");
         setDisabled(true);
       } else {

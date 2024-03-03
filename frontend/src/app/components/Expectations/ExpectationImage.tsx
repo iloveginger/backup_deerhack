@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import { ReactElement } from "react";
-import expectation_image from "@/app/assets/images/expectation_image.jpg";
 
 export default function ExpectationImage({
   imageSrc,
@@ -14,8 +13,9 @@ export default function ExpectationImage({
           src={imageSrc}
           alt="Some Fun Games Played at Deerhack 2023"
           fill
-          priority
+          // priority
           className="object-cover rounded-lg"
+          loading="lazy"
         />
       </div>
     </div>
