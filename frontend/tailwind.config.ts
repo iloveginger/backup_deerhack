@@ -17,7 +17,7 @@ const config: Config = {
         purpures: "#9D4BAD",
         saffron: "#F5C144",
         magnolia: "#FCF7FF",
-        green: "#78f76a",
+        green: "#004F2D",
         red: "#c70017"
       },
       gradientColorStopPositions: {
