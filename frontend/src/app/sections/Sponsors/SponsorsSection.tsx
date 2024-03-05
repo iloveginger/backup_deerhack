@@ -17,7 +17,7 @@ export default function SponsorsSection() {
       </div>
       
     {sponsors.map((sponsorType)=>(
-      <div className="flex flex-col justify-center items-center mb-[5rem]">
+      <div key = {sponsorType.name} className="flex flex-col justify-center items-center mb-[5rem]">
         
         <div
           className={`${cabinetMedium.className} m-10 text-white text-3xl font-extrabold tracking-normal`}
@@ -25,7 +25,7 @@ export default function SponsorsSection() {
           {sponsorType.name}
         </div>
         {sponsorType.sponsors.map((sponsor)=>(
-            <div className="mx-[15rem]  flex flex-row flex-wrap justify-center items-center">
+            <div key = {sponsor.name} className="mx-[15rem]  flex flex-row flex-wrap justify-center items-center">
           <Sponsor image={sponsor.image} alt={sponsor.name} url = {sponsor.url}/>
             </div>
      ))}     
