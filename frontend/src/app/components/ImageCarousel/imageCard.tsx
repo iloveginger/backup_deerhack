@@ -14,7 +14,8 @@ export default function ImageCard({ image }: { image: string }): ReactElement {
           // objectFit="contain"
           className="rounded-xl object-cover w-full h-full bg-gradient-to-br p-1 from-grape to-saffron"
           alt="Deerhack2023 Images"
-          quality={100}
+          quality={50}
+          // priority={true}
         />
       </div>
     </li>

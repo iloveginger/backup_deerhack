@@ -3,12 +3,12 @@ import Link from "next/link";
 const GoBackToHome = () => {
   return (
     <div>
-      <Link
+      <a
         className={`bg-secondary w-48 ${cabinetExtraBold.className} text-center py-3 px-4 text-lg rounded-md`}
         href="/"
       >
         Go Back to home
-      </Link>
+      </a>
     </div>
   );
 };

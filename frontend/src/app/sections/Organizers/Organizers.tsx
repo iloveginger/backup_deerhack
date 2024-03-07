@@ -4,6 +4,7 @@ import Team from "@/app/types/team";
 import Image from "next/image";
 import UserCard from "@/app/components/core/UserCard";
 import { cabinetBold, cabinetExtraBold, cabinetBlack } from "@/app/utils/fonts";
+import VolunteerSection from "../Volunteers/VolunteerSection";
 
 export default async function Organizers() {
   const teams: Array<Team> = await getData();
@@ -59,6 +60,15 @@ export default async function Organizers() {
           </div>
         </div>
       ))}
+      <div
+        key="volunteers"
+        className="flex justify-center items-center flex-col mt-10"
+      >
+        <h1 className={`headings ${cabinetExtraBold.className} text-4xl`}>
+          Volunteers
+        </h1>
+        <VolunteerSection />
+      </div>
     </div>
   );
 }
