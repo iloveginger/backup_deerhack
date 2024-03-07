@@ -5,10 +5,10 @@ import { cabinetBlack, cabinetBold } from "@/app/utils/fonts";
 export default function TrackWinner(): ReactElement {
   return (
     <div
-      className={`primary-gradient-background w-full sm:w-64 lg:w-[22rem] p-[2px] rounded-[0.9rem]`}
+      className={`primary-gradient-background w-full sm:w-64 lg:w-[22rem] p-[2px] rounded-2xl`}
     >
       <div
-        className={`bg-violet flex flex-col h-full w-full rounded-[0.8rem] justify-start gap-10 py-12`}
+        className={`bg-violet flex flex-col h-full w-full rounded-[0.9rem] justify-start gap-10 py-12`}
       >
         <div className="flex justify-center gap-4">
           <Confetti height={50} width={50} />

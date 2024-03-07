@@ -10,14 +10,14 @@ import {
 export default function GrandPrizeCard(): ReactElement {
   return (
     <div
-      className={`flex flex-col justify-evenly grow h-[26rem] sm:h-72 md:h-72 lg:h-[25rem] w-full lg:w-[22rem] primary-gradient-background rounded-xl`}
+      className={`flex flex-col justify-evenly grow h-[27rem] sm:h-72 md:h-72 lg:h-[25rem] w-full lg:w-[22rem] primary-gradient-background rounded-2xl`}
     >
       <div className="flex flex-col justify-center text-center gap-4">
         <div className="flex justify-center">
           <Trophy height={120} width={120} />
         </div>
         <p
-          className={`${cabinetBold.className} font-bold  text-2xl sm:text-xl lg:text-3xl`}
+          className={`${cabinetExtraBold.className} font-bold  text-2xl sm:text-xl lg:text-3xl`}
         >
           Grand Prize
         </p>
