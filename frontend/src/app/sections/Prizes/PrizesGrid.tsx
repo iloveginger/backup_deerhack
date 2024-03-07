@@ -20,7 +20,7 @@ export default function PrizesGrid(): ReactElement {
           <Filecoin />
           <Replit />
         </div>
-        <div className="max-w-[350px] w-full  md:w-fit flex flex-col sm:justify-around items-center gap-4 md:self-stretch">
+        <div className="max-w-[350px] w-full  md:w-fit flex flex-col sm:justify-around items-center gap-4 md:self-stretch gap-5">
           <Solana
             title="Young Gun"
             description="best beginner project just starting out on Solana"
@@ -38,7 +38,7 @@ export default function PrizesGrid(): ReactElement {
           />
         </div>
       </div>
-      <div className="px-5 max-w-[27rem] sm:w-[18rem] md:max-w-[45rem] md:w-[45rem] lg:max-w-[63rem] lg:w-[63rem]">
+      <div className="px-5 max-w-[24.5rem] sm:w-[18rem] md:max-w-[45rem] md:w-[45rem] lg:max-w-[63rem] lg:w-[63rem]">
         <OtherPrizes />
       </div>
     </div>

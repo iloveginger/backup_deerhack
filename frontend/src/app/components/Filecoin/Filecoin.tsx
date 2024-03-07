@@ -9,7 +9,7 @@ import FileCoinSVG from "@/app/assets/images/filecoin";
 
 export default function Filecoin(): ReactElement {
   return (
-    <div className=" bg-violet w-full sm:w-64 md:w-48 lg:w-72 px-2 md:px-0 rounded-xl h-40 sm:h-auto sm:pt-0">
+    <div className=" bg-violet w-full sm:w-64 md:w-48 lg:w-72 px-2 md:px-0 rounded-xl h-40 sm:h-auto py-3">
       <div className="flex flex-col px-4 py-5 gap-3 lg:gap-5">
         <div className="flex justify-start gap-2 items-center">
           <FileCoinSVG height={50} width={50} />
