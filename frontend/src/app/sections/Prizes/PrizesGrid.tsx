@@ -9,18 +9,18 @@ import OtherPrizes from "@/app/components/OtherPrizes/OtherPrizes";
 
 export default function PrizesGrid(): ReactElement {
   return (
-    <div>
-      <div className="mx-auto flex flex-wrap justify-center gap-4 mt-10">
-        <div className="w-full sm:w-fit md:w-fit flex flex-col gap-4 items-center justify-between">
+    <div className="flex flex-col items-center">
+      <div className="w-full mx-auto  md:items-start flex flex-col md:flex-row justify-center gap-4 mt-10 h-full px-5 items-center">
+        <div className="max-w-[350px] w-full sm:w-fit md:w-fit flex flex-col gap-5 items-center justify-between md:self-stretch">
           <GrandPrizeCard />
           <TrackWinner />
         </div>
-        <div className="w-full md:w-fit flex flex-col sm:justify-between items-center gap-4">
+        <div className="max-w-[350px] w-full md:w-fit flex flex-col sm:justify-between items-center gap-4 md:self-stretch">
           <Polygon />
           <Filecoin />
           <Replit />
         </div>
-        <div className="w-full md:w-fit flex flex-col sm:justify-around items-center gap-4">
+        <div className="max-w-[350px] w-full  md:w-fit flex flex-col sm:justify-around items-center gap-4 md:self-stretch gap-5">
           <Solana
             title="Young Gun"
             description="best beginner project just starting out on Solana"
@@ -38,7 +38,9 @@ export default function PrizesGrid(): ReactElement {
           />
         </div>
       </div>
-      <OtherPrizes />
+      <div className="px-5 max-w-[24.5rem] sm:w-[18rem] md:max-w-[45rem] md:w-[45rem] lg:max-w-[63rem] lg:w-[63rem]">
+        <OtherPrizes />
+      </div>
     </div>
   );
 }
