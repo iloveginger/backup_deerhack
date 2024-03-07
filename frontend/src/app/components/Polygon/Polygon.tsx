@@ -9,7 +9,7 @@ import PolygonSVG from "@/app/assets/images/polygon";
 
 export default function Polygon(): ReactElement {
   return (
-    <div className=" bg-violet w-full sm:w-64 md:w-48 lg:w-72 rounded-xl sm:items-center pb-4  px-2 md:px-0 h-[22rem] sm:h-auto ">
+    <div className=" bg-violet w-full sm:w-64 md:w-48 lg:w-72 rounded-2xl sm:items-center pb-4  px-2 md:px-0 h-[22rem] sm:h-auto ">
       <div className="flex flex-col px-4 lg:px-6 gap-3 lg:gap-5 h-full justify-around py-4">
         <div className="flex justify-start gap-2 items-center">
           <PolygonSVG height={50} width={50} />
