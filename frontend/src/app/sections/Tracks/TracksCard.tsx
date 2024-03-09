@@ -8,7 +8,7 @@ import OpenInnovationSVG from "@/app/assets/icons/OpenInnovation";
 import TracksBodyCard from "@/app/components/Tracks/TracksBodyCard";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import { useRef } from "react";
-import styles from "./styles.module.css";
+
 
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
@@ -88,7 +88,7 @@ const TracksCard = () => {
         <ArrowSVG />
       </div>
       <div
-        className={`flex justify-start xl:justify-center items-start text-magnolia gap-8 overflow-x-auto pb-4 ${styles.scrollbar_hide}`}
+        className={`flex justify-start xl:justify-center items-start text-magnolia gap-8 overflow-x-auto pb-4 no-scrollbar`}
         ref={containerRef}
       >
         {trackData.map((track, index) => (
