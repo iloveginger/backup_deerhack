@@ -143,7 +143,7 @@ const Faq = () => {
   };
 
   return (
-    <div key="faqContainer" className="bg-dark-purple md:w-[70%] w-[80%] pb-32">
+    <div key="faqContainer" className="bg-dark-purple md:w-[70%] w-[80%] pb-16">
       <div className=" box-border flex flex-col items-end sm:items-center md:items-start md:flex-row nowrap  w-full justify-between">
         <div className="sm:block md:hidden mb-5" onClick={handleArrowClick}>
           <ArrowSVG />
