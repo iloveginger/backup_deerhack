@@ -68,13 +68,13 @@ const Navbar = () => {
           >
             Schedule
           </Link>
-          <Link
+          {/* <Link
             href="/organizers"
             className="hover:text-secondary block lg:inline-block 
         "
           >
             Organizers
-          </Link>
+          </Link> */}
           <Link
             href="/winners"
             className="hover:text-secondary block lg:inline-block "
