@@ -5,7 +5,7 @@ import leaf_deerhack2023_right from "@/app/assets/images/leaf_deerhack2023_right
 
 const FAQ = () => {
   return (
-    <div className="flex flex-col items-center bg-dark-purple mb-1 sm:mb-5  sm:h-[90vh]  lg:mb-48 md:mb-48 md:h-[81%] lg:h-[85vh] mt-5">
+    <div className="flex flex-col items-center bg-dark-purple mb-1 sm:mb-5   lg:mb-8 md:mb-10  mt-5">
       <Image
         src={leaf_deerhack2023_right}
         alt="leaf"
