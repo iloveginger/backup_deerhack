@@ -23,13 +23,13 @@ export default function RegisterCard(): ReactElement {
               innovation.
             </p>
           </div>
-          <Link href = "/register">
-          <button
-            className={` ${satoshiBlack.className} text-center text-sm lg:text-xl bg-secondary text-dark-purple p-3 rounded lg:ml-20 bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[60%] md:w-[12rem]`}
+          <Link href="/register">
+            <button
+              className={` ${satoshiBlack.className} text-center text-sm lg:text-xl bg-secondary text-dark-purple p-3 rounded lg:ml-20 bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out sm:w-[60%] md:w-[12rem]  `}
             >
-            Register Now
-          </button>
-            </Link>
+              Register Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
