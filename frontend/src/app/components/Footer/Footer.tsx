@@ -62,12 +62,12 @@ export default function Footer(): ReactElement {
               </p>
               <div className="flex gap-4">
                 <span className=" w-[25px] px-0">
-                  <Link href="https://www.facebook.com/people/DeerHack-2023/100089906884851/">
+                  <Link href="https://www.facebook.com/people/DeerHack-2023/100089906884851/" target="_blank">
                     <FacebookSVG />
                   </Link>
                 </span>
                 <span className="w-[25px]">
-                  <Link href="https://www.instagram.com/deerhack2024/">
+                  <Link href="https://www.instagram.com/deerhack2024/" target="_blank">
                     <InstagramSVG />
                   </Link>
                 </span>
@@ -77,7 +77,7 @@ export default function Footer(): ReactElement {
                   </Link>
                 </span>
                 <span className="w-[25px]">
-                  <Link href="https://www.linkedin.com/company/deerhack-dwit/">
+                  <Link href="https://www.linkedin.com/company/deerhack-dwit/" target="_blank">
                     <LinkedInSVG />
                   </Link>
                 </span>
