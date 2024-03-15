@@ -29,22 +29,27 @@ export default function Footer(): ReactElement {
               <SoftwareSVG />
             </div>
             <div key="contact_info" className="mt-10">
+                <Link href = "mailto:deerhack@deerwalk.edu.np">
               <div className="text-white flex flex-row mb-4 justify-start items-center">
                 <MailSVG />
                 <span
-                  className={`px-2 md:text-[17px] lg:text-[20px] ${cabinetRegular.className}`}
-                >
-                  deerhack@deerwalk.edu.np
+                    className={`px-2 md:text-[17px] lg:text-[20px] ${cabinetRegular.className}`}
+                    >
+                    deerhack@deerwalk.edu.np
                 </span>
               </div>
+                </Link>
+                <Link href = "tel: +977-9847357575">
               <div className="text-white flex flex-row justify-start items-center">
                 <PhoneSVG />
+
                 <span
                   className={`px-2 md:text-[17px] lg:text-[20px] ${cabinetRegular.className}`}
                 >
-                  9841210924/9843109234
+                  9847357575/9807250988
                 </span>
               </div>
+                </Link>
             </div>
             <div
               key="socials"
@@ -57,12 +62,12 @@ export default function Footer(): ReactElement {
               </p>
               <div className="flex gap-4">
                 <span className=" w-[25px] px-0">
-                  <Link href="">
+                  <Link href="https://www.facebook.com/people/DeerHack-2023/100089906884851/">
                     <FacebookSVG />
                   </Link>
                 </span>
                 <span className="w-[25px]">
-                  <Link href="">
+                  <Link href="https://www.instagram.com/deerhack2024/">
                     <InstagramSVG />
                   </Link>
                 </span>
@@ -72,7 +77,7 @@ export default function Footer(): ReactElement {
                   </Link>
                 </span>
                 <span className="w-[25px]">
-                  <Link href="">
+                  <Link href="https://www.linkedin.com/company/deerhack-dwit/">
                     <LinkedInSVG />
                   </Link>
                 </span>
@@ -83,19 +88,19 @@ export default function Footer(): ReactElement {
             <div className="links text-white flex flex-col gap-7 md:gap-9 justify-center md:items-center">
               <Link
                 className={`px-2 text-[16px] ${cabinetRegular.className}`}
-                href=""
+                href="/schedule"
               >
                 Schedule
               </Link>
               <Link
                 className={`px-2 text-[16px] ${cabinetRegular.className}`}
-                href=""
+                href="/organizers"
               >
                 Organizers
               </Link>
               <Link
                 className={`px-2 text-[16px] ${cabinetRegular.className}`}
-                href=""
+                href="/winners"
               >
                 Winners
               </Link>

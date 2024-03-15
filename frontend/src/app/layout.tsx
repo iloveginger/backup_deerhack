@@ -7,8 +7,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 export const metadata = {
   metadataBase: "https://deerhack.deerwalk.edu.np",
   title: {
-    template: "%s | Deerhack 2024 - Fawning Over Innovation",
-    default: "Deerhack 2024 - Fawning Over Innovation",
+    template: "%s | DeerHack 2024 - Fawning Over Innovation",
+    default: "DeerHack 2024 - Fawning Over Innovation",
   },
   description:
     "DeerHack 2024 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",

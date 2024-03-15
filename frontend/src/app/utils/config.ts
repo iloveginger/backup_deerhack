@@ -11,7 +11,7 @@ const ANALYTICS_ID = "G-MZMTQJ9HQX";
 if (mode == "dev") {
   SERVER_URL = "http://localhost:1337";
 } else {
-  SERVER_URL = "http://54.164.230.35"; // "https://deerhack.deerwalk.edu.np";
+  SERVER_URL =  "https://deerhack.deerwalk.edu.np";
 }
 
 const supaBaseConfig = {
