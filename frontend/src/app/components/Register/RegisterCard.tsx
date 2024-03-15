@@ -10,7 +10,7 @@ export default function RegisterCard(): ReactElement {
   return (
     <div className="flex-col justify-center items-center w-[70vw] md:w-[668px] lg:w-[960px] mx-auto">
       <div className="primary-gradient-background p-[0.15rem] w-full rounded-[0.9rem]">
-        <div className=" py-[2rem]  flex flex-col lg:items-center items-start justify-start bg-violet rounded-[0.8rem] md:flex-row md:py-[3rem] md:px-[2rem] sm:py-[2rem] lg:py-20 px-[1rem] lg:gap-[3rem]  md:items-center  ">
+        <div className=" py-[1.5rem]  flex flex-col lg:items-center items-start justify-start bg-violet rounded-[0.8rem] md:flex-row md:py-[3rem] md:px-[2rem] sm:py-[2rem] lg:py-20 px-[1rem] lg:gap-[3rem]  md:items-center  ">
           <div
             className={`${cabinetExtraBold.className} justify-center items-center text-primary-gradient-color text-2xl lg:text-3xl text-start md:text-start`}
           >
