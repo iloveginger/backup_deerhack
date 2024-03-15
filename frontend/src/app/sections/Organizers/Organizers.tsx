@@ -64,7 +64,7 @@ export default async function Organizers() {
         key="volunteers"
         className="flex justify-center items-center flex-col mt-10"
       >
-        <h1 className={`headings ${cabinetExtraBold.className} text-4xl`}>
+        <h1 className={`headings ${cabinetExtraBold.className} text-3xl`}>
           Volunteers
         </h1>
         <VolunteerSection />
