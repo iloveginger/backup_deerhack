@@ -7,13 +7,24 @@ import { cabinetExtraBold, cabinetRegular } from "../utils/fonts";
 import Navbar from "../components/Navbar/Navbar";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Page() {
   const [email, setEmail] = useState<string>("");
   const [color, setColor] = useState<string>("bg-secondary");
   const [submitStatus, setSubmitStatus] = useState<string>("Submit");
   const [disabled, setDisabled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
