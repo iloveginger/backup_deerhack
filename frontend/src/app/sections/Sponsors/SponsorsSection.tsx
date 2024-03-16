@@ -26,7 +26,7 @@ export default function SponsorsSection() {
         </div>
         {sponsorType.sponsors.map((sponsor)=>(
             <div key = {sponsor.name} className="mx-[15rem]  flex flex-row flex-wrap justify-center items-center">
-          <Sponsor image={sponsor.image} alt={sponsor.name} url = {sponsor.url}/>
+          <Sponsor image={sponsor.image} alt={sponsor.imageAlt} url = {sponsor.url}/>
             </div>
      ))}     
     </div>
