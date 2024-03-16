@@ -12,7 +12,7 @@ const sponsors:SponsorType[] = [
     sponsors:[
       {
         name:"Devfolio",
-        url:"https://devfolio.com",
+        url:"https://devfolio.co",
         image:DevfolioLogo,
         imageAlt:"DEVFOLIO LOGO"
       }
@@ -23,7 +23,7 @@ const sponsors:SponsorType[] = [
     sponsors:[
         {
             name:"deerhold",
-            url:"https://deerhold.co",
+            url:"https://deerhold.com",
             image:DeerholdLogo,
             imageAlt:"DeerHold Logo"
         },
