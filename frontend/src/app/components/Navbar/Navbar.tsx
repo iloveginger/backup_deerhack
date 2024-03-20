@@ -9,6 +9,7 @@ import Image from "next/image";
 import menuSVG from "@/app/assets/icons/menu.svg";
 import crossSVG from "@/app/assets/icons/cross.svg";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isResourceOpen, setIsResourceOpen] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
     if (currentRef && !currentRef.contains(event.target as Node)) {
       setIsResourceOpen(false);
     }
-  };
+};
 
   useEffect(() => {
     if (isResourceOpen) {
@@ -47,109 +48,104 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <header className="fixed w-screen z-10">
-        <div className="backdrop-container"></div> {/* Backdrop filter container */}
-        <nav className={`w-screen isolate mx-auto shadow-lg z-10 relative`}>
+      <header className="fixed bg-violet/50 w-screen isolate z-10 mx-auto shadow-lg backdrop-blur-lg">
+        <nav
+          className={`flex w-screen flex-row justify-${
+            isMenuOpen ? "" : "evenly"
+          } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
+            isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
+          }`}
+        >
+          <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
+            <a href="/">
+              <DeerhackLogo width="50" height="50" />
+            </a>
+            <button
+              onClick={toggleMenu}
+              className="lg:hidden mt-2 md:mt-2 lg:right-0"
+            >
+              {isMenuOpen ? (
+                <Image
+                  src={crossSVG}
+                  alt="Close Menu"
+                  width={40}
+                  height={40}
+                />
+              ) : (
+                <Image src={menuSVG} alt="Open Menu" width={40} height={40} />
+              )}
+            </button>
+          </div>
+
           <div
-            className={`bg-violet/50 w-screen flex flex-row justify-${
-              isMenuOpen ? "" : "evenly"
-            } lg:px-28 gap-x-28 gap-y-8 py-4 items-start ${
-              isMenuOpen ? "flex-col bg-dark-purple px-5 h-screen " : "flex-row"
+            className={`lg:flex lg:items-between md:w-[800px] h-[55px] lg:h-auto ${
+              isMenuOpen ? cabinetMedium.className + " block " : "hidden"
             }`}
           >
-            <div className="flex justify-between items-start w-full lg:w-auto md:px-10 px-4 sm:px-8">
-              <a href="/">
-                <DeerhackLogo width="50" height="50" />
-              </a>
+            <Counter />
+          </div>
+
+          <div
+            className={`lg:flex ${
+              cabinetBold.className
+            } lg:flex-row lg:items-between mt-4 lg:gap-10  ${
+              isMenuOpen
+                ? cabinetMedium.className + " flex-col mt-5 text-2xl space-y-5"
+                : "hidden"
+            } font-[16px] text-magnolia`}
+          >
+            <Link
+              href="/schedule"
+              className="hover:text-secondary block lg:inline-block "
+            >
+              Schedule
+            </Link>
+            <Link
+              href="/winners"
+              className="hover:text-secondary block lg:inline-block "
+            >
+              Winners
+            </Link>
+
+            <div className="flex flex-col" ref={resourceRef}>
+              <span
+                className=" hover:text-secondary block lg:inline-block cursor-pointer "
+                onClick={handleResourceClick}
+              >
+                Resources
+              </span>
+            
+            
+  
+            </div>
+          </div>
+
+          <div
+            className={`lg:flex lg:items-between ${
+              isMenuOpen ? cabinetMedium.className + " block" : "hidden"
+            }`}
+          >
+            <Link href="/register">
               <button
-                onClick={toggleMenu}
-                className="lg:hidden mt-2 md:mt-2 lg:right-0"
+                className={` ${satoshiBlack.className} font-[20px] md:text-md bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
               >
-                {isMenuOpen ? (
-                  <Image
-                    src={crossSVG}
-                    alt="Close Menu"
-                    width={40}
-                    height={40}
-                  />
-                ) : (
-                  <Image
-                    src={menuSVG}
-                    alt="Open Menu"
-                    width={40}
-                    height={40}
-                  />
-                )}
+                Register Now
               </button>
-            </div>
-
-            <div
-              className={`lg:flex lg:items-between md:w-[800px] h-[55px] lg:h-auto ${
-                isMenuOpen ? cabinetMedium.className + " block " : "hidden"
-              }`}
-            >
-              <Counter />
-            </div>
-
-            <div
-              className={`lg:flex ${
-                cabinetBold.className
-              } lg:flex-row lg:items-between mt-4 lg:gap-10  ${
-                isMenuOpen
-                  ? cabinetMedium.className + " flex-col mt-5 text-2xl space-y-5"
-                  : "hidden"
-              } font-[16px] text-magnolia`}
-            >
-              <Link
-                href="/schedule"
-                className="hover:text-secondary block lg:inline-block "
-              >
-                Schedule
-              </Link>
-              <Link
-                href="/winners"
-                className="hover:text-secondary block lg:inline-block "
-              >
-                Winners
-              </Link>
-
-              <div className="flex flex-col" ref={resourceRef}>
-                <span
-                  className=" hover:text-secondary block lg:inline-block cursor-pointer "
-                  onClick={handleResourceClick}
-                >
-                  Resources
-                </span>
-                <div
-                  className={`${
-                    isResourceOpen ? "opacity-1" : "opacity-0 duration-500"
-                  } fixed bg-violet/50 lg:block hidden -z-1 backdrop-blur-md transition-all ease-in-out duration-500 text-white shadow-lg ${cabinetMedium.className} mt-[0.23rem] top-20`}
-                >
-                  <ul className="w-[18.6rem] mt-0.5 text-left list-none">
-                    <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
-                    <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
-                    <li className="p-5 cursor-pointer">Judging Criteria2</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className={`lg:flex lg:items-between ${
-                isMenuOpen ? cabinetMedium.className + " block" : "hidden"
-              }`}
-            >
-              <Link href="/register">
-                <button
-                  className={` ${satoshiBlack.className} font-[20px] md:text-md bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
-                >
-                  Register Now
-                </button>
-              </Link>
-            </div>
+            </Link>
           </div>
         </nav>
       </header>
+      <div
+                className={`${
+                  isResourceOpen ? "opacity-1" : "opacity-0 duration-500"
+                } fixed bg-violet/50  backdrop-blur-md ${cabinetMedium.className} shadow-lg transition-all ease-in-out duration-500 z-20 text-white invisible lg:visible lg:right-[15%] border-sm xl:right-[13.5%] xl2:right-[12.5%] xl3:right-[12%] xl4:right-[13.5vw] xl5:right-[16.5vw] top-20 mt-[0.23rem]`}
+              >
+                <ul className="w-[18.6rem] mt-0.5 text-left list-none">
+                  <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
+                  <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
+                  <li className="p-5 cursor-pointer">Judging Criteria2</li>
+                </ul>
+              </div>
     </div>
   );
 };
