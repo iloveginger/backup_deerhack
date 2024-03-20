@@ -1,5 +1,5 @@
-"use client";
-import { useState } from "react";
+"use client"
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 import NavLinks from "./Navlinks";
@@ -12,6 +12,7 @@ import crossSVG from "@/app/assets/icons/cross.svg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isResourceOpen, setIsResourceOpen] = useState(false);
+  const resourceRef = useRef(null);
 
   const Counter = dynamic(() => import("@/app/components/counter/Counter"), {
     ssr: false,
@@ -24,6 +25,25 @@ const Navbar = () => {
   const handleResourceClick = () => {
     setIsResourceOpen(!isResourceOpen);
   };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    const currentRef = resourceRef.current as HTMLElement | null;
+    if (currentRef && !currentRef.contains(event.target as Node)) {
+      setIsResourceOpen(false);
+    }
+};
+
+  useEffect(() => {
+    if (isResourceOpen) {
+      window.addEventListener("click", handleClickOutside);
+    } else {
+      window.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, [isResourceOpen]);
 
   return (
     <div className="relative">
@@ -79,13 +99,6 @@ const Navbar = () => {
             >
               Schedule
             </Link>
-            {/* <Link
-            href="/organizers"
-            className="hover:text-secondary block lg:inline-block 
-            "
-            >
-            Organizers
-          </Link> */}
             <Link
               href="/winners"
               className="hover:text-secondary block lg:inline-block "
@@ -93,7 +106,7 @@ const Navbar = () => {
               Winners
             </Link>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col" ref={resourceRef}>
               <span
                 className=" hover:text-secondary block lg:inline-block cursor-pointer "
                 onClick={handleResourceClick}
@@ -101,16 +114,16 @@ const Navbar = () => {
                 Resources
               </span>
               <div
-                  className={`${
-                    isResourceOpen ? "opacity-1" : "opacity-0 duration-500"
-                  } fixed bg-violet/50 lg:block hidden z-10 backdrop-blur-md transition-all ease-in-out duration-500 text-white shadow-lg ${cabinetMedium.className} mt-[0.23rem] top-20`}
-                >
-                  <ul className="w-[18.6rem] mt-0.5 text-left list-none">
-                    <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
-                    <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
-                    <li className="p-5 cursor-pointer">Judging Criteria2</li>
-                  </ul>
-                </div>
+                className={`${
+                  isResourceOpen ? "opacity-1" : "opacity-0 duration-500"
+                } fixed bg-violet/50 lg:block hidden z-10 backdrop-blur-md transition-all ease-in-out duration-500 text-white shadow-lg ${cabinetMedium.className} mt-[0.23rem] top-20`}
+              >
+                <ul className="w-[18.6rem] mt-0.5 text-left list-none">
+                  <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
+                  <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
+                  <li className="p-5 cursor-pointer">Judging Criteria2</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -129,7 +142,6 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      
     </div>
   );
 };
