@@ -26,9 +26,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="fixed bg-violet/50 w-screen isolate z-10 mx-auto shadow-lg backdrop-blur-lg ">
 
-    <header className="fixed w-screen mx-auto z-10 isolate shadow-lg backdrop-blur-lg ">
+    <header className=" ">
       <nav
         className={`flex w-screen flex-row justify-${
           isMenuOpen ? "" : "evenly"
@@ -98,6 +98,18 @@ const Navbar = () => {
               onClick={handleResourceClick}>
             Resources
               </span>
+              <div className = {`${
+  isResourceOpen? "opacity-1" :"opacity-0 duration-500"
+}
+  fixed bg-violet/50 lg:block transition-all ease-in-out duration-500 top-20 w-fit hidden text-white mx-auto mt-[0.22rem]  shadow-lg backdrop-blur-lg ${cabinetMedium.className}`}>
+
+<ul className={`
+w-[18.6rem] mt-0.5  text-left  list-none `}>
+    <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
+    <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
+    <li className="p-5 cursor-pointer">Judging Criteria2</li>
+  </ul>
+  </div>
           </div>
               </div>
             
@@ -119,17 +131,18 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
-  <div className = 'fixed  right-64  top-20 w-fit hidden lg:block text-white mx-auto mt-0.5  z-20   backdrop-blur-md'>
-
-<ul className={` ${
-  isResourceOpen? "block" :"hidden "
+  {/* <div className = {`${
+  isResourceOpen? "opacity-1" :"opacity-0 duration-500"
 }
-w-56 mt-0.5  text-left  z-20 list-none  `}>
-    <li className="p-5  mb-2 cursor-pointer">Judging Criteria</li>
+  fixed right-48 bg-violet/50 lg:block transition-all ease-in-out duration-500 top-20 w-fit hidden text-white mx-auto mt-[0.22rem]  z-20 shadow-lg backdrop-blur-lg ${cabinetMedium.className}`}>
+
+<ul className={`
+w-[18.6rem] mt-0.5  text-left  list-none `}>
+    <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
     <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
     <li className="p-5 cursor-pointer">Judging Criteria2</li>
   </ul>
-  </div>
+  </div> */}
   </div>
     
   );
