@@ -49,7 +49,7 @@ const sponsors:SponsorType[] = [
     ]
   },
   {
-    name:"Coffee Sponsors",
+    name:"Coffee Sponsor",
     sponsors:[
         {
             name:"Mount Strada",
