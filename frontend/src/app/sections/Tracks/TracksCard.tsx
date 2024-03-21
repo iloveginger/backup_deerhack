@@ -9,7 +9,6 @@ import TracksBodyCard from "@/app/components/Tracks/TracksBodyCard";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import { useRef } from "react";
 
-
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
     "Interactive Technology",
