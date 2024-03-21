@@ -135,15 +135,15 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      <div
+      <div 
                 className={`${
                   isResourceOpen ? "opacity-1" : "opacity-0 duration-500"
-                } fixed bg-violet/50  backdrop-blur-md ${cabinetMedium.className} shadow-lg transition-all ease-in-out duration-500 z-20 text-white invisible lg:visible lg:right-[15%] border-sm xl:right-[13.5%] xl2:right-[12.5%] xl3:right-[12%] xl4:right-[13.5vw] xl5:right-[16.5vw] top-20 mt-[0.23rem]`}
+                } fixed bg-violet/50  backdrop-blur-md ${cabinetMedium.className} shadow-lg transition-all ease-in-out duration-500 z-20 text-white invisible lg:visible lg:right-[15%] border-sm xl:right-[13.5%] xl2:right-[12.5%] xl3:right-[12%] xl4:right-[13.5vw] xl5:right-[16.5vw] top-20 mt-[0.25rem]`}
               >
                 <ul className="w-[18.6rem] mt-0.5 text-left list-none">
-                  <li className="p-5 mb-2 cursor-pointer">Judging Criteria</li>
-                  <li className="p-5 mb-2 cursor-pointer">Judging Criteria1</li>
-                  <li className="p-5 cursor-pointer">Judging Criteria2</li>
+                  <li className="p-5 mb-2 cursor-pointer"><a href= "https://google.com" target="_blank">Judging Criteria</a></li>
+                  <li className="p-5 mb-2 cursor-pointer"><a href = "https://">Judging Criteria1</a></li>
+                  <li className="p-5 cursor-pointer"><a href= "https://">Judging Criteria2</a></li>
                 </ul>
               </div>
     </div>
