@@ -115,7 +115,13 @@ const Navbar = () => {
               >
                 Resources
               </span>
-            
+              {isResourceOpen?
+              <div className={`lg:hidden block text-xl ${cabinetMedium.className}`} >
+                <ul>
+                  <li className="pt-4 px-6 mb-4"><a href = "/resources/selection_criteria.pdf" className= "hover:text-secondary" target="_blank">Selection Criteria</a></li>
+                </ul>
+              </div>:null
+}
             
   
             </div>
@@ -139,12 +145,12 @@ const Navbar = () => {
       <div 
                 className={`${
                   isResourceOpen ? "opacity-1" : "opacity-0 duration-500"
-                } fixed bg-violet/50  backdrop-blur-md ${cabinetMedium.className} shadow-lg transition-all ease-in-out duration-500 z-20 text-white invisible lg:visible lg:right-[15%] border-sm xl:right-[13.5%] xl2:right-[12.5%] xl3:right-[12%] xl4:right-[13.5vw] xl5:right-[16.5vw] top-20 mt-[0.25rem]`}
+                } fixed bg-violet/50  backdrop-blur-md ${cabinetMedium.className} shadow-lg transition-all ease-in-out duration-500 z-20 text-white invisible rounded-br-xl rounded-bl-xl lg:visible lg:right-[15%] border-sm xl:right-[13.5%] xl2:right-[12.5%] xl3:right-[12%] xl4:right-[13.5vw]  xl5:right-[16.5vw] top-20 mt-[0.25rem]`}
               >
                 <ul className="w-[18.6rem] mt-0.5 text-left list-none">
                   {/* <li className="p-5 mb-2 "><a href= "#" className= "hover:text-secondary" target="_blank">Judging Criteria</a></li> */}
-                  <li className="p-5 mb-2"><a href = "/resources/selection_criteria.pdf" className= "hover:text-secondary" target="_blank">Selection Criteria</a></li>
-                  {/* <li className="p-5 "><a href= "#" className= "hover:text-secondary" target="_blank">Participation Guidelines</a></li> */}
+                  <li className="pt-4 px-6 mb-4"><a href = "/resources/selection_criteria.pdf" className= "hover:text-secondary" target="_blank">Selection Criteria</a></li>
+                  {/* <li className="pt-4 px-6 mb-4"><a href= "#" className= "hover:text-secondary" target="_blank">Participation Guidelines</a></li> */}
                 </ul>
               </div> 
     </div>
