@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, memo } from "react";
 import Link from "next/link";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 import NavLinks from "./Navlinks";
@@ -8,6 +8,8 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import menuSVG from "@/app/assets/icons/menu.svg";
 import crossSVG from "@/app/assets/icons/cross.svg";
+import Counter from "../counter/Counter";
+import Counter_wrapper from "../counter/Counter";
 
 
 const Navbar = () => {
@@ -15,9 +17,8 @@ const Navbar = () => {
   const [isResourceOpen, setIsResourceOpen] = useState(false);
   const resourceRef = useRef(null);
 
-  const Counter = dynamic(() => import("@/app/components/counter/Counter"), {
-    ssr: false,
-  });
+   
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -82,7 +83,7 @@ const Navbar = () => {
               isMenuOpen ? cabinetMedium.className + " block " : "hidden"
             }`}
           >
-            <Counter />
+            <Counter_wrapper />
           </div>
 
           <div

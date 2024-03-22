@@ -1,7 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { cabinetBold, cabinetMedium, cabinetRegular } from "@/app/utils/fonts";
 
+const Counter_wrapper = ()=>{
+  const [isClient, setisClient] = useState(false);
+  useEffect(()=>{
+    setisClient(true);
+  },[])
+  const Counter_component = memo(
+    Counter );
+    return isClient? <Counter_component/>:null;
+}
 const Counter = () => {
   const calculateTimeLeft = (): {
     days: number;
@@ -83,4 +92,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default Counter_wrapper;

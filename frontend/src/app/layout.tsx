@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { ANALYTICS_ID } from "./utils/config";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: "https://deerhack.deerwalk.edu.np",
@@ -62,12 +63,12 @@ export default function RootLayout({
         <GoogleAnalytics gaId={`${ANALYTICS_ID}`} />
         <main>{children}</main>
         {/* <Footer /> */}
-        <script
-          suppressHydrationWarning
+        <Script
+         
           defer
           async
           src="https://apply.devfolio.co/v2/sdk.js"
-        ></script>
+        ></Script>
       </body>
     </html>
   );
