@@ -10,7 +10,7 @@ export default function Sponsor({
   url: string;
 }) {
   return (
-    <div className="flex flex-row flex-wrap justify-center items-center w-[15rem] h-[15rem]  rounded-full">
+    <div className="flex flex-row  justify-center items-center w-[11rem] h-[11rem]  rounded-full">
       <Link href={url} target="_blank">
         <Image
           src={image}
