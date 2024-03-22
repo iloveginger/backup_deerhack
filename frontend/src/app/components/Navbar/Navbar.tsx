@@ -145,7 +145,7 @@ const Navbar = () => {
                   <li className="p-5 mb-2"><a href = "/resources/selection_criteria.pdf" className= "hover:text-secondary" target="_blank">Selection Criteria</a></li>
                   {/* <li className="p-5 "><a href= "#" className= "hover:text-secondary" target="_blank">Participation Guidelines</a></li> */}
                 </ul>
-              </div>
+              </div> 
     </div>
   );
 };
