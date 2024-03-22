@@ -1,4 +1,4 @@
-import SponsorType from "@/app/types/sponsorType"
+import SponsorType from "@/app/types/sponsorType";
 import DeerholdLogo from "@/app/assets/images/sponsors/deerhold.png";
 import MountStradaLogo from "@/app/assets/images/sponsors/mount_strada.png";
 import SegwayLogo from "@/app/assets/images/sponsors/segway.png";
@@ -7,10 +7,10 @@ import ETHIndiaLogo from "@/app/assets/images/sponsors/ethindia-light.svg"
 import PolygonLogo from "@/app/assets/images/sponsors/Polygon_Logo-White.svg"
 import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.png"
 
-const sponsors:SponsorType[] = [
+const sponsors: SponsorType[] = [
   {
-    name:"Gold Sponsors",
-    sponsors:[
+    name: "Gold Sponsors",
+    sponsors: [
       {
         name:"Hamro CSIT",
         url:"https://hamrocsit.com",
@@ -26,27 +26,27 @@ const sponsors:SponsorType[] = [
     ]
   },
   {
-    name:"Silver Sponsors",
-    sponsors:[
-        {
-            name:"deerhold",
-            url:"https://deerhold.com",
-            image:DeerholdLogo,
-            imageAlt:"DeerHold Logo"
-        },
-        {
-          name:"Polygon",
-          url:"https://polygon.technology/",
-          image:PolygonLogo,
-          imageAlt:"POLYGON LOGO"
-        },
-        {
-          name:"ETH India",
-          url:"https://ethindia.co ",
-          image:ETHIndiaLogo,
-          imageAlt:"ETHINDIA LOGO"
-        }
-    ]
+    name: "Silver Sponsors",
+    sponsors: [
+      {
+        name: "deerhold",
+        url: "https://deerhold.com",
+        image: DeerholdLogo,
+        imageAlt: "DeerHold Logo",
+      },
+      {
+        name: "Polygon",
+        url: "https://polygon.technology/",
+        image: PolygonLogo,
+        imageAlt: "POLYGON LOGO",
+      },
+      {
+        name: "ETH India",
+        url: "https://ethindia.co ",
+        image: ETHIndiaLogo,
+        imageAlt: "ETHINDIA LOGO",
+      },
+    ],
   },
   {
     name:"Coffee Sponsor",
@@ -71,4 +71,4 @@ const sponsors:SponsorType[] = [
   },
 ];
 
-export {sponsors}; 
+export { sponsors };

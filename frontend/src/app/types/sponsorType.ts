@@ -1,8 +1,7 @@
-import Sponsor from "./sponsors"
+import Sponsor from "./sponsors";
 
 type SponsorType = {
-    name: string, 
-    sponsors:Sponsor[],
-
-}
-export default SponsorType
+  name: string;
+  sponsors: Sponsor[];
+};
+export default SponsorType;
