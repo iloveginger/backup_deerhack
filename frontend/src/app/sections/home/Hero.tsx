@@ -17,7 +17,7 @@ const Hero = () => {
       // document.getElementById('hero_container')?.removeChild(script);
       document.body.removeChild(script);
     };
-  }, []);
+  });
 
   return (
     <div
