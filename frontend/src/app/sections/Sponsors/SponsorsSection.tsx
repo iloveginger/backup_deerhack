@@ -26,11 +26,11 @@ export default function SponsorsSection() {
               {sponsorType.name}
             </div>
           </div>
-          <div className=" flex flex-wrap gap-10 justify-center items-center ">
+          <div className=" flex flex-wrap md:flex-row flex-col gap-20 justify-center items-center ">
             {sponsorType.sponsors.map((sponsor) => (
               <div
                 key={sponsor.name}
-                className=" flex flex-row flex-wrap justify-center items-center "
+                className=" flex flex-row  flex-wrap justify-center items-center "
               >
                 <Sponsor
                   image={sponsor.image}
