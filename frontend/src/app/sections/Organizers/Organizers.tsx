@@ -17,7 +17,7 @@ export default async function Organizers() {
         Meet The Organizers
       </h1>
       {teams.map((team: Team, key = team.id) => (
-        <div className="text-white" key={key}>
+        <div className="text-white mt-20" key={key}>
           <h1
             className={`headings ${cabinetExtraBold.className} text-3xl mb-10`}
           >
@@ -62,7 +62,7 @@ export default async function Organizers() {
       ))}
       <div
         key="volunteers"
-        className="flex justify-center items-center flex-col mt-10"
+        className="flex justify-center items-center flex-col mt-20"
       >
         <h1 className={`headings ${cabinetExtraBold.className} text-3xl`}>
           Volunteers
