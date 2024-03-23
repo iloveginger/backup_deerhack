@@ -132,7 +132,7 @@ const Navbar = () => {
               isMenuOpen ? cabinetMedium.className + " block" : "hidden"
             }`}
           >
-            <Link href="/register">
+            <Link href="https://deerhack24.devfolio.co" target="_blank">
               <button
                 className={` ${satoshiBlack.className} font-[20px] md:text-md bg-secondary text-dark-purple text-xl p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[12rem]`}
               >
