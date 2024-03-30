@@ -6,7 +6,7 @@ import DevfolioLogo from "@/app/assets/images/sponsors/Devfolio_Logo-White.svg"
 import ETHIndiaLogo from "@/app/assets/images/sponsors/ethindia-light.svg"
 import PolygonLogo from "@/app/assets/images/sponsors/Polygon_Logo-White.svg"
 import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.png"
-import HamroPatroLogo from "@/app/assets/images/sponsors/hamropatro.png"
+import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg"
 import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png"
 
 const sponsors: SponsorType[] = [
@@ -51,7 +51,7 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
-    name:"Coffee Sponsor",
+    name:"Coffee Partner",
     sponsors:[
         {
             name:"Mount Strada",
@@ -61,7 +61,7 @@ const sponsors: SponsorType[] = [
         },
     ]
   },{
-    name:"App Sponsors",
+    name:"App Partner",
     sponsors:[
         {
             name:"Hamro Patro",
@@ -72,7 +72,7 @@ const sponsors: SponsorType[] = [
     ]
   },
   {
-    name:"Mobility Sponsors",
+    name:"Mobility Partner",
     sponsors:[
         {
             name:"Segway",
