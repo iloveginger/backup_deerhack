@@ -6,6 +6,8 @@ import DevfolioLogo from "@/app/assets/images/sponsors/Devfolio_Logo-White.svg"
 import ETHIndiaLogo from "@/app/assets/images/sponsors/ethindia-light.svg"
 import PolygonLogo from "@/app/assets/images/sponsors/Polygon_Logo-White.svg"
 import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.png"
+import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg"
+import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png"
 
 const sponsors: SponsorType[] = [
   {
@@ -49,7 +51,7 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
-    name:"Coffee Sponsor",
+    name:"Coffee Partner",
     sponsors:[
         {
             name:"Mount Strada",
@@ -59,7 +61,18 @@ const sponsors: SponsorType[] = [
         },
     ]
   },{
-    name:"Mobility Sponsors",
+    name:"App Partner",
+    sponsors:[
+        {
+            name:"Hamro Patro",
+            url:"https://www.hamropatro.com",
+            image:HamroPatroLogo,
+            imageAlt:"HamroPatro Logo"
+        },
+    ]
+  },
+  {
+    name:"Mobility Partner",
     sponsors:[
         {
             name:"Segway",
@@ -69,6 +82,28 @@ const sponsors: SponsorType[] = [
         },
     ]
   },
+  {
+    name:"Training Partner",
+    sponsors:[
+        {
+            name:"Deerwalk Training Center",
+            url:"https://deerwalktrainingcenter.com",
+            image:trainingcenter,
+            imageAlt:"Deerwalk training center logo"
+        },
+    ]
+  },
+  // {
+  //   name:"Media Partner",
+  //   sponsors:[
+  //       {
+  //           name:"Digital Media Team(DMT)",
+  //           url:"",
+  //           image:"",
+  //           imageAlt:"Digital Media Team logo"
+  //       },
+  //   ]
+  // },
 ];
 
 export { sponsors };
