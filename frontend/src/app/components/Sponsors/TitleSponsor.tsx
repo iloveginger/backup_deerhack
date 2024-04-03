@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function TitleSponsor({ image }: { image: ReactElement }) {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mb-16">
       <div
         className={`${cabinetMedium.className} m-10 text-white text-3xl font-extrabold tracking-normal`}
       >

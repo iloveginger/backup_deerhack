@@ -9,8 +9,21 @@ import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.pn
 import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg"
 import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png"
 import Jyotilogo from "@/app/assets/images/sponsors/Jyotilogo.png"
+import securityPal from "@/app/assets/images/sponsors/securityPal.svg"
+import NepalBank from "@/app/assets/images/sponsors/NepalBank.png"
 
 const sponsors: SponsorType[] = [
+  {
+    name: "Platinum Sponsor",
+    sponsors: [
+      {
+        name:"SecurityPal",
+        url:"https://www.securitypalhq.com",
+        image:securityPal,
+        imageAlt:"SecurityPal Logo"
+      },
+    ]
+  },
   {
     name: "Gold Sponsors",
     sponsors: [
@@ -60,6 +73,13 @@ const sponsors: SponsorType[] = [
             image:Jyotilogo,
             imageAlt:"Jyoti Bikas Bank logo"
         },
+        {
+            name:"Nepal Bank Ltd.",
+            url:"https://nepalbank.com.np",
+            image:NepalBank,
+            imageAlt:"Nepal Bank logo"
+        },
+
     ]
   },
   {
