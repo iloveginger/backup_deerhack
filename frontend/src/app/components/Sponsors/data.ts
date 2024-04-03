@@ -10,6 +10,9 @@ import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg";
 import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png";
 import Jyotilogo from "@/app/assets/images/sponsors/Jyotilogo.png";
 import NepalBank from "@/app/assets/images/sponsors/NepalBank.png";
+import Oliz from "@/app/assets/images/sponsors/Oliz.png";
+import github from "@/app/assets/images/sponsors/Github.png";
+import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
 
 const sponsors: SponsorType[] = [
   // {
@@ -105,6 +108,12 @@ const sponsors: SponsorType[] = [
         image: SegwayLogo,
         imageAlt: "Subway Logo",
       },
+      {
+        name: "Oliz Store",
+        url: "https://www.olizstore.com",
+        image: Oliz,
+        imageAlt: "Oliz store Logo",
+      },
     ],
   },
   {
@@ -121,6 +130,18 @@ const sponsors: SponsorType[] = [
   {
     name: "Supported By",
     sponsors: [
+      {
+        name: "Github Education",
+        url: "https://education.github.com",
+        image: github,
+        imageAlt: "Github logo",
+      },
+      {
+        name: "Luminr.co",
+        url: "https://luminr.co",
+        image: Luminr,
+        imageAlt: "Luminr logo",
+      },
       {
         name: "Nepal Bank Ltd.",
         url: "https://nepalbank.com.np",
