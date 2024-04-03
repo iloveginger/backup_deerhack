@@ -8,6 +8,7 @@ import PolygonLogo from "@/app/assets/images/sponsors/Polygon_Logo-White.svg"
 import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.png"
 import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg"
 import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png"
+import Jyotilogo from "@/app/assets/images/sponsors/Jyotilogo.png"
 
 const sponsors: SponsorType[] = [
   {
@@ -51,16 +52,17 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
-    name:"Coffee Partner",
+    name:"Banking Partners",
     sponsors:[
         {
-            name:"Mount Strada",
-            url:"https://mountstradacoffee.com",
-            image:MountStradaLogo,
-            imageAlt:"Mount Strada Logo"
+            name:"Jyoti Bikas Bank Ltd.",
+            url:"https://jbbl.com.np",
+            image:Jyotilogo,
+            imageAlt:"Jyoti Bikas Bank logo"
         },
     ]
-  },{
+  },
+  {
     name:"App Partner",
     sponsors:[
         {
@@ -68,6 +70,17 @@ const sponsors: SponsorType[] = [
             url:"https://www.hamropatro.com",
             image:HamroPatroLogo,
             imageAlt:"HamroPatro Logo"
+        },
+    ]
+  },
+  {
+    name:"Coffee Partner",
+    sponsors:[
+        {
+            name:"Mount Strada",
+            url:"https://mountstradacoffee.com",
+            image:MountStradaLogo,
+            imageAlt:"Mount Strada Logo"
         },
     ]
   },
