@@ -10,11 +10,11 @@ const PlatinumSponsor = () => {
       <div
         className={`${cabinetMedium.className} m-10 text-white text-3xl font-extrabold tracking-normal`}
       >
-        Platinum Sponsors
+        Platinum Sponsor
       </div>
       <div className=" flex flex-wrap md:flex-row flex-col gap-20 justify-center items-center ">
         <div className=" flex flex-row  flex-wrap justify-center items-center gap-20">
-          <div key="platinumSponsor" className="flex flex-row  justify-center items-center w-[14rem] h-[11rem]  rounded-full mb-10">
+          <div key="platinumSponsor" className="flex flex-row  justify-center items-center w-[11rem] md:w-[20rem] h-[11rem]  rounded-full mb-10">
             <Link href="https://www.securitypalhq.com" target="_blank">
               <Image
                 src={securityPal}
