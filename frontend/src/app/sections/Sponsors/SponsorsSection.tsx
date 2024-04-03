@@ -3,6 +3,7 @@ import NetworkSVG from "@/app/assets/images/network";
 import { cabinetMedium, cabinetExtraBold } from "@/app/utils/fonts";
 import TitleSponsor from "@/app/components/Sponsors/TitleSponsor";
 import { sponsors } from "@/app/components/Sponsors/data";
+import PlatinumSponsor from "@/app/components/Sponsors/PlatinumSponsor";
 
 export default function SponsorsSection() {
   return (
@@ -14,6 +15,9 @@ export default function SponsorsSection() {
         <TitleSponsor image={<NetworkSVG height={100} width={100} />} />
       </div>
 
+      <div>
+        <PlatinumSponsor/>
+      </div>
       {sponsors.map((sponsorType) => (
         <div
           key={sponsorType.name}
@@ -22,7 +26,7 @@ export default function SponsorsSection() {
           <div
             className={`${cabinetMedium.className} text-white text-3xl font-extrabold tracking-normal`}
           >
-            <div className=" text-3xl">
+            <div className=" text-3xl mb-2">
               {sponsorType.name}
             </div>
           </div>
