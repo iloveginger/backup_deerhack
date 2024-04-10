@@ -13,19 +13,21 @@ import NepalBank from "@/app/assets/images/sponsors/NepalBank.png";
 import Oliz from "@/app/assets/images/sponsors/Oliz.png";
 import github from "@/app/assets/images/sponsors/Github.png";
 import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
+import VT from "@/app/assets/images/sponsors/VT.png";
+
 
 const sponsors: SponsorType[] = [
-  // {
-  //   name: "Platinum Sponsor",
-  //   sponsors: [
-  //     {
-  //       name:"SecurityPal",
-  //       url:"https://www.securitypalhq.com",
-  //       image:securityPal,
-  //       imageAlt:"SecurityPal Logo"
-  //     },
-  //   ]
-  // },
+  {
+    name: "ISP Partner",
+    sponsors: [
+      {
+        name:"Vianet",
+        url:"https://www.vianet.com.np",
+        image:VT,
+        imageAlt:"Vianet Logo"
+      },
+    ]
+  },
   {
     name: "Gold Sponsors",
     sponsors: [
