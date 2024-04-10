@@ -27,7 +27,7 @@ const PlatinumSponsor = () => {
               />
             </Link>
           </div>
-          <div key="platinumSponsor" className="flex flex-row  justify-center items-center w-[13rem] md:w-[20rem] h-[11rem]  rounded-full mb-10">
+          {/* <div key="platinumSponsor" className="flex flex-row  justify-center items-center w-[13rem] md:w-[20rem] h-[11rem]  rounded-full mb-10">
             <Link href="https://www.vianet.com.np" target="_blank">
               <Image
                 src={VT}
@@ -38,7 +38,7 @@ const PlatinumSponsor = () => {
                 className="object-cover w-full h-full"
               />
             </Link>
-          </div>
+          </div> */}
           
          
         </div>
