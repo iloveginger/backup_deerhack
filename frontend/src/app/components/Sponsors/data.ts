@@ -13,6 +13,7 @@ import NepalBank from "@/app/assets/images/sponsors/NepalBank.png";
 import Oliz from "@/app/assets/images/sponsors/Oliz.png";
 import github from "@/app/assets/images/sponsors/Github.png";
 import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
+import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import VT from "@/app/assets/images/sponsors/VT.png";
 
 
@@ -69,6 +70,17 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
+     name: "Machine Learning and AI Track Partner",
+     sponsors: [
+       {
+         name: "Leapfrog Technologies",
+          url: "https://www.lftechnology.com",
+         image: leapfrog,
+         imageAlt: "Leapfrog Logo",
+       },
+     ],
+   },
+  {
     name: "Banking Partners",
     sponsors: [
       {
@@ -90,6 +102,8 @@ const sponsors: SponsorType[] = [
       },
     ],
   },
+  
+
   {
     name: "Coffee Partner",
     sponsors: [
