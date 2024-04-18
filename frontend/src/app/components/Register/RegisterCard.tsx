@@ -23,9 +23,9 @@ export default function RegisterCard(): ReactElement {
               innovation.
             </p>
           </div>
-          <Link href="https://deerhack24.devfolio.co" target="_blank">
+          <Link href="https://deerhack24.devfolio.co" target="_blank" className="lg:ml-20">
             <button
-              className={` ${satoshiBlack.className}  mt-[1rem] sm:p-[0.75rem] md:py-[0.75rem]  text-center text-sm lg:text-xl bg-secondary text-dark-purple p-[0.5rem] rounded lg:ml-20 bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out md:w-[10rem] lg:w-[12rem] sm:w-[10rem] `}
+              className={` ${satoshiBlack.className}  mt-[1rem] sm:p-[0.75rem]  md:py-[0.75rem]  text-center text-sm lg:text-xl bg-secondary text-dark-purple p-[0.5rem] rounded  bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out md:w-[10rem] lg:w-[12rem] sm:w-[10rem] `}
             >
               Register Now
             </button>
