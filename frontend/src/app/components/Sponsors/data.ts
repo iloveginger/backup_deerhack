@@ -15,6 +15,7 @@ import github from "@/app/assets/images/sponsors/Github.png";
 import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
 import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import VT from "@/app/assets/images/sponsors/VT.png";
+import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 
 
 const sponsors: SponsorType[] = [
@@ -66,6 +67,12 @@ const sponsors: SponsorType[] = [
         url: "https://ethindia.co ",
         image: ETHIndiaLogo,
         imageAlt: "ETHINDIA LOGO",
+      },
+      {
+        name: "Deerwalk Sifal School",
+        url: "https://deerwalk.edu.np/sifalschool ",
+        image: SifalSchool,
+        imageAlt: "Sifal School LOGO",
       },
     ],
   },
