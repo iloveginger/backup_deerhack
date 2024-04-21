@@ -17,6 +17,7 @@ import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import VT from "@/app/assets/images/sponsors/VT.png";
 import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
+import microsoft from "@/app/assets/images/sponsors/Microsoft.png";
 
 
 const sponsors: SponsorType[] = [
@@ -148,6 +149,12 @@ const sponsors: SponsorType[] = [
         url: "https://codefornepal.org",
         image: codefornepal,
         imageAlt: "Code For Nepal Logo",
+      },
+      {
+        name: "Microsoft Learn Student Ambassador",
+        url: "https://mvp.microsoft.com/studentambassadors",
+        image: microsoft,
+        imageAlt: "Microsoft Student Learn ambassador Logo",
       },
     ],
   },
