@@ -16,6 +16,7 @@ import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
 import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import VT from "@/app/assets/images/sponsors/VT.png";
 import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
+import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
 
 
 const sponsors: SponsorType[] = [
@@ -136,6 +137,17 @@ const sponsors: SponsorType[] = [
         url: "https://www.olizstore.com",
         image: Oliz,
         imageAlt: "Oliz store Logo",
+      },
+    ],
+  },
+  {
+    name: "Community Partners",
+    sponsors: [
+      {
+        name: "Code For Nepal",
+        url: "https://codefornepal.org",
+        image: codefornepal,
+        imageAlt: "Code For Nepal Logo",
       },
     ],
   },
