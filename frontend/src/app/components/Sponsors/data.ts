@@ -7,6 +7,7 @@ import ETHIndiaLogo from "@/app/assets/images/sponsors/ethindia-light.svg";
 import PolygonLogo from "@/app/assets/images/sponsors/Polygon_Logo-White.svg";
 import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.png";
 import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg";
+import Programiz from "@/app/assets/images/sponsors/Programiz.svg";
 import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png";
 import Jyotilogo from "@/app/assets/images/sponsors/Jyotilogo.png";
 import NepalBank from "@/app/assets/images/sponsors/NepalBank.png";
@@ -155,6 +156,12 @@ const sponsors: SponsorType[] = [
         url: "https://mvp.microsoft.com/studentambassadors",
         image: microsoft,
         imageAlt: "Microsoft Student Learn ambassador Logo",
+      },
+      {
+        name: "Programiz",
+        url: "https://www.programiz.com",
+        image: Programiz,
+        imageAlt: "Programiz Logo",
       },
     ],
   },
