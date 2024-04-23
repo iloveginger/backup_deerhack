@@ -157,12 +157,7 @@ const sponsors: SponsorType[] = [
         image: microsoft,
         imageAlt: "Microsoft Student Learn ambassador Logo",
       },
-      {
-        name: "Programiz",
-        url: "https://www.programiz.com",
-        image: Programiz,
-        imageAlt: "Programiz Logo",
-      },
+      
     ],
   },
   {
@@ -190,6 +185,12 @@ const sponsors: SponsorType[] = [
         url: "https://luminr.co",
         image: Luminr,
         imageAlt: "Luminr logo",
+      },
+      {
+        name: "Programiz",
+        url: "https://www.programiz.com",
+        image: Programiz,
+        imageAlt: "Programiz Logo",
       },
       {
         name: "Nepal Bank Ltd.",
