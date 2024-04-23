@@ -21,7 +21,7 @@ export default function SponsorsSection() {
       {sponsors.map((sponsorType) => (
         <div
           key={sponsorType.name}
-          className="flex flex-col justify-center items-center mb-[5rem] gap-10"
+          className="flex flex-col justify-center text-center items-center mb-[5rem] gap-10"
         >
           <div
             className={`${cabinetMedium.className} text-white text-3xl font-extrabold tracking-normal`}
