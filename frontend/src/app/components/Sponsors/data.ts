@@ -19,6 +19,7 @@ import VT from "@/app/assets/images/sponsors/VT.png";
 import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
 import microsoft from "@/app/assets/images/sponsors/Microsoft.png";
+import aws from "@/app/assets/images/sponsors/cloudClub.png";
 
 
 const sponsors: SponsorType[] = [
@@ -156,6 +157,12 @@ const sponsors: SponsorType[] = [
         url: "https://mvp.microsoft.com/studentambassadors",
         image: microsoft,
         imageAlt: "Microsoft Student Learn ambassador Logo",
+      },
+      {
+        name: "AWS Cloud Club",
+        url: "https://aws.amazon.com/developer/community/students/cloudclubs/",
+        image: aws,
+        imageAlt: "AWS cloud club Logo",
       },
       
     ],
