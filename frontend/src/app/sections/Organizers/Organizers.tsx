@@ -25,7 +25,7 @@ export default async function Organizers() {
           </h1>
           <div className="">
             {team.organizers.length === 2 ? (
-              <div className="flex justify-center flex-wrap items-center gap-10 mb-20">
+              <div className="flex justify-center flex-wrap items-center gap-8 mb-20">
                 {team.organizers.map((organizer, index) => (
                   <UserCard
                     key={index}
@@ -36,7 +36,7 @@ export default async function Organizers() {
                 ))}
               </div>
             ) : (
-              <div className="flex flex-wrap justify-center items-center align-middle gap-10">
+              <div className="flex flex-wrap justify-center items-center align-middle gap-8">
                 {team.organizers.map((organizer, index) =>
                   index == 0 ? (
                     <div className="w-full" key={index}>
