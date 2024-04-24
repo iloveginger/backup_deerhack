@@ -21,18 +21,17 @@ import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
 import microsoft from "@/app/assets/images/sponsors/Microsoft.png";
 import aws from "@/app/assets/images/sponsors/cloudClub.png";
 
-
 const sponsors: SponsorType[] = [
   {
     name: "ISP Partner",
     sponsors: [
       {
-        name:"Vianet",
-        url:"https://www.vianet.com.np",
-        image:VT,
-        imageAlt:"Vianet Logo"
+        name: "Vianet",
+        url: "https://www.vianet.com.np",
+        image: VT,
+        imageAlt: "Vianet Logo",
       },
-    ]
+    ],
   },
   {
     name: "Gold Sponsors",
@@ -81,16 +80,16 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
-     name: "Machine Learning and AI Track Partner",
-     sponsors: [
-       {
-         name: "Leapfrog Technologies",
-          url: "https://www.lftechnology.com",
-         image: leapfrog,
-         imageAlt: "Leapfrog Logo",
-       },
-     ],
-   },
+    name: "Machine Learning and AI Track Partner",
+    sponsors: [
+      {
+        name: "Leapfrog Technologies",
+        url: "https://www.lftechnology.com",
+        image: leapfrog,
+        imageAlt: "Leapfrog Logo",
+      },
+    ],
+  },
   {
     name: "Banking Partners",
     sponsors: [
@@ -113,7 +112,6 @@ const sponsors: SponsorType[] = [
       },
     ],
   },
-  
 
   {
     name: "Coffee Partner",
@@ -164,7 +162,6 @@ const sponsors: SponsorType[] = [
         image: aws,
         imageAlt: "AWS cloud club Logo",
       },
-      
     ],
   },
   {
