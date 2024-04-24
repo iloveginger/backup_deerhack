@@ -10,22 +10,22 @@ export default async function Organizers() {
   const teams: Array<Team> = await getData();
 
   return (
-    <div className="pb-9">
+    <div className="pb-9 flex flex-col items-center">
       <h1
         className={`headings ${cabinetExtraBold.className} text-5xl mb-16 pt-32`}
       >
         Meet The Organizers
       </h1>
       {teams.map((team: Team, key = team.id) => (
-        <div className="text-white mt-20" key={key}>
+        <div className="text-white mt-20 flex flex-col justify-center w-[100%] md:w-[85%] lg:w-[70%] xl2:w-[55%]" key={key}>
           <h1
             className={`headings ${cabinetExtraBold.className} text-3xl mb-10`}
           >
             {team.name}
           </h1>
-          <div>
+          <div className="">
             {team.organizers.length === 2 ? (
-              <div className="flex justify-center flex-wrap items-center gap-x-6 mb-20">
+              <div className="flex justify-center flex-wrap items-center gap-10 mb-20">
                 {team.organizers.map((organizer, index) => (
                   <UserCard
                     key={index}
@@ -36,7 +36,7 @@ export default async function Organizers() {
                 ))}
               </div>
             ) : (
-              <div className="flex flex-wrap justify-center items-center align-middle gap-x-6 gap-y-3">
+              <div className="flex flex-wrap justify-center items-center align-middle gap-10">
                 {team.organizers.map((organizer, index) =>
                   index == 0 ? (
                     <div className="w-full" key={index}>
