@@ -20,6 +20,13 @@ import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
 import microsoft from "@/app/assets/images/sponsors/Microsoft.png";
 import aws from "@/app/assets/images/sponsors/cloudClub.png";
+import makkuse from "@/app/assets/images/sponsors/makkuse.png";
+import everestlist from "@/app/assets/images/sponsors/everestlist.png";
+import csit from "@/app/assets/images/sponsors/CSITAN-logo.png";
+import cedargate from "@/app/assets/images/sponsors/cedargate.svg";
+import astrek from "@/app/assets/images/sponsors/astrek.jpg";
+import codeforhcange from "@/app/assets/images/sponsors/code-for-change.png";
+import livebakery from "@/app/assets/images/sponsors/livebakery.png";
 
 const sponsors: SponsorType[] = [
   {
@@ -91,6 +98,17 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
+    name: "Open Innovation Track Partner",
+    sponsors: [
+      {
+        name: "Cedar Gate Technologies",
+        url: "https://www.cedargate.com",
+        image: cedargate,
+        imageAlt: "Cedar Gate Logo",
+      },
+    ],
+  },
+  {
     name: "Banking Partners",
     sponsors: [
       {
@@ -121,6 +139,28 @@ const sponsors: SponsorType[] = [
         url: "https://mountstradacoffee.com",
         image: MountStradaLogo,
         imageAlt: "Mount Strada Logo",
+      },
+    ],
+  },
+  {
+    name: "Gifting Partner",
+    sponsors: [
+      {
+        name: "Makkuse",
+        url: "https://makkuse.com",
+        image: makkuse,
+        imageAlt: "Makkuse logo",
+      },
+    ],
+  },
+  {
+    name: "Confectionary Partner",
+    sponsors: [
+      {
+        name: "Live Bakery",
+        url: "https://www.facebook.com/Livebakery766/",
+        image: livebakery,
+        imageAlt: "Live bakery Logo",
       },
     ],
   },
@@ -162,8 +202,32 @@ const sponsors: SponsorType[] = [
         image: aws,
         imageAlt: "AWS cloud club Logo",
       },
+      {
+        name: "CSIT Association Nepal",
+        url: "https://csitan.org.np",
+        image: csit,
+        imageAlt: "AWS cloud club Logo",
+      },
+      {
+        name: "Code For Change Nepal",
+        url: "https://codeforchangenepal.com",
+        image: codeforhcange,
+        imageAlt: "Code For Change Nepal logo",
+      },
     ],
   },
+  {
+    name: "Ranking Partner",
+    sponsors: [
+      {
+        name: "Everest List",
+        url: "https://theeverestlist.org",
+        image: everestlist,
+        imageAlt: "everest list logo",
+      },
+    ],
+  },
+
   {
     name: "Training Partner",
     sponsors: [
@@ -197,11 +261,18 @@ const sponsors: SponsorType[] = [
         imageAlt: "Programiz Logo",
       },
       {
+        name: "Astrek Wall Climbing",
+        url: "https://www.instagram.com/climbastrek/?hl=en",
+        image: astrek,
+        imageAlt: "Astrek Wall Climbing logo",
+      },
+      {
         name: "Nepal Bank Ltd.",
         url: "https://nepalbank.com.np",
         image: NepalBank,
         imageAlt: "Nepal Bank logo",
       },
+
     ],
   },
   // {
