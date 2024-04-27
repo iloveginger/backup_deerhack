@@ -31,10 +31,10 @@ const config: Config = {
         sm: "576px",
         md: "768px",
         lg: "1280px",
-        xl2:"1536px",
-        xl3:"1920px",
-        xl4:"2139px",
-        xl5:'2539px'
+        xl2: "1536px",
+        xl3: "1920px",
+        xl4: "2139px",
+        xl5: "2539px",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 70s linear infinite",

@@ -54,8 +54,6 @@ async function getData() {
     console.log("Error", error.message);
     return [];
   }
-  
-  
 }
 
 export default getData;
