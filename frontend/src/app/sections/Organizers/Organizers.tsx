@@ -17,7 +17,10 @@ export default async function Organizers() {
         Meet The Organizers
       </h1>
       {teams.map((team: Team, key = team.id) => (
-        <div className="text-white mt-20 flex flex-col justify-center w-[100%] md:w-[85%] lg:w-[70%] xl2:w-[55%]" key={key}>
+        <div
+          className="text-white mt-20 flex flex-col justify-center w-[100%] md:w-[85%] lg:w-[70%] xl2:w-[55%]"
+          key={key}
+        >
           <h1
             className={`headings ${cabinetExtraBold.className} text-3xl mb-10`}
           >

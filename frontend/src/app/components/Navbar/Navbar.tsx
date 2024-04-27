@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect, useRef, memo } from "react";
 import Link from "next/link";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
@@ -11,12 +11,10 @@ import crossSVG from "@/app/assets/icons/cross.svg";
 import Counter from "../counter/Counter";
 import Counter_wrapper from "../counter/Counter";
 
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isResourceOpen, setIsResourceOpen] = useState(false);
   const resourceRef = useRef(null);
-
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
