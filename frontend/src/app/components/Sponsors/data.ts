@@ -154,7 +154,7 @@ const sponsors: SponsorType[] = [
     ],
   },
   {
-    name: "Confectionary Partner",
+    name: "Confectionery Partner",
     sponsors: [
       {
         name: "Live Bakery",
