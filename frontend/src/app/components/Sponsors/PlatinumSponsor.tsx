@@ -9,7 +9,7 @@ const PlatinumSponsor = () => {
   return (
     <div className="flex flex-col justify-center items-center mb-16">
       <div
-        className={`${cabinetMedium.className} m-10 text-white text-3xl font-extrabold tracking-normal`}
+        className={`${cabinetMedium.className} m-10 text-3xl font-extrabold tracking-normal headings`}
       >
         Platinum Sponsor
       </div>
