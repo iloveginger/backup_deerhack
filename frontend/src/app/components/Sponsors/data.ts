@@ -24,8 +24,10 @@ import makkuse from "@/app/assets/images/sponsors/makkuse.png";
 import everestlist from "@/app/assets/images/sponsors/everestlist.png";
 import csit from "@/app/assets/images/sponsors/CSITAN-logo.png";
 import cedargate from "@/app/assets/images/sponsors/cedargate.svg";
+import naamche from "@/app/assets/images/sponsors/naamche.svg";
 import astrek from "@/app/assets/images/sponsors/astrek.jpg";
 import codeforhcange from "@/app/assets/images/sponsors/code-for-change.png";
+import adex from "@/app/assets/images/sponsors/adex.png";
 import livebakery from "@/app/assets/images/sponsors/livebakery.png";
 
 const sponsors: SponsorType[] = [
@@ -61,6 +63,12 @@ const sponsors: SponsorType[] = [
     name: "Silver Sponsors",
     sponsors: [
       {
+        name: "naamche",
+        url: "www.naamche.com",
+        image: naamche,
+        imageAlt: "naamche Logo",
+      },
+      {
         name: "deerhold",
         url: "https://deerhold.com",
         image: DeerholdLogo,
@@ -83,6 +91,17 @@ const sponsors: SponsorType[] = [
         url: "https://deerwalk.edu.np/sifalschool ",
         image: SifalSchool,
         imageAlt: "Sifal School LOGO",
+      },
+    ],
+  },
+  {
+    name: "Bronze Sponsors",
+    sponsors: [
+      {
+        name: "Adex",
+        url: "https://adex.ltd",
+        image: adex,
+        imageAlt: "adex Logo",
       },
     ],
   },
