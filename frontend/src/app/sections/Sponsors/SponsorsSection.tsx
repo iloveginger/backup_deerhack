@@ -12,7 +12,7 @@ export default function SponsorsSection() {
         <div className={`mb-8 ${cabinetExtraBold.className} headings`}>
           Our Sponsors
         </div>
-        <TitleSponsor image={<NetworkSVG height={100} width={100} />} />
+        {/* <TitleSponsor image={<NetworkSVG height={100} width={100} />} /> */}
       </div>
 
       <div>
