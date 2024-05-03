@@ -1,13 +1,17 @@
+import SchedulePage from "../(pages)/SchedulePage";
 import Announced from "../components/Announced/Announced";
 import Navbar from "../components/Navbar/Navbar";
+import { ScheduleSection } from "../sections/Schedule";
 
-const schedule = () => {
+const Schedule = () => {
   return (
     <>
       <Navbar />
-      <Announced description="Schedule Will Be Announced Soon!" />
+      <div className="relative overflow-hidden">
+        <ScheduleSection/>
+      </div>
     </>
   );
 };
 
-export default schedule;
+export default Schedule;
