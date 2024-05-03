@@ -118,7 +118,7 @@ const ScheduleSection = () => {
                     venue: "Room 101 , Building 13",
                 },
                 {
-                    time: "03:00 PM",
+                    time: "07:00 PM",
                     title: "Dinner",
                     venue: "Cafeteria",
                 },
