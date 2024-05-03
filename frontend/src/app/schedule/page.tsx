@@ -1,5 +1,6 @@
 import SchedulePage from "../(pages)/SchedulePage";
 import Announced from "../components/Announced/Announced";
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import { ScheduleSection } from "../sections/Schedule";
 
@@ -10,6 +11,7 @@ const Schedule = () => {
       <div className="relative overflow-hidden">
         <ScheduleSection/>
       </div>
+      <Footer/>
     </>
   );
 };
