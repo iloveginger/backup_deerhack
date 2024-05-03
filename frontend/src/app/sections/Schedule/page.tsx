@@ -18,27 +18,27 @@ const ScheduleSection = () => {
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "1:30 PM",
+                    time: "01:30 PM",
                     title: "Ice Breaker Game",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "1:30 PM",
+                    time: "01:30 PM",
                     title: "Team Formation & Registration",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "3:00 PM",
+                    time: "03:00 PM",
                     title: "Snacks and Drinks",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "3:30 PM",
+                    time: "03:30 PM",
                     title: "Team Bonding Game",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "5:00 PM",
+                    time: "05:00 PM",
                     title: "Closing Off",
                     venue: "Sagarmatha Hall",
                 },
@@ -58,7 +58,7 @@ const ScheduleSection = () => {
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "4:00 PM",
+                    time: "04:00 PM",
                     title: "Snacks and Drinks",
                     venue: "Cafeteria",
                 },
@@ -94,8 +94,8 @@ const ScheduleSection = () => {
                 },
                 {
                     time: "11:00 AM",
-                    title: "Workingshop 01",
-                    venue: "Room 101,Building 13",
+                    title: "Workshop 01",
+                    venue: "Room 101 , Building 13",
                 },
                 {
                     time: "01:00 PM",
@@ -115,7 +115,7 @@ const ScheduleSection = () => {
                 {
                     time: "06:00 PM",
                     title: "Workshop 02",
-                    venue: "Room 101,Building 13",
+                    venue: "Room 101 , Building 13",
                 },
                 {
                     time: "03:00 PM",
@@ -166,22 +166,23 @@ const ScheduleSection = () => {
         {Schedule.map((day:Schedule)=>(
             <div key ={day.date} className='flex flex-col text-white mb-10 md:mx-16 mx-8'>
                 <div  className={`${cabinetExtraBold.className} md:text-3xl text-2xl primary-gradient-background p-[0.15rem] w-full rounded-md  md:text-start mb-10`}>
-                    <div className='bg-violet md:p-10 p-5 rounded-md'>
-                        <span className='text-primary-gradient-color'>
+                    <div className='bg-violet md:py-10 p-5 rounded-md'>
+                        <span className='text-primary-gradient-color mx-5 '>
                         {day.date}    
                         </span>
                     </div>
                 </div>
-                <div className='grid grid grid-rows-1 md:grid-rows-4 md:grid-flow-col gap-6'>
+                <div className='grid grid grid-rows-1 md:grid-rows-4 md:grid-flow-col gap-16'>
                     {day.events.map((event,index)=>(
-                        <div key = {index} className=" flex flex-row items-center mx-auto gap-16">
-                            <div className={`${cabinetExtraBold.className} text-2xl md:w-full `}>
+                        <div key = {index} className="flex flex-row items-start gap-10 sm:gap-10 max-w-[30rem] min-w-[15rem] md:mx-auto px-10">
+                            <div className={`${cabinetExtraBold.className} text-2xl `}>
                                 
                                 {event.time}
                             </div>
-                            <div className='flex flex-col justify-center items-start w-32 md:w-full gap-2'>
-                                <p className={`${cabinetExtraBold.className} text-2xl md:min-w-[20rem] md:max-w-[20rem] `}>{event.title}</p>
-                                <p className={`${cabinetLight.className} font-medium text-[#FCF7FF]`}>Venue: {event.venue}</p>
+                            <div className='flex flex-col flex-wrap items-start justify-between '>
+                                {/* w-32 md:w-[80%] */}
+                                <p className={`${cabinetExtraBold.className} text-2xl max-w-[15rem] w-[15rem] md:w-[10rem] lg:w-[15rem] sm:min-w-[10rem]`}>{event.title}</p>
+                                <p className={`${cabinetLight.className} font-medium text-[#FCF7FF] w-[10rem]`}>Venue: {event.venue}</p>
                             </div>
                         </div>
                         
