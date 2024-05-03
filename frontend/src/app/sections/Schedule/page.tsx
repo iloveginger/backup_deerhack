@@ -174,7 +174,7 @@ const ScheduleSection = () => {
                 </div>
                 <div className=' md:p-[3.625rem] mt-10 md:mt-0 grid lg:grid-rows-4 lg:grid-flow-col grid-col-1 gap-y-10 gap-x-32'>
                     {day.events.map((event,index)=>(
-                        <div key = {index} className={`flex flex-row flex-nowrap items-start justify-start md:justify-center xl:justify-normal gap-16 mb-5`}>
+                        <div key = {index} className={`flex flex-row flex-nowrap items-start justify-start sm:justify-center xl:justify-normal gap-16 mb-5`}>
                             <div className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl w-32 `}>
                                 {event.time}
                             </div>
