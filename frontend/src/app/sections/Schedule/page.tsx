@@ -167,7 +167,7 @@ const ScheduleSection = () => {
             <div key ={day.date} className='w-[80%] mx-auto text-white '>
                 <div  className={`${cabinetExtraBold.className} md:text-3xl text-2xl primary-gradient-background p-0.5 rounded-md`}>
                     <div className='bg-violet rounded-md py-5'>
-                        <span className='headings text-3xl md:px-14 '>
+                        <span className='headings text-xl p-4 sm:text-3xl md:px-14 '>
                         {day.date}    
                         </span>
                     </div>
@@ -175,10 +175,10 @@ const ScheduleSection = () => {
                 <div className=' md:p-[3.625rem] mt-10 md:mt-0 grid lg:grid-rows-4 lg:grid-flow-col grid-col-1 gap-y-10 gap-x-32'>
                     {day.events.map((event,index)=>(
                         <div key = {index} className={`flex flex-row flex-nowrap items-start justify-start sm:justify-center xl:justify-normal gap-16 mb-5`}>
-                            <div className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl w-32 `}>
+                            <div className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl w-5 sm:w-24 md:w-32 `}>
                                 {event.time}
                             </div>
-                            <div className='flex flex-col w-[150px] md:w-[250px]'>
+                            <div className='flex flex-col sm:w-[150px] md:w-[250px]'>
                                 {/* w-32 md:w-[80%] */}
                                 <p className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl mb-1`}>{event.title}</p>
                                 <p className={`${cabinetLight.className} xl2:text-xl md:text-base text-sm font-medium text-[#FCF7FF] `}>Venue: {event.venue}</p>
