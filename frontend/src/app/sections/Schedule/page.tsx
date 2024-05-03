@@ -181,7 +181,7 @@ const ScheduleSection = () => {
                             </div>
                             <div className='flex flex-col flex-wrap items-start justify-between '>
                                 {/* w-32 md:w-[80%] */}
-                                <p className={`${cabinetExtraBold.className} text-2xl max-w-[15rem] w-[15rem] md:w-[10rem] lg:w-[15rem] sm:min-w-[10rem]`}>{event.title}</p>
+                                <p className={`${cabinetExtraBold.className} text-2xl md:max-w-[15rem] w-[10rem] md:w-[10rem] lg:w-[15rem] min-w-[10rem]`}>{event.title}</p>
                                 <p className={`${cabinetLight.className} font-medium text-[#FCF7FF] w-[10rem]`}>Venue: {event.venue}</p>
                             </div>
                         </div>
