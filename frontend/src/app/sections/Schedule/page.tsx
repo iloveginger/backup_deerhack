@@ -161,28 +161,27 @@ const ScheduleSection = () => {
         }
     ];
   return (
-    <div className='flex flex-col justify-center'>
+    <div className='flex flex-col'>
         <h1 className={`headings ${cabinetExtraBold.className} text-5xl mb-16 pt-32`}>Event Schedule</h1>
         {Schedule.map((day:Schedule)=>(
-            <div key ={day.date} className='flex flex-col text-white mb-10 md:mx-16 mx-8'>
-                <div  className={`${cabinetExtraBold.className} md:text-3xl text-2xl primary-gradient-background p-[0.15rem] w-full rounded-md  md:text-start mb-10`}>
-                    <div className='bg-violet md:py-10 p-5 rounded-md'>
-                        <span className='text-primary-gradient-color mx-5 '>
+            <div key ={day.date} className='w-[80%] mx-auto text-white '>
+                <div  className={`${cabinetExtraBold.className} md:text-3xl text-2xl primary-gradient-background p-0.5 rounded-md`}>
+                    <div className='bg-violet rounded-md py-5'>
+                        <span className='headings text-3xl md:px-14 '>
                         {day.date}    
                         </span>
                     </div>
                 </div>
-                <div className='grid grid grid-rows-1 md:grid-rows-4 md:grid-flow-col gap-16'>
+                <div className=' md:p-[3.625rem] mt-10 md:mt-0 grid lg:grid-rows-4 lg:grid-flow-col grid-col-1 gap-y-10 gap-x-32'>
                     {day.events.map((event,index)=>(
-                        <div key = {index} className="flex flex-row items-start gap-10 sm:gap-10 max-w-[30rem] min-w-[15rem] md:mx-auto px-10">
-                            <div className={`${cabinetExtraBold.className} text-2xl `}>
-                                
+                        <div key = {index} className={`flex flex-row flex-nowrap items-start justify-start md:justify-center xl:justify-normal gap-16 mb-5`}>
+                            <div className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl w-32 `}>
                                 {event.time}
                             </div>
-                            <div className='flex flex-col flex-wrap items-start justify-between '>
+                            <div className='flex flex-col w-[150px] md:w-[250px]'>
                                 {/* w-32 md:w-[80%] */}
-                                <p className={`${cabinetExtraBold.className} text-2xl md:max-w-[15rem] w-[10rem] md:w-[10rem] lg:w-[15rem] min-w-[10rem]`}>{event.title}</p>
-                                <p className={`${cabinetLight.className} font-medium text-[#FCF7FF] w-[10rem]`}>Venue: {event.venue}</p>
+                                <p className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl mb-1`}>{event.title}</p>
+                                <p className={`${cabinetLight.className} xl2:text-xl md:text-base text-sm font-medium text-[#FCF7FF] `}>Venue: {event.venue}</p>
                             </div>
                         </div>
                         
