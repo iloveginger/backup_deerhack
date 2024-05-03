@@ -8,7 +8,7 @@ const Schedule = () => {
   return (
     <>
       <Navbar />
-      <div className="relative overflow-hidden">
+      <div className="relative ">
         <ScheduleSection/>
       </div>
       <Footer/>
