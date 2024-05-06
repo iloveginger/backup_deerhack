@@ -29,6 +29,7 @@ import astrek from "@/app/assets/images/sponsors/astrek.jpg";
 import codeforhcange from "@/app/assets/images/sponsors/code-for-change.png";
 import adex from "@/app/assets/images/sponsors/adex.png";
 import livebakery from "@/app/assets/images/sponsors/livebakery.png";
+import metlife from "@/app/assets/images/sponsors/metlife.svg";
 
 const sponsors: SponsorType[] = [
   {
@@ -102,6 +103,12 @@ const sponsors: SponsorType[] = [
         url: "https://adex.ltd",
         image: adex,
         imageAlt: "adex Logo",
+      },
+      {
+        name: "Metlife Nepal",
+        url: "https://www.metlife.com.np/en/",
+        image: metlife,
+        imageAlt: "metlief Logo",
       },
     ],
   },
