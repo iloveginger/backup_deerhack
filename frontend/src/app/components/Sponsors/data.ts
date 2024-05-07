@@ -29,7 +29,7 @@ import astrek from "@/app/assets/images/sponsors/astrek.jpg";
 import codeforhcange from "@/app/assets/images/sponsors/code-for-change.png";
 import adex from "@/app/assets/images/sponsors/adex.png";
 import livebakery from "@/app/assets/images/sponsors/livebakery.png";
-import metlife from "@/app/assets/images/sponsors/metlife.svg";
+import metlife from "@/app/assets/images/sponsors/metlife.png";
 
 const sponsors: SponsorType[] = [
   {
