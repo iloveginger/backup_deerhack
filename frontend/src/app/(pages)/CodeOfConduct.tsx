@@ -1,11 +1,12 @@
 import { ReactElement } from "react"
 import Schedule from "../schedule/page"
+import { CodeOfConductSection } from "../sections/codeOfConduct"
 
 
-const SchedulePage = ():ReactElement => {
+const CodeOfConductPage = ():ReactElement => {
   return (
-    <Schedule/>
+    <CodeOfConductSection/>
   )
 }
 
-export default SchedulePage
+export default CodeOfConductPage
