@@ -6,7 +6,7 @@ export default function TitleSponsor({ image }: { image: ReactElement }) {
   return (
     <div className="flex flex-col justify-center items-center mb-16">
       <div
-        className={`${cabinetMedium.className} m-10 text-white text-3xl font-extrabold tracking-normal`}
+        className={`${cabinetMedium.className} m-10 headings text-3xl font-extrabold tracking-normal`}
       >
         Title Sponsor
       </div>

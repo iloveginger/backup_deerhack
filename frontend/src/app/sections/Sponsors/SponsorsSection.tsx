@@ -12,23 +12,21 @@ export default function SponsorsSection() {
         <div className={`mb-8 ${cabinetExtraBold.className} headings`}>
           Our Sponsors
         </div>
-        <TitleSponsor image={<NetworkSVG height={100} width={100} />} />
+        {/* <TitleSponsor image={<NetworkSVG height={100} width={100} />} /> */}
       </div>
 
       <div>
-        <PlatinumSponsor/>
+        <PlatinumSponsor />
       </div>
       {sponsors.map((sponsorType) => (
         <div
           key={sponsorType.name}
-          className="flex flex-col justify-center items-center mb-[5rem] gap-10"
+          className="flex flex-col justify-center text-center items-center mb-[5rem] gap-10"
         >
           <div
             className={`${cabinetMedium.className} text-white text-3xl font-extrabold tracking-normal`}
           >
-            <div className=" text-3xl mb-2">
-              {sponsorType.name}
-            </div>
+            <div className=" text-3xl mb-2 headings">{sponsorType.name}</div>
           </div>
           <div className=" flex flex-wrap md:flex-row flex-col gap-20 justify-center items-center ">
             {sponsorType.sponsors.map((sponsor) => (
