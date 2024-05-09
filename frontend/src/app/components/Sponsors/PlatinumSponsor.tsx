@@ -1,5 +1,5 @@
 import { cabinetMedium } from "@/app/utils/fonts";
-import securityPal from "@/app/assets/images/sponsors/securityPal.svg";
+import securityPal from "@/app/assets/images/sponsors/securitypal_new.svg";
 import VT from "@/app/assets/images/sponsors/VT.png";
 
 import Image from "next/image";
