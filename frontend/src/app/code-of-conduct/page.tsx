@@ -8,7 +8,7 @@ import shortFatLeaf from "../assets/images/leaf_deerhack2023_right.svg";
 import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
 
-const Schedule = () => {
+const COD = () => {
   return (
     <>
       <Navbar />
@@ -82,4 +82,4 @@ const Schedule = () => {
   );
 };
 
-export default Schedule;
+export default COD;
