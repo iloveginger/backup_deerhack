@@ -150,7 +150,7 @@ const Navbar = () => {
         <ul className="w-[18.6rem] mt-0.5 text-left list-none">
           {/* <li className="p-5 mb-2 "><a href= "#" className= "hover:text-secondary" target="_blank">Judging Criteria</a></li> */}
           <li className="pt-4 px-6 mb-4"><a href="/resources/selection_criteria.pdf" className="hover:text-secondary" target="_blank">Selection Criteria</a></li>
-          {/* <li className="pt-4 px-6 mb-4"><a href= "#" className= "hover:text-secondary" target="_blank">Participation Guidelines</a></li> */}
+          <li className="pt-4 px-6 mb-4"><a href= "/code-of-conduct" className= "hover:text-secondary" target="_blank">Code Of Conduct</a></li>
         </ul>
       </div>
     </div>
