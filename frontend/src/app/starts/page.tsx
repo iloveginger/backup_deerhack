@@ -78,7 +78,7 @@ const Schedule = () => {
         />
         <div className="headings">
 
-            <Timer_wrapper targetDate="May 10,2024 17:00:00"/>
+            <Timer_wrapper targetDate="May 10,2024 17:30:00"/>
         </div>
        
       </div>
