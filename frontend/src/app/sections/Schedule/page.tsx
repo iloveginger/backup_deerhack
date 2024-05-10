@@ -98,16 +98,6 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "11:00 AM",
-                    title: "Workshop 01",
-                    venue: "Room 101 , Building 13",
-                },
-                {
-                    time: "11:00 AM",
-                    title: "Workshop 01",
-                    venue: "Room 101 , Building 13",
-                },
-                {
                     time: "01:00 PM",
                     title: "Talk Session 02",
                     venue: "Sagarmatha Hall",
