@@ -7,6 +7,7 @@ import shortFatLeaf from "../assets/images/leaf_deerhack2023_right.svg";
 import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
 import Timer_wrapper from "../components/counter/Timer";
+import Link from "next/link";
 
 
 const Schedule = () => {
@@ -78,11 +79,17 @@ const Schedule = () => {
         />
         <div className="headings">
 
-            <Timer_wrapper targetDate="May 10,2024 17:30:00"/>
+            {/* <Timer_wrapper targetDate="May 10,2024 17:00:00"/> */}
+            <p>
+            Event Has Begun, click 
+<Link href="/ends">
+  {" "} here.
+</Link>
+              </p> 
         </div>
        
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
