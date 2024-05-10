@@ -64,8 +64,8 @@ const ScheduleSection = () => {
                 },
                 {
                     time: "05:00 PM",
-                    title: "Talk Session 01",
-                    venue: "Sagarmatha Hall",
+                    title: "Coding Session Starts",
+                    venue: "Coding Rooms",
                 },
                 {
                     time: "07:00 PM",
