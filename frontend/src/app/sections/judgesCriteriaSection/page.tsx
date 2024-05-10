@@ -13,7 +13,7 @@ const page = () => {
         <p className="leading-9 mb-10">
           The project is primarily marked on its creativity and uniqueness, as these elements serve as the cornerstone of innovation. How the end-result properly justifies the technologies used in the project heavily decides the marking for innovation, demonstrating not only a mastery of tools but also a deep understanding of their application to solve real-world problems. 
         </p>
-{/* functionaltily, scalability, impact potential, presentation */}
+
         <h2 className={`text-3xl headings ${cabinetExtraBold.className}  mb-10`}>Functionality</h2>
         <p className="leading-9 mb-3">
         The robust functionality of the project serves as a testament to the thoroughness and sophistication of its development process. This emphasis on integration not only enhances the project's capabilities but also signifies a deep understanding of modern technological ecosystems and the importance of interoperability.
