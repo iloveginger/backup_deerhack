@@ -12,7 +12,7 @@ import Timer_wrapper from "../components/counter/Timer";
 const Schedule = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="relative lg:overflow-hidden h-[420px] sm:h-screen  flex flex-col justify-center">
       <Image
           src={longLeafSVG}
