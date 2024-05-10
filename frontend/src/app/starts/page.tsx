@@ -8,9 +8,11 @@ import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
 import Timer_wrapper from "../components/counter/Timer";
 import Link from "next/link";
-
+import { redirect } from "next/navigation";
 
 const Schedule = () => {
+  redirect("/ends");
+
   return (
     <>
       {/* <Navbar /> */}
