@@ -1,23 +1,20 @@
 
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import { CodeOfConductSection } from "../sections/codeOfConduct"; 
 import Image from "next/image";
 import longLeafSVG from "../assets/images/long_leaf.svg";
 import shortFatLeaf from "../assets/images/leaf_deerhack2023_right.svg";
 import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
-import Timer_wrapper from "../components/counter/Timer";
-import Link from "next/link";
-import { redirect } from "next/navigation";
+import { JudgesCriteriaSection } from "../sections/judgesCriteriaSection";
 
-const Schedule = () => {
-  redirect("/ends");
-
+const COD = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="relative lg:overflow-hidden h-[420px] sm:h-screen  flex flex-col justify-center">
-        <Image
+      <Navbar />
+      <div className="relative overflow-hidden">
+      <Image
           src={longLeafSVG}
           height={50}
           width={50}
@@ -69,7 +66,7 @@ const Schedule = () => {
           width={80}
           alt="leaf"
           className="absolute top-[135rem] left-0 hidden lg:block scale-150"
-        // style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
+          // style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
         />
         <Image
           src={shortLeaf}
@@ -79,21 +76,11 @@ const Schedule = () => {
           className="absolute top-[165rem] right-0 lg:block hidden"
           style={{ transform: "rotate(-5deg)" }}
         />
-        <div className="headings">
-
-          {/* <Timer_wrapper targetDate="May 10,2024 17:00:00"/> */}
-          <p className="min-h-24 text-wrap">
-            Event Has Begun, click
-            <Link href="/ends" className="font-extrabold">
-              {" "} here.
-            </Link>
-          </p>
-        </div>
-
+      <JudgesCriteriaSection/>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 };
 
-export default Schedule;
+export default COD;
