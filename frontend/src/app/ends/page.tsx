@@ -13,7 +13,7 @@ const COD = () => {
   return (
     <>
       {/* <Navbar /> */}
-      <div className="relative overflow-hidden">
+      <div className="relative lg:overflow-hidden h-[420px] sm:h-screen  flex flex-col justify-center">
       <Image
           src={longLeafSVG}
           height={50}
