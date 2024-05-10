@@ -7,11 +7,12 @@ import longLeafSVG from "../assets/images/long_leaf.svg";
 import shortFatLeaf from "../assets/images/leaf_deerhack2023_right.svg";
 import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
+import Timer_wrapper from "../components/counter/Timer";
 
 const COD = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="relative overflow-hidden">
       <Image
           src={longLeafSVG}
@@ -75,9 +76,12 @@ const COD = () => {
           className="absolute top-[165rem] right-0 lg:block hidden"
           style={{ transform: "rotate(-5deg)" }}
         />
-      
+        <div className="headings">
+
+      <Timer_wrapper targetDate="May 12,2024 05:00:00"/>
+        </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
