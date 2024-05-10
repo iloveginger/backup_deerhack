@@ -76,14 +76,14 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             className={`lg:flex lg:items-start md:w-[800px] h-[55px] lg:h-auto ${isMenuOpen ? cabinetMedium.className + " block " : "hidden"
               }`}
           >
             <div className="md:flex px-4">
               <Counter_wrapper />
             </div>
-          </div>
+          </div> */}
 
           <div
             className={`lg:flex ${cabinetBold.className
