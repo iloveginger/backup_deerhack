@@ -15,7 +15,7 @@ const Schedule = () => {
     <>
       {/* <Navbar /> */}
       <div className="relative lg:overflow-hidden h-[420px] sm:h-screen  flex flex-col justify-center">
-      <Image
+        <Image
           src={longLeafSVG}
           height={50}
           width={50}
@@ -67,7 +67,7 @@ const Schedule = () => {
           width={80}
           alt="leaf"
           className="absolute top-[135rem] left-0 hidden lg:block scale-150"
-          // style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
+        // style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
         />
         <Image
           src={shortLeaf}
@@ -79,17 +79,17 @@ const Schedule = () => {
         />
         <div className="headings">
 
-            {/* <Timer_wrapper targetDate="May 10,2024 17:00:00"/> */}
-            <p>
-            Event Has Begun, click 
-<Link href="/ends">
-  {" "} here.
-</Link>
-              </p> 
+          {/* <Timer_wrapper targetDate="May 10,2024 17:00:00"/> */}
+          <p className="min-h-24 text-wrap">
+            Event Has Begun, click
+            <Link href="/ends" className="font-extrabold">
+              {" "} here.
+            </Link>
+          </p>
         </div>
-       
+
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
