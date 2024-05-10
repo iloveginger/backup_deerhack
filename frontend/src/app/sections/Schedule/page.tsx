@@ -83,14 +83,24 @@ const ScheduleSection = () => {
             date: "11th May | Day 2", 
             events: [
                 {
-                    time: "07:00 AM",
+                    time: "08:00 AM",
                     title: "Breakfast",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "10:00 AM",
+                    time: "11:00 AM",
+                    title: "Workshop 01",
+                    venue: "Room 101 , Building 13",
+                },
+                {
+                    time: "12:00 AM",
                     title: "Lunch",
                     venue: "Cafeteria",
+                },
+                {
+                    time: "11:00 AM",
+                    title: "Workshop 01",
+                    venue: "Room 101 , Building 13",
                 },
                 {
                     time: "11:00 AM",
@@ -133,7 +143,7 @@ const ScheduleSection = () => {
                     venue: "DWIT Complex",
                 },
                 {
-                    time: "07:00 AM",
+                    time: "08:00 AM",
                     title: "Breakfast",
                     venue: "Cafeteria",
                 },
