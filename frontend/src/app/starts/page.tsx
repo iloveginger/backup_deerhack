@@ -82,7 +82,7 @@ const Schedule = () => {
         </div>
        
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
