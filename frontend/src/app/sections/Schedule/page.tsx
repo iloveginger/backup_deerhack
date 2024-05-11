@@ -63,7 +63,7 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "05:00 PM",
+                    time: "05:30 PM",
                     title: "Coding Session Starts",
                     venue: "Coding Rooms",
                 },
@@ -89,28 +89,23 @@ const ScheduleSection = () => {
                 },
                 {
                     time: "11:00 AM",
-                    title: "Workshop 01",
+                    title: "Github Education Workshop",
                     venue: "Room 101 , Building 13",
                 },
                 {
-                    time: "12:00 AM",
+                    time: "12:30 AM",
                     title: "Lunch",
-                    venue: "Cafeteria",
-                },
-                {
-                    time: "01:00 PM",
-                    title: "Talk Session 02",
-                    venue: "Sagarmatha Hall",
-                },
-                {
-                    time: "02:00 PM",
-                    title: "Snacks and Drinks",
                     venue: "Cafeteria",
                 },
                 {
                     time: "03:00 PM",
                     title: "Fun Game 02",
                     venue: "Courtyard",
+                },
+                {
+                    time: "04:00 PM",
+                    title: "Snacks and Drinks",
+                    venue: "Cafeteria",
                 },
                 {
                     time: "06:00 PM",
@@ -128,14 +123,9 @@ const ScheduleSection = () => {
             date: "12th May | Day 3",
             events: [
                 {
-                    time: "05:00 AM",
+                    time: "06:30 AM",
                     title: "Check Out | Teams",
                     venue: "DWIT Complex",
-                },
-                {
-                    time: "08:00 AM",
-                    title: "Breakfast",
-                    venue: "Cafeteria",
                 },
                 {
                     time: "07:30 AM",
@@ -143,9 +133,14 @@ const ScheduleSection = () => {
                     venue: "Coding Rooms",
                 },
                 {
-                    time: "09:00 AM",
-                    title: "Pitching Sessions",
-                    venue: "Sagarmatha Hall",
+                    time: "08:00 AM",
+                    title: "Breakfast",
+                    venue: "Cafeteria",
+                },
+                {
+                    time: "09:30 AM",
+                    title: "First Stage Judgement",
+                    venue: "Coding Rooms",
                 },
                 {
                     time: "12:00 PM",
@@ -153,7 +148,12 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "01:00 PM",
+                    time: "01:30 PM",
+                    title: "Pitching Sessions",
+                    venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "04:00 PM",
                     title: "Winner Announcement & Closing Ceremony",
                     venue: "Sagarmatha Hall",
                 },

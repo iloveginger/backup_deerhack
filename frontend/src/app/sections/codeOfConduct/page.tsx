@@ -88,7 +88,7 @@ const codeOfConduct = () => {
 
           <h2 className={`text-3xl text-secondary ${cabinetExtraBold.className} mb-5`}>Rules for Team Formation</h2>
           <ul className="mb-10 list-disc">
-            <li>Teams can have a maximum of five members.</li>
+            <li>Teams can have a maximum of five members. <i>In special cases of individual teams, the number can be extended to 6.</i></li>
             <li>Each team must have at least three members.</li>
             <li>
               All teams should consider creating a multi-disciplinary team which
