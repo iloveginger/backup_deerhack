@@ -1,4 +1,4 @@
-
+"use client";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 
@@ -8,13 +8,15 @@ import shortFatLeaf from "../assets/images/leaf_deerhack2023_right.svg";
 import shortLeaf from "../assets/images/leaf_prizes_right.svg";
 import veryLongLeaf from "../assets/images/veryLongLeaf.svg";
 import Timer_wrapper from "../components/counter/Timer";
+import { cabinetExtraBold } from "../utils/fonts";
 
 const COD = () => {
+
   return (
     <>
       {/* <Navbar /> */}
       <div className="relative lg:overflow-hidden h-[420px] sm:h-screen  flex flex-col justify-center">
-      <Image
+        <Image
           src={longLeafSVG}
           height={50}
           width={50}
@@ -66,7 +68,7 @@ const COD = () => {
           width={80}
           alt="leaf"
           className="absolute top-[135rem] left-0 hidden lg:block scale-150"
-          // style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
+        // style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
         />
         <Image
           src={shortLeaf}
@@ -77,8 +79,11 @@ const COD = () => {
           style={{ transform: "rotate(-5deg)" }}
         />
         <div className="headings">
-
-      <Timer_wrapper targetDate="May 12,2024 05:30:00"/>
+          {
+            <div className={`${cabinetExtraBold.className} headings`}>
+              <p>The event has ended. Thank you for participating!</p>
+            </div>
+          }
         </div>
       </div>
       {/* <Footer/> */}
