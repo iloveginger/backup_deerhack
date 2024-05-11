@@ -98,14 +98,14 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "04:00 PM",
-                    title: "Snacks and Drinks",
-                    venue: "Cafeteria",
-                },
-                {
                     time: "03:00 PM",
                     title: "Fun Game 02",
                     venue: "Courtyard",
+                },
+                {
+                    time: "04:00 PM",
+                    title: "Snacks and Drinks",
+                    venue: "Cafeteria",
                 },
                 {
                     time: "06:00 PM",
