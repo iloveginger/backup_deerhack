@@ -123,7 +123,7 @@ const ScheduleSection = () => {
             date: "12th May | Day 3",
             events: [
                 {
-                    time: "05:30 AM",
+                    time: "06:30 AM",
                     title: "Check Out | Teams",
                     venue: "DWIT Complex",
                 },
@@ -138,17 +138,22 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "09:00 AM",
-                    title: "Pitching Sessions",
-                    venue: "Sagarmatha Hall",
+                    time: "09:30 AM",
+                    title: "First Stage Judgement",
+                    venue: "Coding Rooms",
                 },
                 {
-                    time: "01:30 PM",
+                    time: "12:00 PM",
                     title: "Lunch",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "03:00 PM",
+                    time: "01:30 PM",
+                    title: "Pitching Sessions",
+                    venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "04:00 PM",
                     title: "Winner Announcement & Closing Ceremony",
                     venue: "Sagarmatha Hall",
                 },
