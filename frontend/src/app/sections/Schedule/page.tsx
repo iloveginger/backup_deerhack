@@ -128,11 +128,6 @@ const ScheduleSection = () => {
                     venue: "DWIT Complex",
                 },
                 {
-                    time: "07:30 AM",
-                    title: "Final Call",
-                    venue: "Coding Rooms",
-                },
-                {
                     time: "08:00 AM",
                     title: "Breakfast",
                     venue: "Cafeteria",
