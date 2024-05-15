@@ -78,6 +78,7 @@ const winners = () => {
         />
     <WinnerSection/>
       </div>
+      <Footer/>
     </>
   );
 };
