@@ -9,9 +9,6 @@ import Footer from "@/app/components/Footer/Footer";
 import WinnersName from "@/app/components/WinnersName/WinnersName";
 import { cabinetBold, cabinetExtraBold } from "@/app/utils/fonts";
 import Image from "next/image";
-import right from "@/app/assets/icons/right.svg"
-import left from "@/app/assets/icons/left.svg"
-
 
 const page = () => {
   return (
@@ -27,21 +24,19 @@ const page = () => {
             <h2 className={`${cabinetBold.className} text-4xl  mb-10`}>
               Overall Winners
             </h2>
-            <div className="relative flex lg:w-fit flex-row justify-center shrink ">
-              <div className="absolute z-0 lg:right-96 right-64 ">
+            <div className=" flex relative">
+              <div className=" absolute -left-[9.5rem]">
                 <WinnerLeafLeft />
               </div>
-              <span className="z-1">
-                <TeamSolo className="lg:w-full md:w-96 sm:w-96 w-96" />
+              <span className="">
+                <TeamSolo className=" w-72  lg:w-fit" />
               </span>
-              <div className="absolute z-0 lg:left-96 left-64">
+              <span className=" absolute -right-[9.5rem]">
                 <WinnerLeafRight />
+              </span>
+              <div className={` absolute bottom-0  w-full `}>
+                <WinnersName teamName="SOLO" />
               </div>
-            </div>
-            <div
-              className={` absolute inset-x-0 bottom-0 mx-auto min-w-64 max-w-96 text-center ${cabinetExtraBold.className} md:text-3xl text-2xl  p-0.5 rounded-md`}
-            >
-              <WinnersName teamName="SOLO" />
             </div>
           </div>
 
@@ -60,27 +55,17 @@ const page = () => {
                   Open Innovation
                 </p>
 
-                <div className="relative flex flex-row justify-center items-center px-0 sm:px-8">
-                  <span className="absolute z-0 lg:right-96 right-48">
-                    <Image
-                      src={left}
-                      alt="right"
-          
-                    />
+                <div className=" flex relative">
+                  <div className=" absolute -left-[9rem]">
+                    <WinnerLeafLeft />
+                  </div>
+                  <span className="">
+                    <TeamDecent className=" w-64  lg:w-fit" />
                   </span>
-                  <span className="z-1">
-                    <TeamDecent className="md:w-80 w-72 sm:w-80 lg:w-fit" />
+                  <span className=" absolute -right-[9rem]">
+                    <WinnerLeafRight />
                   </span>
-                  <span className="absolute z-0 lg:left-96  left-48 ">
-                    <Image
-                      src={right}
-                      alt="left"
-                     
-                    />
-                  </span>
-                  <div
-                    className={`absolute bottom-0 w-96 text-center ${cabinetExtraBold.className} `}
-                  >
+                  <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="decent" />
                   </div>
                 </div>
@@ -92,22 +77,22 @@ const page = () => {
                   Data Science / ML
                 </p>
 
-                <div className="relative flex flex-row justify-center items-center ">
-                  <div className="absolute z-0 lg:right-96 right-48">
+
+                <div className=" flex relative">
+                  <div className=" absolute -left-[9rem]">
                     <WinnerLeafLeft />
                   </div>
-                  <span className="z-1">
-                    <TeamNymna className="md:w-80 w-72 sm:w-96 lg:w-fit"/>
+                  <span className="">
+                    <TeamNymna className=" w-64  lg:w-fit" />
                   </span>
-                  <span className="absolute z-0 lg:left-96 left-48">
+                  <span className=" absolute -right-[9rem]">
                     <WinnerLeafRight />
                   </span>
-                  <div
-                    className={`absolute bottom-0 w-96 text-center ${cabinetExtraBold.className} `}
-                  >
+                  <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="nymna" />
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -116,23 +101,21 @@ const page = () => {
             <div className="flex flex-row  px-24 gap-20 py-10  w-1/2 justify-center items-center">
               <div className="flex flex-col gap-6 text-white justify-center items-center">
                 <p className={`${cabinetBold.className} text-2xl text-center  mb-10`}>
-                 Interactive Technology
+                  Interactive Technology
                 </p>
 
-                <div className="relative flex flex-row justify-center items-center ">
-                  <span className="absolute z-0 lg:right-96 md:right-48 right-48">
+                <div className=" flex relative">
+                  <div className=" absolute -left-[9rem]">
                     <WinnerLeafLeft />
+                  </div>
+                  <span className="">
+                    <TeamEverest className=" w-64  lg:w-fit" />
                   </span>
-                  <span className="z-1">
-                    <TeamEverest className="md:w-80 w-72 sm:w-96 lg:w-fit"/>
-                  </span>
-                  <span className="absolute z-0 lg:left-96 left-48">
+                  <span className=" absolute -right-[9rem]">
                     <WinnerLeafRight />
                   </span>
-                  <div
-                    className={`absolute bottom-0 w-96 text-center ${cabinetExtraBold.className} `}
-                  >
-                    <WinnersName teamName="Team Everest" />
+                  <div className={` absolute bottom-0  w-full `}>
+                    <WinnersName teamName="team everest" />
                   </div>
                 </div>
               </div>
@@ -143,19 +126,17 @@ const page = () => {
                   Blockchain
                 </p>
 
-                <div className="relative flex flex-row justify-center items-center ">
-                  <span className="absolute z-0 lg:right-96 md:right-48 right-48">
+                <div className=" flex relative">
+                  <div className=" absolute -left-[9rem]">
                     <WinnerLeafLeft />
+                  </div>
+                  <span className="">
+                    <TeamERROR className=" w-64  lg:w-fit" />
                   </span>
-                  <span className="z-1">
-                    <TeamERROR className="md:w-80 w-72 sm:w-96 lg:w-fit"/>
-                  </span>
-                  <span className="absolute z-0 lg:left-96 left-48">
+                  <span className=" absolute -right-[9rem]">
                     <WinnerLeafRight />
                   </span>
-                  <div
-                    className={`absolute bottom-0 w-96 text-center ${cabinetExtraBold.className} `}
-                  >
+                  <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="Error - 404" />
                   </div>
                 </div>

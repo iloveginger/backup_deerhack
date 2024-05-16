@@ -15,36 +15,36 @@ const WinnerLeafLeft = () => {
     <defs>
     <linearGradient id="paint0_linear_2731_2723" x1="17.5821" y1="205.897" x2="236.512" y2="-29.806" gradientUnits="userSpaceOnUse">
     <stop/>
-    <stop offset="0.60345" stop-color="#6633CC"/>
-    <stop offset="1" stop-color="#FF9CAA"/>
+    <stop offset="0.60345" stopColor="#6633CC"/>
+    <stop offset="1" stopColor="#FF9CAA"/>
     </linearGradient>
     <linearGradient id="paint1_linear_2731_2723" x1="167.829" y1="422.559" x2="52.9564" y2="147.923" gradientUnits="userSpaceOnUse">
     <stop/>
-    <stop offset="0.60345" stop-color="#6633CC"/>
-    <stop offset="1" stop-color="#FF9CAA"/>
+    <stop offset="0.60345" stopColor="#6633CC"/>
+    <stop offset="1" stopColor="#FF9CAA"/>
     </linearGradient>
     <linearGradient id="paint2_linear_2731_2723" x1="281.208" y1="424.685" x2="128.197" y2="388.068" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#FFA5A5"/>
-    <stop offset="1" stop-color="#311172"/>
+    <stop stopColor="#FFA5A5"/>
+    <stop offset="1" stopColor="#311172"/>
     </linearGradient>
     <linearGradient id="paint3_linear_2731_2723" x1="45.6204" y1="449.036" x2="182.728" y2="378.648" gradientUnits="userSpaceOnUse">
     <stop/>
-    <stop offset="0.60345" stop-color="#4D2899"/>
-    <stop offset="1" stop-color="#FF9CAA"/>
+    <stop offset="0.60345" stopColor="#4D2899"/>
+    <stop offset="1" stopColor="#FF9CAA"/>
     </linearGradient>
     <linearGradient id="paint4_linear_2731_2723" x1="203.46" y1="361.11" x2="125.933" y2="399.178" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#FFA5A5"/>
-    <stop offset="1" stop-color="#4A219B"/>
+    <stop stopColor="#FFA5A5"/>
+    <stop offset="1" stopColor="#4A219B"/>
     </linearGradient>
     <linearGradient id="paint5_linear_2731_2723" x1="117.27" y1="397.57" x2="253.401" y2="389.418" gradientUnits="userSpaceOnUse">
     <stop/>
-    <stop offset="0.60345" stop-color="#6633CC"/>
-    <stop offset="1" stop-color="#FF9CAA"/>
+    <stop offset="0.60345" stopColor="#6633CC"/>
+    <stop offset="1" stopColor="#FF9CAA"/>
     </linearGradient>
     <linearGradient id="paint6_linear_2731_2723" x1="30.7148" y1="378.081" x2="225.755" y2="458.822" gradientUnits="userSpaceOnUse">
     <stop/>
-    <stop offset="0.60345" stop-color="#6633CC"/>
-    <stop offset="1" stop-color="#FF9CAA"/>
+    <stop offset="0.60345" stopColor="#6633CC"/>
+    <stop offset="1" stopColor="#FF9CAA"/>
     </linearGradient>
     <clipPath id="clip0_2731_2723">
     <rect width="211.2" height="189.019" fill="white" transform="translate(57.2852 239.407)"/>
