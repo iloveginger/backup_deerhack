@@ -26,13 +26,13 @@ const page = () => {
             </h2>
             <div className=" flex relative">
               <div className=" absolute -left-[9.5rem]">
-                <WinnerLeafLeft />
+                <WinnerLeafLeft className=" w-80 h-48 md:w-max md:h-max" />
               </div>
               <span className="">
-                <TeamSolo className=" w-72  lg:w-fit" />
+                <TeamSolo className=" md:w-fit  sm:w-56 sm:h-56 w-48 h-48 md:h-max  lg:w-fit" />
               </span>
               <span className=" absolute -right-[9.5rem]">
-                <WinnerLeafRight />
+                <WinnerLeafRight className="w-80 h-48 md:w-max md:h-max" />
               </span>
               <div className={` absolute bottom-0  w-full `}>
                 <WinnersName teamName="SOLO" />
@@ -57,13 +57,13 @@ const page = () => {
 
                 <div className=" flex relative">
                   <div className=" absolute -left-[9rem]">
-                    <WinnerLeafLeft />
+                    <WinnerLeafLeft className="w-80 h-48 md:w-max md:h-max" />
                   </div>
                   <span className="">
-                    <TeamDecent className=" w-64  lg:w-fit" />
+                    <TeamDecent className=" w-48 h-48 sm:w-56 sm:h-56 md:w-fit md:h-max lg:w-fit" />
                   </span>
                   <span className=" absolute -right-[9rem]">
-                    <WinnerLeafRight />
+                    <WinnerLeafRight className="w-80 h-48 md:w-max md:h-max" />
                   </span>
                   <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="decent" />
@@ -80,13 +80,13 @@ const page = () => {
 
                 <div className=" flex relative">
                   <div className=" absolute -left-[9rem]">
-                    <WinnerLeafLeft />
+                    <WinnerLeafLeft className="w-80 h-48 md:w-max md:h-max"/>
                   </div>
                   <span className="">
-                    <TeamNymna className=" w-64  lg:w-fit" />
+                    <TeamNymna className=" w-48 h-48 md:w-fit sm:w-56 sm:h-56 md:h-max lg:w-fit" />
                   </span>
                   <span className=" absolute -right-[9rem]">
-                    <WinnerLeafRight />
+                    <WinnerLeafRight className="w-80 h-48 md:w-max md:h-max" />
                   </span>
                   <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="nymna" />
@@ -106,13 +106,13 @@ const page = () => {
 
                 <div className=" flex relative">
                   <div className=" absolute -left-[9rem]">
-                    <WinnerLeafLeft />
+                    <WinnerLeafLeft className="w-80 h-48 md:w-max md:h-max" />
                   </div>
                   <span className="">
-                    <TeamEverest className=" w-64  lg:w-fit" />
+                    <TeamEverest className=" md:w-fit w-48  sm:w-56 sm:h-56 h-48 md:h-max lg:w-fit" />
                   </span>
                   <span className=" absolute -right-[9rem]">
-                    <WinnerLeafRight />
+                    <WinnerLeafRight className="w-80 h-48 md:w-max md:h-max" />
                   </span>
                   <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="team everest" />
@@ -128,13 +128,13 @@ const page = () => {
 
                 <div className=" flex relative">
                   <div className=" absolute -left-[9rem]">
-                    <WinnerLeafLeft />
+                    <WinnerLeafLeft className="w-80 h-48 md:w-max md:h-max"/>
                   </div>
                   <span className="">
-                    <TeamERROR className=" w-64  lg:w-fit" />
+                    <TeamERROR className=" md:w-fit w-48 h-48 sm:w-56 sm:h-56 md:h-max lg:h-max  lg:w-fit" />
                   </span>
                   <span className=" absolute -right-[9rem]">
-                    <WinnerLeafRight />
+                    <WinnerLeafRight className="w-80 h-48 md:w-max md:h-max" />
                   </span>
                   <div className={` absolute bottom-0  w-full `}>
                     <WinnersName teamName="Error - 404" />

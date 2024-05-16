@@ -2,7 +2,7 @@ import React from 'react'
 
 const TeamERROR = ({className}:any) => {
   return (
-    <svg width="500" height="350" className={className} viewBox="0 0 384 267"fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg width="400" height="350" className={className} viewBox="0 0 384 267"fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <rect x="0.338867" y="0.923096" width="410.215" height="235.908" fill="url(#pattern0_2733_2869)"/>
     <defs>
     <pattern id="pattern0_2733_2869" patternContentUnits="objectBoundingBox" width="1" height="1">
