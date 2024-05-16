@@ -9,6 +9,9 @@ import Footer from "@/app/components/Footer/Footer";
 import WinnersName from "@/app/components/WinnersName/WinnersName";
 import { cabinetBold, cabinetExtraBold } from "@/app/utils/fonts";
 import Image from "next/image";
+import right from "@/app/assets/icons/right.svg"
+import left from "@/app/assets/icons/left.svg"
+
 
 const page = () => {
   return (
@@ -57,15 +60,23 @@ const page = () => {
                   Open Innovation
                 </p>
 
-                <div className="relative flex flex-row justify-center items-center ">
-                  <span className="absolute z-0 lg:right-96 md:right-48 right-48">
-                    <WinnerLeafLeft />
+                <div className="relative flex flex-row justify-center items-center px-0 sm:px-8">
+                  <span className="absolute z-0 lg:right-96 right-48">
+                    <Image
+                      src={left}
+                      alt="right"
+          
+                    />
                   </span>
                   <span className="z-1">
                     <TeamDecent className="md:w-80 w-72 sm:w-80 lg:w-fit" />
                   </span>
-                  <span className="absolute z-0 lg:left-96 left-48">
-                    <WinnerLeafRight />
+                  <span className="absolute z-0 lg:left-96  left-48 ">
+                    <Image
+                      src={right}
+                      alt="left"
+                     
+                    />
                   </span>
                   <div
                     className={`absolute bottom-0 w-96 text-center ${cabinetExtraBold.className} `}
