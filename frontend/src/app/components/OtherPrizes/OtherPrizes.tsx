@@ -11,11 +11,13 @@ export default function OtherPrizes(): ReactElement {
           <div
             className={`${cabinetExtraBold.className} text-primary-gradient-color text-2xl sm:text-2xl lg:text-4xl text-start md:text-end`}
           >
-            And Many More Gifts and <br className="hidden sm:block" />
-            Swags for Everyone!
+            Tons of Gifts and <br className="hidden sm:block" />
+            Merch for Everyone!
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+
