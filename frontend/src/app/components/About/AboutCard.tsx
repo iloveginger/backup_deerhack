@@ -12,7 +12,7 @@ export default function AboutCard({
 }): ReactElement {
   return (
     
-<div className="primary-aboutpage-background max-w-[32.1rem] flex flex-col lg:h-[39.78rem]  md:h-[28.75rem] h-fit rounded-[1rem] p-[0.2875rem] m-6 sm:m-8">
+<div className="primary-aboutpage-background max-w-[32.1rem] flex flex-col lg:h-[39.78rem]  h-[33.75rem]   rounded-[1rem] p-[0.2875rem] m-6 sm:m-8">
   <div className="bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 py-12 px-12">
     <div className="lg:h-[171px] h-fit mb-4">
     <div className="bg-dark-purple rounded-full w-12 lg:w-20 h-12 mb-5 lg:h-20 flex items-center justify-center p-0">
