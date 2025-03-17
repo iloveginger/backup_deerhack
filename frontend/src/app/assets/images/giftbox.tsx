@@ -3,14 +3,17 @@ import { ReactElement } from "react";
 export default function GiftBox({
   height = 72,
   width = 72,
+  className = "",
 }: {
   height?: number;
   width?: number;
+  className?: string;
 }): ReactElement {
   return (
     <svg
       width={`${height}`}
       height={`${width}`}
+      className="md:h-[8.914rem] md:w-[8.914rem] h-[5.125rem] w-[5.125rem]"
       viewBox="0 0 144 144"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
