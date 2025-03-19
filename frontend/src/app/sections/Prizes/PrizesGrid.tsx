@@ -79,14 +79,14 @@ export default function PrizesGrid(): ReactElement {
 
   <div className="maindiv flex items-center justify-center mt-10  flex-col md:flex-row">
 
-  <div className="Grandprize">
+  <div className="Grandprize md:mb-[1.5rem]">
     <GrandPrizeCard />
   </div>
 
 
   <div className="Everythingelse flex flex-col ">
 
-    <div className="uppercards flex flex-col lg:flex-row md:flex-row sm:flex-col sm:items-start">
+    <div className="uppercards flex flex-col lg:flex-row md:mt-[1rem] md:flex-row sm:flex-col sm:items-start">
       <div className="Trackwinner relative bottom-[3rem]">
         <TrackWinner />
       </div>

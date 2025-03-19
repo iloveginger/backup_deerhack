@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import Trophy from "@/app/assets/images/trophy";
-import Leaf from "@/app/assets/images/leaf";
+import Leaf from "@/app/assets/images/Leaf";
 import {
   satoshiRegular,
   cabinetBold,
@@ -11,7 +11,7 @@ import {
 export default function GrandPrizeCard(): ReactElement {
   return (
     
-    <div className="flex flex-col justify-evenly grow h-[29.448rem] md:h-[43.284rem] rounded-[2rem] primary-aboutpage-background w-[19.966rem] md:w-[29.348rem] mb-6">
+    <div className="flex flex-col justify-evenly grow h-[29.448rem] md:h-[43.284rem] rounded-[2rem] primary-aboutpage-background w-[19.966rem] md:w-[29.348rem] mb-6 ml-[1rem]">
       <div className="flex flex-col text-left ml-[2rem]">
         <div className="flex">
           <Trophy height={160} width={160} />
@@ -33,8 +33,9 @@ export default function GrandPrizeCard(): ReactElement {
         </div>
         
     
-        <div className="absolute bottom-[-8rem] right-[-3rem]">
-          <Leaf height={300} width={300} />
+        <div className="absolute bottom-[4rem]">
+        
+          <Leaf height={300} width={300}/>
         </div>
       </p>
     </div>

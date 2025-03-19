@@ -5,7 +5,7 @@ import { cabinetBlack, cabinetBold, cabinetRegular } from "@/app/utils/fonts";
 export default function TrackWinner(): ReactElement {
   return (
 
-    <div className="primary-gradient-background w-[19.985rem] md:w-[26.313rem] h-[18.369rem] md:h-[29.063rem] p-[2px] rounded-[2rem] mt-[3rem] ml-[2rem] mb-[1rem]">
+    <div className="primary-gradient-background w-[19.985rem] md:w-[26.313rem] h-[18.369rem] md:h-[29.063rem] p-[2px] rounded-[2rem] mt-[3rem] ml-[1.5rem]">
     {/* <div className="bg-[#110C24] flex flex-col h-full w-full rounded-[2rem] justify-between py-8 sm:py-12"> */}
     <div className="bg-[#110C24] flex flex-col h-full w-full rounded-[2rem] justify-between py-8">
       
